@@ -1,135 +1,170 @@
-"use client"
-
-import { useState, useEffect } from "react"
-import BootScreen from "@/components/boot-screen"
-import LoginScreen from "@/components/login-screen"
-import Desktop from "@/components/desktop"
-import SleepScreen from "@/components/sleep-screen"
-import ShutdownScreen from "@/components/shutdown-screen"
-
-type SystemState = "booting" | "login" | "desktop" | "sleeping" | "shutdown" | "restarting"
+import EditorialLayout from "@/components/editorial/EditorialLayout"
+import Breadcrumb from "@/components/editorial/Breadcrumb"
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 
 export default function Home() {
-  const [systemState, setSystemState] = useState<SystemState>("booting")
-  const [isDarkMode, setIsDarkMode] = useState(false) // Default to light mode
-  const [screenBrightness, setScreenBrightness] = useState(90)
+  return (
+    <EditorialLayout currentPath="home.mdx">
+      <Breadcrumb path="home.mdx" />
 
-  // Simulate boot sequence
-  useEffect(() => {
-    if (systemState === "booting") {
-      const timer = setTimeout(() => {
-        setSystemState("login")
-      }, 3000) // 3 seconds boot sequence
+      {/* Hero */}
+      <header className="mb-16">
+        <h1 className="font-serif text-5xl md:text-6xl text-[rgb(var(--text))] mb-6 leading-tight">
+          I build things that{" "}
+          <span className="text-[rgb(var(--primary))]">matter</span>.
+        </h1>
+        <p className="text-lg text-[rgb(var(--muted))] max-w-xl leading-relaxed">
+          Entrepreneur with a background in economics, athletics, and venture.
+          Currently building at the intersection of AI and human creativity.
+        </p>
+      </header>
 
-      return () => clearTimeout(timer)
-    }
-
-    if (systemState === "restarting") {
-      // First show boot screen
-      const bootTimer = setTimeout(() => {
-        setSystemState("login")
-      }, 3000) // 3 seconds boot sequence
-
-      return () => clearTimeout(bootTimer)
-    }
-  }, [systemState])
-
-  // Load settings from localStorage
-  useEffect(() => {
-    const savedDarkMode = localStorage.getItem("isDarkMode")
-    if (savedDarkMode !== null) {
-      setIsDarkMode(savedDarkMode === "true")
-    }
-
-    const savedBrightness = localStorage.getItem("screenBrightness")
-    if (savedBrightness !== null) {
-      setScreenBrightness(Number.parseInt(savedBrightness))
-    }
-  }, [])
-
-  const handleLogin = () => {
-    setSystemState("desktop")
-  }
-
-  const handleLogout = () => {
-    setSystemState("login")
-  }
-
-  const handleSleep = () => {
-    setSystemState("sleeping")
-  }
-
-  const handleWakeUp = () => {
-    setSystemState("login")
-  }
-
-  const handleShutdown = () => {
-    setSystemState("shutdown")
-  }
-
-  const handleBoot = () => {
-    setSystemState("booting")
-  }
-
-  const handleRestart = () => {
-    setSystemState("restarting")
-  }
-
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode
-    setIsDarkMode(newMode)
-    localStorage.setItem("isDarkMode", newMode.toString())
-  }
-
-  const updateBrightness = (value: number) => {
-    setScreenBrightness(value)
-    localStorage.setItem("screenBrightness", value.toString())
-  }
-
-  // Render the appropriate screen based on system state
-  const renderScreen = () => {
-    switch (systemState) {
-      case "booting":
-      case "restarting":
-        return <BootScreen />
-
-      case "login":
-        return <LoginScreen onLogin={handleLogin} isDarkMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
-
-      case "desktop":
-        return (
-          <Desktop
-            onLogout={handleLogout}
-            onSleep={handleSleep}
-            onShutdown={handleShutdown}
-            onRestart={handleRestart}
-            initialDarkMode={isDarkMode}
-            onToggleDarkMode={toggleDarkMode}
-            initialBrightness={screenBrightness}
-            onBrightnessChange={updateBrightness}
+      {/* Current Focus */}
+      <section className="mb-16">
+        <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-6">
+          Currently Building
+        </h2>
+        <div className="grid gap-4">
+          <CompanyCard
+            name="Supanova"
+            description="AI video production"
+            status="active"
+            href="/companies/supanova"
           />
-        )
+          <CompanyCard
+            name="1z2"
+            description="Content research intelligence"
+            status="active"
+            href="/companies/1z2"
+          />
+        </div>
+        <Link
+          href="/companies"
+          className="inline-flex items-center gap-1 mt-4 text-sm text-[rgb(var(--primary))] hover:underline"
+        >
+          View all companies
+          <ArrowUpRight className="w-3 h-3" />
+        </Link>
+      </section>
 
-      case "sleeping":
-        return <SleepScreen onWakeUp={handleWakeUp} isDarkMode={isDarkMode} />
+      {/* Latest Writing */}
+      <section className="mb-16">
+        <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-6">
+          Latest Writing
+        </h2>
+        <div className="space-y-4">
+          <JournalEntry
+            title="On Building in Public"
+            date="Mar 15, 2026"
+            href="/journal/building-in-public"
+          />
+          <JournalEntry
+            title="The CKC Framework"
+            date="Mar 10, 2026"
+            href="/journal/ckc-framework"
+          />
+          <JournalEntry
+            title="Fourth Dimensional Thinking"
+            date="Mar 5, 2026"
+            href="/journal/fourth-dimensional"
+          />
+        </div>
+        <Link
+          href="/journal"
+          className="inline-flex items-center gap-1 mt-4 text-sm text-[rgb(var(--primary))] hover:underline"
+        >
+          Read more
+          <ArrowUpRight className="w-3 h-3" />
+        </Link>
+      </section>
 
-      case "shutdown":
-        return <ShutdownScreen onBoot={handleBoot} />
+      {/* Values */}
+      <section>
+        <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-6">
+          What I Believe
+        </h2>
+        <blockquote className="font-serif text-2xl italic text-[rgb(var(--text))] border-l-2 border-[rgb(var(--primary))] pl-6">
+          "Interesting people build interesting companies."
+        </blockquote>
+        <div className="mt-8 grid grid-cols-3 gap-4">
+          <ValueCard letter="C" word="Competence" />
+          <ValueCard letter="K" word="Kindness" />
+          <ValueCard letter="C" word="Confidence" />
+        </div>
+      </section>
+    </EditorialLayout>
+  )
+}
 
-      default:
-        return <BootScreen />
-    }
+// Component: Company Card
+function CompanyCard({
+  name,
+  description,
+  status,
+  href,
+}: {
+  name: string
+  description: string
+  status: "active" | "live" | "exploring"
+  href: string
+}) {
+  const statusColors = {
+    active: "bg-green-500",
+    live: "bg-blue-500",
+    exploring: "bg-yellow-500",
   }
 
   return (
-    <div className="relative">
-      {renderScreen()}
+    <Link
+      href={href}
+      className="group flex items-center justify-between p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+    >
+      <div>
+        <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors">
+          {name}
+        </h3>
+        <p className="text-sm text-[rgb(var(--muted))]">{description}</p>
+      </div>
+      <div className="flex items-center gap-2">
+        <span className={`w-2 h-2 rounded-full ${statusColors[status]}`} />
+        <ArrowUpRight className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors" />
+      </div>
+    </Link>
+  )
+}
 
-      {/* Brightness overlay - apply to all screens */}
-      <div
-        className="absolute inset-0 bg-black pointer-events-none z-50 transition-opacity duration-300"
-        style={{ opacity: Math.max(0.1, 0.9 - screenBrightness / 100) }}
-      />
+// Component: Journal Entry
+function JournalEntry({
+  title,
+  date,
+  href,
+}: {
+  title: string
+  date: string
+  href: string
+}) {
+  return (
+    <Link
+      href={href}
+      className="group flex items-center justify-between py-2 border-b border-[rgb(var(--border))] hover:border-[rgb(var(--primary))] transition-colors"
+    >
+      <span className="text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors">
+        {title}
+      </span>
+      <span className="font-mono text-xs text-[rgb(var(--muted))]">{date}</span>
+    </Link>
+  )
+}
+
+// Component: Value Card
+function ValueCard({ letter, word }: { letter: string; word: string }) {
+  return (
+    <div className="text-center p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))]">
+      <span className="font-serif text-3xl text-[rgb(var(--primary))]">
+        {letter}
+      </span>
+      <p className="text-sm text-[rgb(var(--muted))] mt-1">{word}</p>
     </div>
   )
 }
