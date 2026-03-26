@@ -1,19 +1,23 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import { useTheme } from "next-themes"
 import { Search, Sun, Moon } from "lucide-react"
 import SearchModal from "./SearchModal"
 
 const IDENTITY_WORDS = ["builder", "athlete", "founder", "curious"]
+const WORD_DISPLAY_TIME = 150 // ms per word
+const TOTAL_CYCLE_TIME = IDENTITY_WORDS.length * WORD_DISPLAY_TIME
 
 export default function TopBar() {
   const [mounted, setMounted] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
-  const [wordIndex, setWordIndex] = useState(0)
   const [currentDate, setCurrentDate] = useState("")
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [displayWord, setDisplayWord] = useState<string | null>(null)
   const { theme, setTheme } = useTheme()
+
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const isAnimatingRef = useRef(false)
 
   useEffect(() => {
     setMounted(true)
@@ -25,6 +29,15 @@ export default function TopBar() {
         year: "numeric",
       })
     )
+  }, [])
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
   }, [])
 
   // Cmd+K shortcut
@@ -40,25 +53,33 @@ export default function TopBar() {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [])
 
-  // Word cycle effect on hover
-  useEffect(() => {
-    if (!isHovering) {
-      setWordIndex(0)
-      return
+  const runWordCycle = useCallback(() => {
+    // Prevent multiple animations from running
+    if (isAnimatingRef.current) return
+    isAnimatingRef.current = true
+
+    let index = 0
+
+    const showNextWord = () => {
+      if (index < IDENTITY_WORDS.length) {
+        setDisplayWord(IDENTITY_WORDS[index])
+        index++
+        timeoutRef.current = setTimeout(showNextWord, WORD_DISPLAY_TIME)
+      } else {
+        // Animation complete - show name again
+        setDisplayWord(null)
+        isAnimatingRef.current = false
+      }
     }
 
-    const interval = setInterval(() => {
-      setWordIndex((prev) => {
-        if (prev >= IDENTITY_WORDS.length - 1) {
-          setIsHovering(false)
-          return 0
-        }
-        return prev + 1
-      })
-    }, 150)
+    showNextWord()
+  }, [])
 
-    return () => clearInterval(interval)
-  }, [isHovering])
+  const handleMouseEnter = useCallback(() => {
+    if (!isAnimatingRef.current) {
+      runWordCycle()
+    }
+  }, [runWordCycle])
 
   if (!mounted) {
     return (
@@ -70,21 +91,21 @@ export default function TopBar() {
 
   return (
     <>
-      <header className="h-12 border-b border-[rgb(var(--border))] bg-[rgb(var(--surface))] flex items-center justify-between px-6 sticky top-0 z-40">
+      <header className="editorial-elevated h-12 border-b border-[rgb(var(--border))] flex items-center justify-between px-6 sticky top-0 z-40">
         {/* Logo / Name */}
         <div
-          className="cursor-pointer select-none"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
+          className="cursor-pointer select-none min-w-[120px]"
+          onMouseEnter={handleMouseEnter}
         >
-          <h1 className="font-serif text-xl font-normal text-[rgb(var(--text))]">
-            {isHovering ? (
-              <span className="text-[rgb(var(--primary))]">
-                {IDENTITY_WORDS[wordIndex]}
-              </span>
-            ) : (
-              "Your Name"
-            )}
+          <h1 className="font-serif text-xl font-normal">
+            <span
+              className={`
+                inline-block transition-all duration-100 ease-out
+                ${displayWord ? "text-[rgb(var(--primary))]" : "text-[rgb(var(--text))]"}
+              `}
+            >
+              {displayWord || "Your Name"}
+            </span>
           </h1>
         </div>
 

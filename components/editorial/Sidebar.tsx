@@ -43,7 +43,7 @@ export default function Sidebar({ currentPath }: SidebarProps) {
   }
 
   return (
-    <aside className="w-52 border-r border-[rgb(var(--border))] bg-[rgb(var(--surface))] flex flex-col">
+    <aside className="editorial-elevated w-52 border-r border-[rgb(var(--border))] flex flex-col">
       {/* File Tree */}
       <nav className="flex-1 py-4 overflow-y-auto">
         <ul className="space-y-0.5 px-2">

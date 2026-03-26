@@ -26,8 +26,8 @@ export default function EditorialLayout({
         {/* Left Sidebar - File Tree */}
         <Sidebar currentPath={currentPath} />
 
-        {/* Center - Document Area */}
-        <main className="flex-1 overflow-y-auto">
+        {/* Center - Document Area (contains grain texture) */}
+        <main className="editorial-document-area flex-1 overflow-y-auto">
           <div className="max-w-3xl mx-auto px-8 py-12">
             {children}
           </div>

@@ -118,7 +118,7 @@ function CompanyCard({
   return (
     <Link
       href={href}
-      className="group flex items-center justify-between p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+      className="editorial-elevated-card group flex items-center justify-between p-4 rounded-lg border border-[rgb(var(--border))] hover:border-[rgb(var(--primary))] transition-colors"
     >
       <div>
         <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors">
@@ -160,7 +160,7 @@ function JournalEntry({
 // Component: Value Card
 function ValueCard({ letter, word }: { letter: string; word: string }) {
   return (
-    <div className="text-center p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))]">
+    <div className="editorial-elevated-card text-center p-4 rounded-lg border border-[rgb(var(--border))]">
       <span className="font-serif text-3xl text-[rgb(var(--primary))]">
         {letter}
       </span>
