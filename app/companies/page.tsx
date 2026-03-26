@@ -2,41 +2,7 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { ArrowUpRight, ExternalLink } from "lucide-react"
-
-const COMPANIES = [
-  {
-    slug: "supanova",
-    name: "Supanova",
-    description: "AI video production",
-    longDescription: "Helping creators produce professional video content with AI-powered tools.",
-    url: "https://www.iamsupanova.com",
-    status: "active" as const,
-  },
-  {
-    slug: "1z2",
-    name: "1z2",
-    description: "Content research intelligence",
-    longDescription: "AI-powered platform for content research and competitive analysis.",
-    url: "https://www.1z2.app",
-    status: "active" as const,
-  },
-  {
-    slug: "our-circles",
-    name: "Our Circles",
-    description: "Family life sharing",
-    longDescription: "A private space for families to share moments and stay connected.",
-    url: "https://www.our-circles.com",
-    status: "live" as const,
-  },
-  {
-    slug: "20punches",
-    name: "20 Punches",
-    description: "AI financial advisory",
-    longDescription: "Making financial advice accessible through AI-powered guidance.",
-    url: "https://www.20punches.co.uk",
-    status: "live" as const,
-  },
-]
+import { COMPANIES, CompanyStatus } from "@/lib/data/portfolio-data"
 
 export default function CompaniesPage() {
   return (
@@ -48,7 +14,7 @@ export default function CompaniesPage() {
           Companies
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl">
-          Things I'm building. Each one started as a problem I wanted to solve.
+          Things I&apos;m building. Each one started as a problem I wanted to solve.
         </p>
       </header>
 
@@ -74,7 +40,7 @@ function CompanyCard({
   description: string
   longDescription: string
   url: string
-  status: "active" | "live" | "exploring"
+  status: CompanyStatus
 }) {
   const statusConfig = {
     active: { color: "bg-green-500", label: "Active" },

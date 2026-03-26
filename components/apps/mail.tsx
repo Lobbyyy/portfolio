@@ -2,6 +2,7 @@
 
 import { useEffect } from "react"
 import { Mail } from "lucide-react"
+import { PERSONAL } from "@/lib/data/portfolio-data"
 
 interface MailProps {
   isDarkMode?: boolean
@@ -13,7 +14,7 @@ export default function MailApp({ isDarkMode = true }: MailProps) {
 
   // Open mailto link when the app is opened
   useEffect(() => {
-    const mailtoLink = "mailto:mail@danielprior.dk"
+    const mailtoLink = `mailto:${PERSONAL.email}`
     window.location.href = mailtoLink
   }, [])
 

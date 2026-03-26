@@ -17,7 +17,6 @@ export default function FaceTime({ isDarkMode = true }: FaceTimeProps) {
 
   const bgColor = isDarkMode ? "bg-gray-900" : "bg-white"
   const textColor = isDarkMode ? "text-white" : "text-gray-800"
-  const buttonBg = isDarkMode ? "bg-gray-800 hover:bg-gray-700" : "bg-gray-100 hover:bg-gray-200"
 
   // Start camera when component mounts
   useEffect(() => {

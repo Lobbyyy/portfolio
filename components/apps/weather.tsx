@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Search, MapPin, Thermometer, Droplets, Wind, Sunrise, Sunset, Cloud, CloudRain, CloudSnow, Sun } from 'lucide-react'
+import { Search, MapPin, Droplets, Wind, Sunrise, Sunset, Cloud, CloudRain, CloudSnow, Sun } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -174,6 +174,7 @@ export default function Weather({ isDarkMode = true }: WeatherProps) {
         cancelAnimationFrame(animationRef.current)
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [condition])
   
   // Update weather condition when city changes
@@ -198,6 +199,7 @@ export default function Weather({ isDarkMode = true }: WeatherProps) {
       // Reinitialize particles
       initParticles()
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city])
   
   const initParticles = () => {

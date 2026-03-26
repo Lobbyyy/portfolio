@@ -2,6 +2,7 @@
 
 import { Github } from "lucide-react"
 import { useEffect, useRef } from "react"
+import { PERSONAL } from "@/lib/data/portfolio-data"
 
 interface GitHubProps {
   isDarkMode?: boolean
@@ -19,7 +20,7 @@ export default function GitHub({ isDarkMode = true }: GitHubProps) {
       hasOpenedRef.current = true
 
       // Open GitHub profile in new tab
-      window.open("https://github.com/daprior", "_blank")
+      window.open(`https://github.com/${PERSONAL.github}`, "_blank")
     }
   }, [])
 

@@ -2,6 +2,12 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
+import { PERSONAL, COMPANIES, JOURNAL_POSTS, VALUES, CompanyStatus } from "@/lib/data/portfolio-data"
+
+// Get active companies for homepage
+const activeCompanies = COMPANIES.filter(c => c.status === "active").slice(0, 2)
+// Get latest journal posts for homepage
+const latestPosts = JOURNAL_POSTS.slice(0, 3)
 
 export default function Home() {
   return (
@@ -11,12 +17,11 @@ export default function Home() {
       {/* Hero */}
       <header className="mb-16">
         <h1 className="font-serif text-5xl md:text-6xl text-[rgb(var(--text))] mb-6 leading-tight">
-          I build things that{" "}
-          <span className="text-[rgb(var(--primary))]">matter</span>.
+          {PERSONAL.tagline.split(" ").slice(0, -1).join(" ")}{" "}
+          <span className="text-[rgb(var(--primary))]">{PERSONAL.tagline.split(" ").slice(-1)}</span>
         </h1>
         <p className="text-lg text-[rgb(var(--muted))] max-w-xl leading-relaxed">
-          Entrepreneur with a background in economics, athletics, and venture.
-          Currently building at the intersection of AI and human creativity.
+          {PERSONAL.bio}
         </p>
       </header>
 
@@ -26,18 +31,15 @@ export default function Home() {
           Currently Building
         </h2>
         <div className="grid gap-4">
-          <CompanyCard
-            name="Supanova"
-            description="AI video production"
-            status="active"
-            href="/companies/supanova"
-          />
-          <CompanyCard
-            name="1z2"
-            description="Content research intelligence"
-            status="active"
-            href="/companies/1z2"
-          />
+          {activeCompanies.map((company) => (
+            <CompanyCard
+              key={company.slug}
+              name={company.name}
+              description={company.description}
+              status={company.status}
+              href={`/companies/${company.slug}`}
+            />
+          ))}
         </div>
         <Link
           href="/companies"
@@ -54,21 +56,14 @@ export default function Home() {
           Latest Writing
         </h2>
         <div className="space-y-4">
-          <JournalEntry
-            title="On Building in Public"
-            date="Mar 15, 2026"
-            href="/journal/building-in-public"
-          />
-          <JournalEntry
-            title="The CKC Framework"
-            date="Mar 10, 2026"
-            href="/journal/ckc-framework"
-          />
-          <JournalEntry
-            title="Fourth Dimensional Thinking"
-            date="Mar 5, 2026"
-            href="/journal/fourth-dimensional"
-          />
+          {latestPosts.map((post) => (
+            <JournalEntry
+              key={post.slug}
+              title={post.title}
+              date={post.date}
+              href={`/journal/${post.slug}`}
+            />
+          ))}
         </div>
         <Link
           href="/journal"
@@ -85,12 +80,12 @@ export default function Home() {
           What I Believe
         </h2>
         <blockquote className="font-serif text-2xl italic text-[rgb(var(--text))] border-l-2 border-[rgb(var(--primary))] pl-6">
-          "Interesting people build interesting companies."
+          &ldquo;Interesting people build interesting companies.&rdquo;
         </blockquote>
         <div className="mt-8 grid grid-cols-3 gap-4">
-          <ValueCard letter="C" word="Competence" />
-          <ValueCard letter="K" word="Kindness" />
-          <ValueCard letter="C" word="Confidence" />
+          {VALUES.map((value) => (
+            <ValueCard key={value.word} letter={value.letter} word={value.word} />
+          ))}
         </div>
       </section>
     </EditorialLayout>
@@ -106,7 +101,7 @@ function CompanyCard({
 }: {
   name: string
   description: string
-  status: "active" | "live" | "exploring"
+  status: CompanyStatus
   href: string
 }) {
   const statusColors = {

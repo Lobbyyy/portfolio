@@ -2,12 +2,13 @@
 
 import { useState, useEffect, useRef, useCallback } from "react"
 import { useTheme } from "next-themes"
-import { Search, Sun, Moon } from "lucide-react"
+import { Search, Sun, Moon, Monitor, Globe } from "lucide-react"
+import Link from "next/link"
 import SearchModal from "./SearchModal"
+import { PERSONAL } from "@/lib/data/portfolio-data"
 
 const IDENTITY_WORDS = ["builder", "athlete", "founder", "curious"]
 const WORD_DISPLAY_TIME = 150 // ms per word
-const TOTAL_CYCLE_TIME = IDENTITY_WORDS.length * WORD_DISPLAY_TIME
 
 export default function TopBar() {
   const [mounted, setMounted] = useState(false)
@@ -104,9 +105,24 @@ export default function TopBar() {
                 ${displayWord ? "text-[rgb(var(--primary))]" : "text-[rgb(var(--text))]"}
               `}
             >
-              {displayWord || "Your Name"}
+              {displayWord || PERSONAL.name}
             </span>
           </h1>
+        </div>
+
+        {/* Center - Mode Toggle */}
+        <div className="flex items-center gap-1 bg-[rgb(var(--border))] rounded-full p-1">
+          <span className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-[rgb(var(--surface))] text-[rgb(var(--text))]">
+            <Globe className="w-3 h-3" />
+            Browser
+          </span>
+          <Link
+            href="/macos"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[rgb(var(--muted))] hover:text-[rgb(var(--text))] transition-colors"
+          >
+            <Monitor className="w-3 h-3" />
+            Desktop
+          </Link>
         </div>
 
         {/* Right side - Date, Search, Theme */}

@@ -3,12 +3,9 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
+import { PERSONAL, SKILLS, COMPANIES } from "@/lib/data/portfolio-data"
 
-interface TerminalProps {
-  isDarkMode?: boolean
-}
-
-export default function Terminal({ isDarkMode = true }: TerminalProps) {
+export default function Terminal() {
   const [input, setInput] = useState("")
   const [history, setHistory] = useState<string[]>([])
   const [commandHistory, setCommandHistory] = useState<string[]>([])
@@ -92,7 +89,7 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
     const mainCommand = args[0]
 
     // Add command to history
-    setHistory((prev) => [...prev, `daniel@macbook-pro ~ $ ${cmd}`, ""])
+    setHistory((prev) => [...prev, `${PERSONAL.username}@macbook-pro ~ $ ${cmd}`, ""])
 
     // Process command
     switch (mainCommand) {
@@ -131,25 +128,21 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
         break
 
       case "whoami":
-        setHistory((prev) => [...prev, "daniel", ""])
+        setHistory((prev) => [...prev, PERSONAL.username, ""])
         break
 
       case "about":
         setHistory((prev) => [
           ...prev,
           "┌─────────────────────────────────────┐",
-          "│ Daniel Prior                        │",
-          "│ Frontend Developer & UI/UX Designer │",
+          `│ ${PERSONAL.name.padEnd(35)} │`,
+          "│ Entrepreneur & Builder              │",
           "└─────────────────────────────────────┘",
           "",
-          "I'm a passionate web developer with expertise in",
-          "creating beautiful, responsive, and user-friendly",
-          "web applications. I love working with modern",
-          "frameworks and technologies to build",
-          "seamless user experiences. I have a strong",
-          "background in both frontend and backend",
-          "development, and I'm always eager to learn",
-          "new skills and improve my craft.",
+          PERSONAL.bio,
+          "",
+          "Currently building:",
+          ...COMPANIES.filter(c => c.status === "active").map(c => `• ${c.name} - ${c.description}`),
           "",
         ])
         break
@@ -161,41 +154,17 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
             "│   Skills     │",
             "└──────────────┘",
             "",
-            "Frontend:",
-            "• React / Next.js",
-            "• Vue.js / Nuxt.js",
-            "• TypeScript / JavaScript",
-            "• Tailwind CSS / SCSS",
-            "• UI/UX Design",
-            "• Responsive Web Development",
-            "• Vite / Webpack",
-            "• WordPress, Umbraco etc.",
+            "Languages:",
+            ...SKILLS.languages.map(s => `• ${s}`),
             "",
-            "Backend:",
-            "• Node.js / Express",
-            "• PHP / Laravel / Slim",
-            "• Python / Django",
-            "• Rust & Go (learning)",
-            "• SQL (MySQL, PostgreSQL)",
-            "• NoSQL (MongoDB)",
-            "• RESTful APIs / GraphQL",
+            "Frameworks:",
+            ...SKILLS.frameworks.map(s => `• ${s}`),
             "",
-            "Game Development:",
-            "• Unity / Unreal Engine",
-            "• C# & C++",
-            "• Game Design Principles",
-            "• Game Mechanics & Systems",
-            "• Blender 3D / 3D Modeling",
-            "• Animations for agri machinery & vehicles",
-            "• Godot Engine",
+            "Tools:",
+            ...SKILLS.tools.map(s => `• ${s}`),
             "",
-            "DevOps & Tools:",
-            "• Docker / Containerization",
-            "• CI/CD Pipelines",
-            "• Git / GitHub",
-            "• Agile / Scrum Methodologies",
-            "• AWS / Cloud Services",
-            "• Linux / Unix",
+            "Interests:",
+            ...SKILLS.interests.map(s => `• ${s}`),
             "",
           ])
           break
@@ -207,10 +176,10 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
           "│ Contact │",
           "└─────────┘",
           "",
-          "Email: mail@danielprior.dk",
-          "GitHub: github.com/daprior",
-          "LinkedIn: linkedin.com/in/daniel-prior-53a679195/",
-          "Website: danielprior.dev",
+          `Email: ${PERSONAL.email}`,
+          `GitHub: github.com/${PERSONAL.github}`,
+          `LinkedIn: linkedin.com/in/${PERSONAL.linkedin}`,
+          `Website: ${PERSONAL.website}`,
           "",
         ])
         break
@@ -234,7 +203,7 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
       ))}
 
       <div className="flex">
-        <span className="mr-2">daniel@macbook-pro ~ $</span>
+        <span className="mr-2">{PERSONAL.username}@macbook-pro ~ $</span>
         <input
           ref={inputRef}
           type="text"

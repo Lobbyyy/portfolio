@@ -1,9 +1,5 @@
-interface VSCodeProps {
-  isDarkMode?: boolean
-}
-
 // Replace VSCode component with an iframe
-export default function VSCode({ isDarkMode = true }: VSCodeProps) {
+export default function VSCode() {
   return (
     <div className="h-full w-full bg-gray-900">
       <iframe

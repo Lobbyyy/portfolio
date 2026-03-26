@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useCallback } from "react"
 import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX } from "lucide-react"
 import { Slider } from "@/components/ui/slider"
 
@@ -37,6 +37,11 @@ export default function Music() {
 
   const currentTrack = playlist[currentTrackIndex]
 
+  const handleNext = useCallback(() => {
+    setCurrentTrackIndex((prev) => (prev === playlist.length - 1 ? 0 : prev + 1))
+    setIsPlaying(true)
+  }, [playlist.length])
+
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
@@ -53,7 +58,7 @@ export default function Music() {
       audio.removeEventListener("loadedmetadata", updateDuration)
       audio.removeEventListener("ended", handleNext)
     }
-  }, [currentTrackIndex])
+  }, [currentTrackIndex, handleNext])
 
   useEffect(() => {
     const audio = audioRef.current
@@ -82,11 +87,6 @@ export default function Music() {
 
   const handlePrevious = () => {
     setCurrentTrackIndex((prev) => (prev === 0 ? playlist.length - 1 : prev - 1))
-    setIsPlaying(true)
-  }
-
-  const handleNext = () => {
-    setCurrentTrackIndex((prev) => (prev === playlist.length - 1 ? 0 : prev + 1))
     setIsPlaying(true)
   }
 

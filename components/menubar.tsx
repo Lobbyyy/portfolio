@@ -3,8 +3,17 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
-import { Search } from "lucide-react"
+
+// BatteryManager type for the Battery Status API
+interface BatteryManager extends EventTarget {
+  charging: boolean
+  level: number
+  addEventListener(type: string, listener: () => void): void
+}
+import { Search, Globe, Monitor } from "lucide-react"
+import Link from "next/link"
 import { AppleIcon } from "@/components/icons"
+import { PERSONAL } from "@/lib/data/portfolio-data"
 
 interface MenubarProps {
   time: Date
@@ -49,10 +58,10 @@ export default function Menubar({
   useEffect(() => {
     // Try to get battery information if available
     if ("getBattery" in navigator) {
-      // @ts-ignore - getBattery is not in the standard navigator type
+      // @ts-expect-error - getBattery is not in the standard navigator type
       navigator
         .getBattery()
-        .then((battery: any) => {
+        .then((battery: BatteryManager) => {
           updateBatteryStatus(battery)
 
           // Listen for battery status changes
@@ -92,7 +101,7 @@ export default function Menubar({
     }
   }, [])
 
-  const updateBatteryStatus = (battery: any) => {
+  const updateBatteryStatus = (battery: BatteryManager) => {
     setBatteryLevel(Math.round(battery.level * 100))
     setIsCharging(battery.charging)
   }
@@ -152,7 +161,7 @@ export default function Menubar({
             </button>
             <div className="border-t border-gray-700 my-1"></div>
             <button className={`w-full text-left px-4 py-1 ${hoverClass}`} onClick={onLogout}>
-              Log Out Daniel...
+              Log Out {PERSONAL.name}...
             </button>
           </div>
         )}
@@ -165,6 +174,21 @@ export default function Menubar({
             {activeWindow.title}
           </button>
         )}
+
+        {/* Mode Toggle */}
+        <div className="flex items-center gap-0.5 bg-white/10 rounded-full p-0.5 ml-2">
+          <Link
+            href="/"
+            className="flex items-center gap-1 px-2 py-0.5 rounded-full text-xs hover:bg-white/20 transition-colors"
+          >
+            <Globe className="w-3 h-3" />
+            Browser
+          </Link>
+          <span className="flex items-center gap-1 px-2 py-0.5 rounded-full text-xs bg-white/20">
+            <Monitor className="w-3 h-3" />
+            Desktop
+          </span>
+        </div>
       </div>
 
       <div className="flex items-center space-x-3">

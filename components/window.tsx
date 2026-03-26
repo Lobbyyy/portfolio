@@ -195,7 +195,6 @@ export default function Window({ window, isActive, onClose, onFocus, isDarkMode 
 
   const contentBgClass = isDarkMode ? "bg-gray-900" : "bg-white"
   const textClass = isDarkMode ? "text-white" : "text-gray-800"
-  const resizeBorderClass = isDarkMode ? "border-gray-700" : "border-gray-300"
 
   return (
     <div

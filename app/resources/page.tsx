@@ -54,7 +54,7 @@ export default function ResourcesPage() {
           Resources
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl">
-          Templates, guides, and tools I've found useful. Take what's helpful.
+          Templates, guides, and tools I&apos;ve found useful. Take what&apos;s helpful.
         </p>
       </header>
 
@@ -83,12 +83,11 @@ export default function ResourcesPage() {
 
 function ResourceCategory({
   name,
-  label,
   description,
   items,
 }: {
   name: string
-  label: string
+  label?: string
   description: string
   items: { name: string; type: string; href: string }[]
 }) {

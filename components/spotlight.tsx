@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import type { AppWindow } from "@/types"
 
 const spotlightApps = [
@@ -28,6 +28,17 @@ export default function Spotlight({ onClose, onAppClick }: SpotlightProps) {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  const handleAppClick = useCallback((app: (typeof spotlightApps)[0]) => {
+    onAppClick({
+      id: app.id,
+      title: app.title,
+      component: app.component,
+      position: { x: Math.random() * 200 + 100, y: Math.random() * 100 + 50 },
+      size: { width: 800, height: 600 },
+    })
+    onClose()
+  }, [onAppClick, onClose])
+
   useEffect(() => {
     // Focus the input when spotlight opens
     inputRef.current?.focus()
@@ -50,7 +61,7 @@ export default function Spotlight({ onClose, onAppClick }: SpotlightProps) {
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [filteredApps, selectedIndex])
+  }, [filteredApps, selectedIndex, onClose, handleAppClick])
 
   useEffect(() => {
     if (searchTerm) {
@@ -61,17 +72,6 @@ export default function Spotlight({ onClose, onAppClick }: SpotlightProps) {
       setFilteredApps(spotlightApps)
     }
   }, [searchTerm])
-
-  const handleAppClick = (app: (typeof spotlightApps)[0]) => {
-    onAppClick({
-      id: app.id,
-      title: app.title,
-      component: app.component,
-      position: { x: Math.random() * 200 + 100, y: Math.random() * 100 + 50 },
-      size: { width: 800, height: 600 },
-    })
-    onClose()
-  }
 
   return (
     <div className="fixed inset-0 bg-transparent z-40 flex items-center justify-center" onClick={onClose}>

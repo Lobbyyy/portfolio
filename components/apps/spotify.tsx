@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useCallback } from "react"
 import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Shuffle, Repeat } from "lucide-react"
 
 interface SpotifyProps {
@@ -54,6 +54,21 @@ export default function Spotify({ isDarkMode = true }: SpotifyProps) {
   const textColor = isDarkMode ? "text-white" : "text-gray-800"
   const secondaryBg = isDarkMode ? "bg-gray-800" : "bg-gray-100"
 
+  const handleNext = useCallback(() => {
+    // First pause current track to avoid errors
+    if (audioRef.current) {
+      audioRef.current.pause()
+    }
+
+    setIsPlaying(false)
+    setCurrentTrackIndex((prev) => (prev === playlist.length - 1 ? 0 : prev + 1))
+
+    // We'll set isPlaying to true after the new track is loaded
+    setTimeout(() => {
+      setIsPlaying(true)
+    }, 100)
+  }, [playlist.length])
+
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
@@ -91,7 +106,7 @@ export default function Spotify({ isDarkMode = true }: SpotifyProps) {
       audio.removeEventListener("ended", handleEnd)
       audio.removeEventListener("error", handleError as EventListener)
     }
-  }, [currentTrackIndex])
+  }, [currentTrackIndex, handleNext])
 
   useEffect(() => {
     const audio = audioRef.current
@@ -134,23 +149,6 @@ export default function Spotify({ isDarkMode = true }: SpotifyProps) {
 
     setIsPlaying(false)
     setCurrentTrackIndex((prev) => (prev === 0 ? playlist.length - 1 : prev - 1))
-
-    // We'll set isPlaying to true after the new track is loaded
-    setTimeout(() => {
-      if (isAudioReady) {
-        setIsPlaying(true)
-      }
-    }, 100)
-  }
-
-  const handleNext = () => {
-    // First pause current track to avoid errors
-    if (isPlaying && audioRef.current) {
-      audioRef.current.pause()
-    }
-
-    setIsPlaying(false)
-    setCurrentTrackIndex((prev) => (prev === playlist.length - 1 ? 0 : prev + 1))
 
     // We'll set isPlaying to true after the new track is loaded
     setTimeout(() => {

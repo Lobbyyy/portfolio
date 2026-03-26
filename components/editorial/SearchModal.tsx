@@ -1,33 +1,9 @@
 "use client"
 
-import { useState, useEffect, useRef, useCallback } from "react"
+import { useState, useEffect, useRef, useCallback, useMemo } from "react"
 import { useRouter } from "next/navigation"
-import { Search, FileText, Folder, ArrowRight } from "lucide-react"
-
-interface SearchItem {
-  title: string
-  path: string
-  type: "page" | "folder" | "post"
-  description?: string
-}
-
-const SEARCH_ITEMS: SearchItem[] = [
-  { title: "Home", path: "/", type: "page", description: "Welcome" },
-  { title: "Companies", path: "/companies", type: "folder", description: "Things I'm building" },
-  { title: "Supanova", path: "/companies/supanova", type: "page", description: "AI video production" },
-  { title: "1z2", path: "/companies/1z2", type: "page", description: "Content research intelligence" },
-  { title: "Our Circles", path: "/companies/our-circles", type: "page", description: "Family life sharing" },
-  { title: "20 Punches", path: "/companies/20punches", type: "page", description: "AI financial advisory" },
-  { title: "Journal", path: "/journal", type: "folder", description: "Writing and thoughts" },
-  { title: "On Building in Public", path: "/journal/building-in-public", type: "post" },
-  { title: "The CKC Framework", path: "/journal/ckc-framework", type: "post" },
-  { title: "Fourth Dimensional Thinking", path: "/journal/fourth-dimensional", type: "post" },
-  { title: "Localhost", path: "/localhost", type: "folder", description: "Experiments" },
-  { title: "Resources", path: "/resources", type: "folder", description: "Templates and tools" },
-  { title: "About", path: "/about", type: "page", description: "The story so far" },
-  { title: "Contact", path: "/contact", type: "page", description: "Get in touch" },
-  { title: "Spotify", path: "/spotify", type: "page", description: "Music playlists" },
-]
+import { Search, FileText, Folder, ArrowRight, Building, BookOpen } from "lucide-react"
+import { generateSearchItems } from "@/lib/data/portfolio-data"
 
 interface SearchModalProps {
   isOpen: boolean
@@ -40,13 +16,16 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const inputRef = useRef<HTMLInputElement>(null)
   const router = useRouter()
 
+  // Generate search items from shared data
+  const searchItems = useMemo(() => generateSearchItems(), [])
+
   const filteredItems = query
-    ? SEARCH_ITEMS.filter(
+    ? searchItems.filter(
         (item) =>
           item.title.toLowerCase().includes(query.toLowerCase()) ||
           item.description?.toLowerCase().includes(query.toLowerCase())
       )
-    : SEARCH_ITEMS.slice(0, 8)
+    : searchItems.slice(0, 8)
 
   const handleSelect = useCallback(
     (path: string) => {
@@ -149,6 +128,10 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                 >
                   {item.type === "folder" ? (
                     <Folder className="w-4 h-4 text-[rgb(var(--primary))]" />
+                  ) : item.type === "company" ? (
+                    <Building className="w-4 h-4 text-[rgb(var(--primary))]" />
+                  ) : item.type === "post" ? (
+                    <BookOpen className="w-4 h-4 text-[rgb(var(--muted))]" />
                   ) : (
                     <FileText className="w-4 h-4 text-[rgb(var(--muted))]" />
                   )}

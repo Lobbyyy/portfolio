@@ -5,10 +5,10 @@ import { AppleIcon } from "@/components/icons"
 
 interface SleepScreenProps {
   onWakeUp: () => void
-  isDarkMode: boolean
+  isDarkMode?: boolean
 }
 
-export default function SleepScreen({ onWakeUp, isDarkMode }: SleepScreenProps) {
+export default function SleepScreen({ onWakeUp }: SleepScreenProps) {
   const [showWakeText, setShowWakeText] = useState(false)
 
   useEffect(() => {

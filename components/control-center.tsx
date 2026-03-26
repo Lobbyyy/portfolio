@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Wifi, Bluetooth, Moon, Sun, Volume2, VolumeX, Maximize } from "lucide-react"
 
 interface ControlCenterProps {
-  onClose: () => void
+  onClose?: () => void
   isDarkMode: boolean
   onToggleDarkMode: () => void
   brightness: number
@@ -12,7 +12,6 @@ interface ControlCenterProps {
 }
 
 export default function ControlCenter({
-  onClose,
   isDarkMode,
   onToggleDarkMode,
   brightness,

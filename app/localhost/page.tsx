@@ -50,7 +50,7 @@ export default function LocalhostPage() {
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl">
           Experiments that may never leave localhost. Unfinished ideas, paused projects,
-          and things I'm tinkering with. The graveyard and the nursery.
+          and things I&apos;m tinkering with. The graveyard and the nursery.
         </p>
       </header>
 
@@ -64,7 +64,7 @@ export default function LocalhostPage() {
       {/* Footer Note */}
       <footer className="mt-12 p-4 rounded-lg border border-dashed border-[rgb(var(--border))]">
         <p className="text-sm text-[rgb(var(--muted))] italic text-center">
-          "A lot more that may never leave localhost lol"
+          &ldquo;A lot more that may never leave localhost lol&rdquo;
         </p>
       </footer>
     </EditorialLayout>

@@ -10,7 +10,7 @@ interface SafariProps {
 export default function Safari({ isDarkMode = true }: SafariProps) {
   const [url, setUrl] = useState("https://danielprior.dev")
   const [isLoading, setIsLoading] = useState(false)
-  const [activeTab, setActiveTab] = useState("home")
+  const [activeTab] = useState("home")
   const [wifiEnabled, setWifiEnabled] = useState(true)
 
   // Get WiFi status from localStorage or default to true
@@ -110,7 +110,7 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
       </div>
       <h2 className={`text-xl font-semibold mb-2 ${textColor}`}>You Are Not Connected to the Internet</h2>
       <p className={`text-center ${isDarkMode ? "text-gray-400" : "text-gray-500"} mb-6`}>
-        This page can't be displayed because your computer is currently offline.
+        This page can&apos;t be displayed because your computer is currently offline.
       </p>
       <button
         className={`px-4 py-2 rounded ${
@@ -218,7 +218,7 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
                 <div className={`p-6 rounded-lg ${cardBg}`}>
                   <h3 className="text-xl font-semibold mb-4">Daniel Prior - Portfolio</h3>
                   <p className="mb-4">
-                    Welcome to my portfolio website! I'm a frontend developer specializing in creating beautiful,
+                    Welcome to my portfolio website! I&apos;m a frontend developer specializing in creating beautiful,
                     responsive, and user-friendly web applications.
                   </p>
                   <p className="mb-4">
