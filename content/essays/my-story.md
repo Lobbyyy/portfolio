@@ -3,7 +3,7 @@ title: "my story"
 excerpt: "a tale of unfortunate fortunate events"
 date: "Nov 27, 2024"
 readTime: "10 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["antler","startup","london","nepal","entrepreneurship","career-navigation","making-lemondade-from-lemons","kathmandu","stoicism","mystory"]
 substackUrl: "https://deckandadream.substack.com/p/my-story"
 featured: false
 ---

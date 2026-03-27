@@ -3,7 +3,7 @@ title: "half my board members are dead"
 excerpt: "and the other half don't know i exist "
 date: "Oct 28, 2024"
 readTime: "12 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["startup","rosa-parks","edward-snowden","philosophy","entrepreneur","isaac-newton","david-goggins","leonardo-da-vinci","lebron-james","venture-capital","bruce-lee","career-navigation","thomas-edison","galileo-galilei","gary-vaynerchuk","technology","elon-musk","board-members","simon-sinek","marcus-aurelius"]
 substackUrl: "https://deckandadream.substack.com/p/half-my-board-is-dead"
 featured: false
 ---

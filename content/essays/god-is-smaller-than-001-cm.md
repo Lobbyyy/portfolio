@@ -3,7 +3,7 @@ title: "god is smaller than 0.01 cm"
 excerpt: "or bigger than 8,800,000,000,000,000,000,000,000,000 meters"
 date: "Nov 2, 2024"
 readTime: "2 min"
-tags: ["philosophy","ai","creativity"]
+tags: ["universe","physics","astrophysics","logic","god","philosophy","exploration","astronomy","theology"]
 substackUrl: "https://deckandadream.substack.com/p/god-is-smaller-than-001-cm"
 featured: false
 ---

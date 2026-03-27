@@ -3,7 +3,7 @@ title: "don't be afraid to explode"
 excerpt: "just make sure you channel it"
 date: "Sep 27, 2025"
 readTime: "2 min"
-tags: ["ai","creativity"]
+tags: ["space-travel","self-development","mental-model","rocket-science"]
 substackUrl: "https://deckandadream.substack.com/p/dont-be-afraid-to-explode"
 featured: false
 ---

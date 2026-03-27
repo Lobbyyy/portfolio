@@ -3,7 +3,7 @@ title: "don't listen to advice"
 excerpt: "this is not advice"
 date: "Sep 28, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["stoicism","mental-model"]
 substackUrl: "https://deckandadream.substack.com/p/dont-listen-to-advice"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "do you ever question your mortality?"
 excerpt: "I was once a fortunate man but at some point fortune abandoned me - Marcus Aurelius"
 date: "Nov 21, 2024"
 readTime: "28 min"
-tags: ["philosophy","mindset","learning"]
+tags: ["death","mortality","wellbeing","life","stoicism","obstacles","meditations","mental-health","stoic","marcus-aurelius"]
 substackUrl: "https://deckandadream.substack.com/p/do-you-ever-question-your-mortality"
 featured: false
 ---

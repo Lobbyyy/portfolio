@@ -3,7 +3,7 @@ title: "do you understand?"
 excerpt: "no, but do you really understand?"
 date: "Sep 18, 2025"
 readTime: "2 min"
-tags: ["philosophy","ai"]
+tags: ["character","empathy"]
 substackUrl: "https://deckandadream.substack.com/p/do-you-understand"
 featured: false
 ---

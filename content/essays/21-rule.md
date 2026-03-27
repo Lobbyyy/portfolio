@@ -3,7 +3,7 @@ title: "21% rule"
 excerpt: "do you hate 79% of the atmosphere?"
 date: "Oct 14, 2025"
 readTime: "2 min"
-tags: ["ai","creativity"]
+tags: ["stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/21-rule"
 featured: false
 ---

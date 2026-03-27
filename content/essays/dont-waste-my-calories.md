@@ -3,7 +3,7 @@ title: "6-year-old framework"
 excerpt: "help your users survive, and they will help you survive"
 date: "Oct 26, 2024"
 readTime: "5 min"
-tags: ["founder-life","philosophy","learning"]
+tags: ["startup","anthropology","marketing","venture-capital","sales","human-psychology"]
 substackUrl: "https://deckandadream.substack.com/p/dont-waste-my-calories"
 featured: false
 ---

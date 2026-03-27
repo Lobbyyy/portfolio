@@ -3,7 +3,7 @@ title: "(in)sanity"
 excerpt: "are you in or out?"
 date: "Sep 24, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["sanity","insanity"]
 substackUrl: "https://deckandadream.substack.com/p/insanity"
 featured: false
 ---

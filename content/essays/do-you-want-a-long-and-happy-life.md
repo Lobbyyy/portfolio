@@ -3,7 +3,7 @@ title: "book series 1: ikigai "
 excerpt: " ikigai translates to 'reason for life'"
 date: "Nov 5, 2024"
 readTime: "4 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["reason-for-life","japanese-philosophy","technolgy","self-discovery","waterstones","longevity","book-summary","japan","book-series","happiness","ikigai"]
 substackUrl: "https://deckandadream.substack.com/p/do-you-want-a-long-and-happy-life"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "if you think you can, you're right "
 excerpt: "if you think you can't, you're right "
 date: "Nov 6, 2024"
 readTime: "1 min"
-tags: ["founder-life","philosophy","mindset"]
+tags: ["taoism","steve-jobs","startups","technology","belief"]
 substackUrl: "https://deckandadream.substack.com/p/if-you-think-you-can-youre-right"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "why startup founders should be more like thanos"
 excerpt: " acquire and develop skills to make your visions a reality"
 date: "Nov 4, 2024"
 readTime: "9 min"
-tags: ["founder-life","philosophy","mindset"]
+tags: ["upskilling","entrepreneur","marvel","venture-capital","avengers","startups","thanos"]
 substackUrl: "https://deckandadream.substack.com/p/what-thanos-and-i-have-in-common"
 featured: false
 ---

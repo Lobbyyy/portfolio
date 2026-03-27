@@ -3,7 +3,7 @@ title: "calculus of feelings"
 excerpt: "the atomic theory of emotions"
 date: "Sep 19, 2025"
 readTime: "3 min"
-tags: ["philosophy","mindset","creativity"]
+tags: ["first-principle-thinking","calculus","emotions","feelings"]
 substackUrl: "https://deckandadream.substack.com/p/calculus-of-feelings"
 featured: false
 ---

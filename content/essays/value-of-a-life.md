@@ -3,7 +3,7 @@ title: "value of a life"
 excerpt: "it's really simple"
 date: "Oct 25, 2024"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["philosophy"]
 substackUrl: "https://deckandadream.substack.com/p/value-of-a-life"
 featured: false
 ---

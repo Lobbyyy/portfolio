@@ -3,7 +3,7 @@ title: "how does this journey end?"
 excerpt: "finding a path you don't want to exit from"
 date: "Oct 28, 2024"
 readTime: "3 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["startup","philosophy","entrepreneur","founder"]
 substackUrl: "https://deckandadream.substack.com/p/how-does-this-journey-end"
 featured: false
 ---

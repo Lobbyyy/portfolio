@@ -3,7 +3,7 @@ title: "laws are rules with teeth"
 excerpt: "continuum of rules and laws"
 date: "Oct 15, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/laws-are-rules-with-teeth"
 featured: false
 ---

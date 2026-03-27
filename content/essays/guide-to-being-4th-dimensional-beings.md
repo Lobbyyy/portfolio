@@ -3,7 +3,7 @@ title: "guide to being 4th dimensional beings"
 excerpt: "disclaimer: lots of training required + you might break your brain"
 date: "Sep 26, 2025"
 readTime: "7 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["dimensional-thinking","self-discovery","exploration","scientific-observations","self-development","mental-model"]
 substackUrl: "https://deckandadream.substack.com/p/guide-to-being-4th-dimensional-beings"
 featured: false
 ---

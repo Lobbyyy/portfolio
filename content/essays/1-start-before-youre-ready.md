@@ -3,7 +3,7 @@ title: "Start Before You're Ready"
 excerpt: "Just start. Take the first step. It's probably going to be bad, but do it anyway."
 date: "Apr 4, 2024"
 readTime: "2 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["startup","entrepreneur","venture-capital","founder"]
 substackUrl: "https://deckandadream.substack.com/p/1-start-before-youre-ready"
 featured: false
 ---

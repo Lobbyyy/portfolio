@@ -3,7 +3,7 @@ title: "who is your teacher?"
 excerpt: "there is always an opportunity to learn"
 date: "Oct 11, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/who-is-your-teacher"
 featured: false
 ---

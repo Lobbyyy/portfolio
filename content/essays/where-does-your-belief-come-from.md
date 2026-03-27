@@ -3,7 +3,7 @@ title: "origin of belief"
 excerpt: "mine comes from slaying the unslayable dragons"
 date: "Nov 2, 2024"
 readTime: "10 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["university","storytime","entrepreneur","david-goggins","exploration","top-boy","startups","lord-of-the-flies","belief"]
 substackUrl: "https://deckandadream.substack.com/p/where-does-your-belief-come-from"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "Pain vs Suffering"
 excerpt: "Suffering is optional"
 date: "Oct 27, 2024"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["you-got-this"]
 substackUrl: "https://deckandadream.substack.com/p/pain-vs-suffering"
 featured: false
 ---

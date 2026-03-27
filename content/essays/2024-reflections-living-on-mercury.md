@@ -3,7 +3,7 @@ title: "2024 wrapped - living on mercury"
 excerpt: "surviving in an inhospitable environment - how hard can it be?"
 date: "Dec 16, 2024"
 readTime: "31 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["antler","mercury","entrepreneurship","entrepreneurs-wrapped-up","2024-reflections","self-development","the-journey"]
 substackUrl: "https://deckandadream.substack.com/p/2024-reflections-living-on-mercury"
 featured: false
 ---

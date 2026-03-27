@@ -3,7 +3,7 @@ title: "unruly"
 excerpt: "unlawful"
 date: "Oct 12, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/unruly"
 featured: false
 ---

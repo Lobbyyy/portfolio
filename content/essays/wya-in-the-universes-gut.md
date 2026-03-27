@@ -3,7 +3,7 @@ title: "wya? in the universe's gut"
 excerpt: "wbu?"
 date: "Nov 1, 2024"
 readTime: "3 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["universe","physics","astrophysics","gut-bacteria","health","philosophy","astronomy","scientific-observations","microbiology","biology"]
 substackUrl: "https://deckandadream.substack.com/p/wya-in-the-universes-gut"
 featured: false
 ---

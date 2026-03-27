@@ -3,7 +3,7 @@ title: "first work wide, then work hard"
 excerpt: "recipe for doing great work"
 date: "Nov 5, 2024"
 readTime: "6 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["professional-life","how-to-do-great-work","entrepreneur","paul-graham","life-decision","career-navigation","career","joy","olympics","technology","happiness"]
 substackUrl: "https://deckandadream.substack.com/p/first-work-wide-then-work-hard"
 featured: false
 ---

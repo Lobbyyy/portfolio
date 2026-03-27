@@ -3,7 +3,7 @@ title: "one day vs day one"
 excerpt: "no-thing matters vs every-thing matters"
 date: "Sep 17, 2025"
 readTime: "1 min"
-tags: ["ai","creativity"]
+tags: ["mortality","acceptance","stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/one-day-vs-day-one"
 featured: false
 ---

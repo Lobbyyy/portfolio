@@ -3,7 +3,7 @@ title: "The Present/Not-Present Hypothesis"
 excerpt: "A Binary Constraint Framework for Understanding Quantum Mechanics, Time, and Choice"
 date: "Oct 18, 2025"
 readTime: "7 min"
-tags: ["philosophy","mindset","learning"]
+tags: ["storytime","philosophy","quantum-mechanics"]
 substackUrl: "https://deckandadream.substack.com/p/the-presentnot-present-hypothesis"
 featured: false
 ---

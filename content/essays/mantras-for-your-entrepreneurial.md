@@ -3,7 +3,7 @@ title: "mantras for your entrepreneurial journey"
 excerpt: "repeat after me x3"
 date: "Sep 23, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["entrepreneur","entrepreneurship","mantras","you-got-this","mental-health"]
 substackUrl: "https://deckandadream.substack.com/p/mantras-for-your-entrepreneurial"
 featured: false
 ---

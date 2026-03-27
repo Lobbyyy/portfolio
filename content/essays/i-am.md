@@ -3,7 +3,7 @@ title: "i am ..."
 excerpt: "who are you?"
 date: "Nov 4, 2024"
 readTime: "1 min"
-tags: ["founder-life","startups","creativity"]
+tags: ["identity","you-can-be-a-feeling","mindfullness","who-are-you","belief","empathy"]
 substackUrl: "https://deckandadream.substack.com/p/i-am"
 featured: false
 ---

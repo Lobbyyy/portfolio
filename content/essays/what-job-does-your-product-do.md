@@ -3,7 +3,7 @@ title: "what job does your product do?"
 excerpt: "people don't buy products or service, they hire them"
 date: "Oct 30, 2024"
 readTime: "4 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["consumer-psychology","design-thinking","marketing","product-marketing","tony-ulwick","harvard-business-school","disruptive-strategy","startups","clayton-christensen","technology","job-to-be-done"]
 substackUrl: "https://deckandadream.substack.com/p/what-job-does-your-product-do"
 featured: false
 ---

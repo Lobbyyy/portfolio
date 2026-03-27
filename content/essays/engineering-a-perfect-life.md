@@ -3,7 +3,7 @@ title: "how do you engineer a perfect life?"
 excerpt: "count every moment and make every moment count"
 date: "Oct 31, 2024"
 readTime: "2 min"
-tags: ["founder-life","philosophy","mindset"]
+tags: ["first-principle-thinking","physics","philosophy","thoughts","engineering","life","economics","elon-musk"]
 substackUrl: "https://deckandadream.substack.com/p/engineering-a-perfect-life"
 featured: false
 ---

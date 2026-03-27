@@ -9,6 +9,12 @@ import path from "path"
 const SUBSTACK_URL = "deckandadream.substack.com"
 const OUTPUT_DIR = path.join(process.cwd(), "content/essays")
 
+interface SubstackTag {
+  id: string
+  name: string
+  slug: string
+}
+
 interface SubstackPost {
   id: number
   title: string
@@ -19,6 +25,7 @@ interface SubstackPost {
   body_html: string
   truncated_body_text: string
   wordcount: number
+  postTags?: SubstackTag[]
 }
 
 function slugify(text: string): string {
@@ -105,7 +112,12 @@ function htmlToMarkdown(html: string): string {
 function createMarkdownFile(post: SubstackPost): void {
   const slug = post.slug || slugify(post.title)
   const content = htmlToMarkdown(post.body_html || post.truncated_body_text || "")
-  const tags = extractTags(post.title, content)
+
+  // Use real Substack tags, fallback to auto-generated if none
+  const tags = post.postTags && post.postTags.length > 0
+    ? post.postTags.map(t => t.slug)
+    : extractTags(post.title, content)
+
   const readTime = estimateReadTime(post.wordcount || content.split(/\s+/).length)
   const date = formatDate(post.post_date)
 

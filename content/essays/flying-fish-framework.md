@@ -3,7 +3,7 @@ title: "flying fish framework "
 excerpt: "how to stop comparing yourself "
 date: "Nov 8, 2024"
 readTime: "9 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["comparing","birds","fish","flying-fish-framework","joy","framework","animal-kingdom","happiness","mental-health","mental-model"]
 substackUrl: "https://deckandadream.substack.com/p/flying-fish-framework"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "goldilocks of time"
 excerpt: "explaining the universe in 4 lines"
 date: "Sep 14, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["universe","astrophysics"]
 substackUrl: "https://deckandadream.substack.com/p/goldilocks-of-time"
 featured: false
 ---

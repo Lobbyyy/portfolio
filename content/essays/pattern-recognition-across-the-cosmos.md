@@ -3,7 +3,7 @@ title: "pattern recognition across the cosmos"
 excerpt: "explaining the goldilocks of time"
 date: "Sep 15, 2025"
 readTime: "3 min"
-tags: ["philosophy","ai","creativity"]
+tags: ["universe","astrophysics"]
 substackUrl: "https://deckandadream.substack.com/p/pattern-recognition-across-the-cosmos"
 featured: false
 ---

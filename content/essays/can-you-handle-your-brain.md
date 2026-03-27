@@ -3,7 +3,7 @@ title: "can you handle your brain? "
 excerpt: "a ferrari engine in a mini cooper chassis"
 date: "Sep 25, 2025"
 readTime: "4 min"
-tags: ["philosophy","mindset","learning"]
+tags: ["ferrari","wellbeing","physical-health","mini-cooper","mental-health"]
 substackUrl: "https://deckandadream.substack.com/p/can-you-handle-your-brain"
 featured: false
 ---

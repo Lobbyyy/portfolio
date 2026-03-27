@@ -3,7 +3,7 @@ title: "observe, imagine and build the bridge"
 excerpt: "the only things you need to do as an entrepreneur"
 date: "Nov 7, 2024"
 readTime: "4 min"
-tags: ["founder-life","startups","ai"]
+tags: ["ford","bridging-the-gap","cars","henry-ford","entrepreneur","horses","venture-capital","startups","technology","finding-ideas","guide-to-being-an-entrepreneur"]
 substackUrl: "https://deckandadream.substack.com/p/observe-imagine-and-build-the-bridge"
 featured: false
 ---

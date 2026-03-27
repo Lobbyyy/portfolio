@@ -3,7 +3,7 @@ title: "the tallest trees have the deepest roots"
 excerpt: "the tallest buildings have the deepest foundations"
 date: "Oct 16, 2025"
 readTime: "1 min"
-tags: ["ai"]
+tags: ["stoicism"]
 substackUrl: "https://deckandadream.substack.com/p/the-tallest-buildings-have-the-deepest"
 featured: false
 ---

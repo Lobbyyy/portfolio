@@ -3,7 +3,7 @@ title: "ever seen a cemetery full of life?"
 excerpt: "celebrating life and death"
 date: "Nov 5, 2024"
 readTime: "3 min"
-tags: ["founder-life","philosophy","startups"]
+tags: ["death","mortality","poland","all-saints-day","time","love","life","cemetery"]
 substackUrl: "https://deckandadream.substack.com/p/ever-seen-a-cemetery-full-of-life"
 featured: false
 ---

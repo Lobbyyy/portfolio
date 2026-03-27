@@ -3,7 +3,7 @@ title: "if you're depressed, express"
 excerpt: "find your equilibrium"
 date: "Nov 1, 2024"
 readTime: "5 min"
-tags: ["founder-life","philosophy","curiosity"]
+tags: ["physics","mindfulness","astrophysics","depression","astronomy","the-sun","stoicism","gravity","mental-health"]
 substackUrl: "https://deckandadream.substack.com/p/express-if-youre-depressed"
 featured: false
 ---

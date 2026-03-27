@@ -3,7 +3,7 @@ title: "make the jump without the rope"
 excerpt: "fear is a potent, visceral impluse - use it to your advantage"
 date: "Nov 10, 2024"
 readTime: "5 min"
-tags: ["founder-life","philosophy","mindset"]
+tags: ["christopher-nolan","sun-tzu","entrepreneurship","bruce-wayne","the-dark-knight-rises","strategies","art-of-war"]
 substackUrl: "https://deckandadream.substack.com/p/make-the-jump-without-the-rope"
 featured: false
 ---

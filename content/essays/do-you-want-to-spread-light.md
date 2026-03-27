@@ -3,7 +3,7 @@ title: "do you want to spread light?"
 excerpt: "be the sun, be the moon"
 date: "Nov 22, 2024"
 readTime: "3 min"
-tags: ["founder-life","startups","ai"]
+tags: ["astrophysics","spreading-positivity","spreading-light","astronomy","mental-wellbeing","sun","moon","alchemy","mental-health","mental-model"]
 substackUrl: "https://deckandadream.substack.com/p/do-you-want-to-spread-light"
 featured: false
 ---

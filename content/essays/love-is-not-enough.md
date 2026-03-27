@@ -3,7 +3,7 @@ title: "love is not enough"
 excerpt: "peace is not enough "
 date: "Nov 3, 2024"
 readTime: "1 min"
-tags: ["founder-life","startups","creativity"]
+tags: ["relationships","love","peace","united-nations"]
 substackUrl: "https://deckandadream.substack.com/p/love-is-not-enough"
 featured: false
 ---

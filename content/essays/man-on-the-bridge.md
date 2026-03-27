@@ -3,7 +3,7 @@ title: "man on the bridge"
 excerpt: "a short story about choices"
 date: "Sep 22, 2025"
 readTime: "6 min"
-tags: ["philosophy","curiosity","mindset"]
+tags: ["short-story","wellbeing","mental-health"]
 substackUrl: "https://deckandadream.substack.com/p/man-on-the-bridge"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "do you believe in manifestation?"
 excerpt: "create your vision, and manifest it"
 date: "Oct 29, 2024"
 readTime: "6 min"
-tags: ["founder-life","mindset","learning"]
+tags: ["startup","philosophy","entrepreneur","full-stack-founder","entrepreneurship","founder","manifestation","my-vision","digital-nomad"]
 substackUrl: "https://deckandadream.substack.com/p/the-vision"
 featured: false
 ---

@@ -3,7 +3,7 @@ title: "champions are broken"
 excerpt: "it is a feature, not a bug"
 date: "Nov 5, 2024"
 readTime: "2 min"
-tags: ["founder-life","startups","creativity"]
+tags: ["acceptance","champions","motivation","alex-hormozi","technology","human-psychology","the-last-dance","belief"]
 substackUrl: "https://deckandadream.substack.com/p/champions-are-broken"
 featured: false
 ---

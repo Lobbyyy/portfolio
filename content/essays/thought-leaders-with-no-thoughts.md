@@ -3,7 +3,7 @@ title: "thought leaders with no thoughts"
 excerpt: "do not be a parrot, do not be a sheep"
 date: "Nov 4, 2024"
 readTime: "2 min"
-tags: ["founder-life","startups","ai"]
+tags: ["tips-for-founders","quantum-physics","influencer-marketing","marketing","product-marketing","big-tech","erwin-schrodinger","startups","schrodingers-cat","thought-leadership"]
 substackUrl: "https://deckandadream.substack.com/p/thought-leaders-with-no-thoughts"
 featured: false
 ---
