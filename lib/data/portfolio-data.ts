@@ -42,7 +42,7 @@ export interface NavItem {
 export const NAVIGATION: NavItem[] = [
   { name: "home.mdx", path: "/", icon: "home", type: "file" },
   { name: "companies/", path: "/companies", icon: "folder", type: "folder" },
-  { name: "journal/", path: "/journal", icon: "folder", type: "folder" },
+  { name: "essays/", path: "/essays", icon: "folder", type: "folder" },
   { name: "localhost/", path: "/localhost", icon: "folder", type: "folder" },
   { name: "resources/", path: "/resources", icon: "folder", type: "folder" },
   { name: "about.mdx", path: "/about", icon: "user", type: "file" },
@@ -100,9 +100,9 @@ export const COMPANIES: Company[] = [
 ]
 
 // ============================================
-// JOURNAL POSTS
+// ESSAYS
 // ============================================
-export interface JournalPost {
+export interface Essay {
   slug: string
   title: string
   excerpt: string
@@ -111,7 +111,7 @@ export interface JournalPost {
   tags: string[]
 }
 
-export const JOURNAL_POSTS: JournalPost[] = [
+export const ESSAYS: Essay[] = [
   {
     slug: "building-in-public",
     title: "On Building in Public",
@@ -154,7 +154,7 @@ export const JOURNAL_POSTS: JournalPost[] = [
   },
 ]
 
-export const JOURNAL_TAGS = ["all", "founder-life", "philosophy", "curiosity", "mindset", "learning", "startups"]
+export const ESSAY_TAGS = ["all", "founder-life", "philosophy", "curiosity", "mindset", "learning", "startups"]
 
 // ============================================
 // SKILLS (for terminal, notes, about page)
@@ -178,7 +178,7 @@ export const VALUES = [
 // ============================================
 // SEARCH ITEMS
 // ============================================
-// Generated from navigation + companies + journal for search functionality
+// Generated from navigation + companies + essays for search functionality
 export type SearchItemType = "page" | "folder" | "company" | "post"
 
 export interface SearchItem {
@@ -211,11 +211,11 @@ export function generateSearchItems(): SearchItem[] {
     })
   })
 
-  // Add journal posts
-  JOURNAL_POSTS.forEach(post => {
+  // Add essays
+  ESSAYS.forEach(post => {
     items.push({
       title: post.title,
-      path: `/journal/${post.slug}`,
+      path: `/essays/${post.slug}`,
       type: "post",
       description: post.excerpt.slice(0, 60) + "...",
     })

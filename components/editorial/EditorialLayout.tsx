@@ -17,25 +17,29 @@ export default function EditorialLayout({
   currentPath = "home.mdx",
 }: EditorialLayoutProps) {
   return (
-    <div className="editorial-bg min-h-screen flex flex-col">
-      {/* Top Bar */}
+    <div className="editorial-bg min-h-screen">
+      {/* Top Bar - Fixed at top */}
       <TopBar />
 
-      {/* Three Column Layout */}
-      <div className="flex flex-1 overflow-hidden">
-        {/* Left Sidebar - File Tree */}
-        <Sidebar currentPath={currentPath} />
+      {/* Left Sidebar - Fixed */}
+      <Sidebar currentPath={currentPath} />
 
-        {/* Center - Document Area (contains grain texture) */}
-        <main className="editorial-document-area flex-1 overflow-y-auto">
-          <div className="max-w-3xl mx-auto px-8 py-12">
-            {children}
-          </div>
-        </main>
+      {/* Right - Context Panel - Fixed */}
+      <ContextPanel>{contextContent}</ContextPanel>
 
-        {/* Right - Context Panel */}
-        <ContextPanel>{contextContent}</ContextPanel>
-      </div>
+      {/* Center - Document Area (scrollable main content) */}
+      <main className="editorial-document-area ml-52 mr-48 pt-12 min-h-screen hidden lg:block">
+        <div className="max-w-3xl mx-auto px-8 py-12">
+          {children}
+        </div>
+      </main>
+
+      {/* Mobile: Full width content (no fixed panels) */}
+      <main className="editorial-document-area pt-12 min-h-screen lg:hidden">
+        <div className="max-w-3xl mx-auto px-4 py-8">
+          {children}
+        </div>
+      </main>
     </div>
   )
 }

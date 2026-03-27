@@ -31,7 +31,7 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="editorial-elevated w-52 border-r border-[rgb(var(--border))] flex flex-col">
+    <aside className="editorial-elevated fixed left-0 top-12 h-[calc(100vh-48px)] w-52 border-r border-[rgb(var(--border))] flex flex-col z-30 hidden lg:flex">
       {/* File Tree */}
       <nav className="flex-1 py-4 overflow-y-auto">
         <ul className="space-y-0.5 px-2">

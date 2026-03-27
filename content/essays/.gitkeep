@@ -1,0 +1,13 @@
+# Essays Content Directory
+
+This directory stores markdown files for essays imported from Substack.
+
+To import essays, run:
+```
+SUBSTACK_TOKEN=your_connect_sid bun run scripts/import-substack.ts
+```
+
+Or for RSS import (limited content):
+```
+bun run scripts/import-substack.ts --rss
+```

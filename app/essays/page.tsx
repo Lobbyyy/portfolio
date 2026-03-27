@@ -2,25 +2,28 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { JOURNAL_POSTS, JOURNAL_TAGS } from "@/lib/data/portfolio-data"
+import { getAllEssays, getAllTags } from "@/lib/essays"
 
-export default function JournalPage() {
+export default function EssaysPage() {
+  const essays = getAllEssays()
+  const tags = getAllTags()
+
   return (
     <EditorialLayout
-      currentPath="journal/"
-      contextContent={<JournalContext />}
+      currentPath="essays/"
+      contextContent={<EssaysContext tags={tags} />}
     >
-      <Breadcrumb path="journal/" />
+      <Breadcrumb path="essays/" />
 
       <header className="mb-12">
         <h1 className="font-serif text-4xl text-[rgb(var(--text))] mb-4">
-          Journal
+          Essays
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl">
           Thoughts on building, philosophy, and everything in between.
           Originally published on{" "}
           <a
-            href="https://substack.com"
+            href="https://deckandadream.substack.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[rgb(var(--primary))] hover:underline"
@@ -33,15 +36,40 @@ export default function JournalPage() {
 
       {/* Posts */}
       <div className="space-y-8">
-        {JOURNAL_POSTS.map((post) => (
-          <JournalPost key={post.slug} {...post} />
+        {essays.map((essay) => (
+          <article key={essay.slug} className="group">
+            <Link href={`/essays/${essay.slug}`} className="block">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="font-mono text-xs text-[rgb(var(--muted))]">{essay.date}</span>
+                <span className="text-[rgb(var(--border))]">·</span>
+                <span className="font-mono text-xs text-[rgb(var(--muted))]">{essay.readTime}</span>
+              </div>
+
+              <h2 className="font-serif text-2xl text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-2">
+                {essay.title}
+              </h2>
+
+              <p className="text-[rgb(var(--muted))] mb-3">{essay.excerpt}</p>
+
+              <div className="flex flex-wrap gap-2">
+                {essay.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="font-mono text-xs px-2 py-0.5 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </Link>
+          </article>
         ))}
       </div>
 
-      {/* Load More */}
+      {/* View More */}
       <div className="mt-12 text-center">
         <a
-          href="https://substack.com"
+          href="https://deckandadream.substack.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[rgb(var(--border))] text-[rgb(var(--muted))] hover:border-[rgb(var(--primary))] hover:text-[rgb(var(--primary))] transition-colors"
@@ -54,78 +82,31 @@ export default function JournalPage() {
   )
 }
 
-function JournalPost({
-  slug,
-  title,
-  excerpt,
-  date,
-  readTime,
-  tags,
-}: {
-  slug: string
-  title: string
-  excerpt: string
-  date: string
-  readTime: string
-  tags: string[]
-}) {
+function EssaysContext({ tags }: { tags: string[] }) {
   return (
-    <article className="group">
-      <Link href={`/journal/${slug}`} className="block">
-        <div className="flex items-center gap-3 mb-2">
-          <span className="font-mono text-xs text-[rgb(var(--muted))]">{date}</span>
-          <span className="text-[rgb(var(--border))]">·</span>
-          <span className="font-mono text-xs text-[rgb(var(--muted))]">{readTime}</span>
-        </div>
-
-        <h2 className="font-serif text-2xl text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-2">
-          {title}
-        </h2>
-
-        <p className="text-[rgb(var(--muted))] mb-3">{excerpt}</p>
-
-        <div className="flex gap-2">
+    <div className="space-y-6">
+      <div>
+        <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
+          Topics
+        </h3>
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="font-mono text-xs px-2 py-0.5 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-      </Link>
-    </article>
-  )
-}
-
-function JournalContext() {
-  return (
-    <div className="space-y-6">
-      {/* Categories */}
-      <div>
-        <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
-          Categories
-        </h3>
-        <div className="flex flex-wrap gap-2">
-          {JOURNAL_TAGS.map((tag) => (
-            <button
-              key={tag}
-              className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors"
+              className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
             >
               {tag === "all" ? "All" : `#${tag}`}
-            </button>
+            </span>
           ))}
         </div>
       </div>
 
-      {/* Subscribe */}
       <div>
         <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
           Subscribe
         </h3>
         <a
-          href="https://substack.com"
+          href="https://deckandadream.substack.com"
           target="_blank"
           rel="noopener noreferrer"
           className="block text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] transition-colors"

@@ -92,7 +92,7 @@ export default function TopBar() {
 
   return (
     <>
-      <header className="editorial-elevated h-12 border-b border-[rgb(var(--border))] flex items-center justify-between px-6 sticky top-0 z-40">
+      <header className="editorial-elevated h-12 border-b border-[rgb(var(--border))] flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-50">
         {/* Logo / Name */}
         <div
           className="cursor-pointer select-none min-w-[120px]"
@@ -117,7 +117,7 @@ export default function TopBar() {
             Browser
           </span>
           <Link
-            href="/macos"
+            href="/desktop"
             className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[rgb(var(--muted))] hover:text-[rgb(var(--text))] transition-colors"
           >
             <Monitor className="w-3 h-3" />

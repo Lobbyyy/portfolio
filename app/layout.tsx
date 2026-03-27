@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import { ThemeProvider } from 'next-themes'
 import { Analytics } from "@vercel/analytics/react"
+import Providers from '@/components/Providers'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -25,14 +25,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Providers>
           {children}
-        </ThemeProvider>
+        </Providers>
         <Analytics />
       </body>
     </html>

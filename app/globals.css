@@ -75,9 +75,8 @@ body {
 }
 
 /* Elevated panel - appears above grain */
+/* Note: Don't set position here - let components control their own positioning */
 .editorial-elevated {
-  position: relative;
-  z-index: 1;
   background-color: rgb(var(--surface));
 }
 

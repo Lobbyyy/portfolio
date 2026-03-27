@@ -8,7 +8,7 @@ interface ContextPanelProps {
 
 export default function ContextPanel({ children }: ContextPanelProps) {
   return (
-    <aside className="editorial-elevated w-48 border-l border-[rgb(var(--border))] p-4 hidden lg:block">
+    <aside className="editorial-elevated fixed right-0 top-12 h-[calc(100vh-48px)] w-48 border-l border-[rgb(var(--border))] p-4 hidden lg:block z-30 overflow-y-auto">
       {children || (
         <div className="space-y-6">
           {/* Quick Links */}

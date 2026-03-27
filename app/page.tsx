@@ -2,12 +2,12 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { PERSONAL, COMPANIES, JOURNAL_POSTS, VALUES, CompanyStatus } from "@/lib/data/portfolio-data"
+import { PERSONAL, COMPANIES, ESSAYS, VALUES, CompanyStatus } from "@/lib/data/portfolio-data"
 
 // Get active companies for homepage
 const activeCompanies = COMPANIES.filter(c => c.status === "active").slice(0, 2)
-// Get latest journal posts for homepage
-const latestPosts = JOURNAL_POSTS.slice(0, 3)
+// Get latest essays for homepage
+const latestPosts = ESSAYS.slice(0, 3)
 
 export default function Home() {
   return (
@@ -57,16 +57,16 @@ export default function Home() {
         </h2>
         <div className="space-y-4">
           {latestPosts.map((post) => (
-            <JournalEntry
+            <EssayEntry
               key={post.slug}
               title={post.title}
               date={post.date}
-              href={`/journal/${post.slug}`}
+              href={`/essays/${post.slug}`}
             />
           ))}
         </div>
         <Link
-          href="/journal"
+          href="/essays"
           className="inline-flex items-center gap-1 mt-4 text-sm text-[rgb(var(--primary))] hover:underline"
         >
           Read more
@@ -129,8 +129,8 @@ function CompanyCard({
   )
 }
 
-// Component: Journal Entry
-function JournalEntry({
+// Component: Essay Entry
+function EssayEntry({
   title,
   date,
   href,
