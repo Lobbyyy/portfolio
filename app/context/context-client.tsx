@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { Book, GraduationCap, Briefcase, School, Trophy } from "lucide-react"
-import { useMemo, Suspense } from "react"
+import { useMemo, Suspense, useState } from "react"
 import type { ContextItem, ContextCategory } from "@/lib/data/context-data"
 
 interface ContextClientProps {
@@ -180,24 +180,33 @@ function ContextCard({
   selectedCategory: ContextCategory
 }) {
   const CategoryIcon = CategoryIcons[item.category]
+  const [imageError, setImageError] = useState(false)
 
-  // Generate Open Library cover URL from ISBN
+  // Generate image URL from ISBN (books), local logo, or Clearbit domain
   const coverUrl = item.isbn
     ? `https://covers.openlibrary.org/b/isbn/${item.isbn}-M.jpg`
     : null
+  const logoUrl = item.logo || (item.domain ? `https://logo.clearbit.com/${item.domain}` : null)
 
   return (
     <article className="group border-l-2 border-transparent hover:border-[rgb(var(--primary))] pl-4 -ml-4 transition-colors">
       <div className="flex items-start gap-3">
-        {coverUrl ? (
+        {coverUrl && !imageError ? (
           <div className="flex-shrink-0 w-16 self-stretch rounded overflow-hidden bg-[rgb(var(--border))] shadow-sm">
             <img
               src={coverUrl}
               alt={`Cover of ${item.title}`}
               className="w-full h-full object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
+              onError={() => setImageError(true)}
+            />
+          </div>
+        ) : logoUrl && !imageError ? (
+          <div className="flex-shrink-0 w-10 h-10 mt-1 rounded bg-white p-1.5 shadow-sm border border-[rgb(var(--border))]">
+            <img
+              src={logoUrl}
+              alt={`${item.subtitle} logo`}
+              className="w-full h-full object-contain"
+              onError={() => setImageError(true)}
             />
           </div>
         ) : (

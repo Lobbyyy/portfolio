@@ -8,6 +8,8 @@ export interface ContextItem {
   takeaway: string // The one key learning
   tags: string[]   // Topic tags for filtering
   isbn?: string    // ISBN for book covers (optional)
+  logo?: string    // Local logo path (e.g., "/antlerglobal_logo.jpeg")
+  domain?: string  // Company/institution domain for Clearbit logo fallback
   date?: string    // Date range for experiences/education (e.g., "2022 - 2023")
   location?: string // Location for experiences/education
 }
@@ -740,6 +742,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Harvard University",
     takeaway: "This is CS50. Computational thinking is a superpower that applies far beyond coding.",
     tags: ["computer-science", "programming", "education"],
+    domain: "harvard.edu",
     date: "2023"
   },
   {
@@ -749,6 +752,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Harvard Business School Online",
     takeaway: "Disruption comes from below. Incumbents fail not because they're stupid, but because they're rational.",
     tags: ["strategy", "innovation", "business"],
+    logo: "/onlinehbs_logo.jpeg",
     date: "Feb 2023"
   },
   {
@@ -758,6 +762,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "R3",
     takeaway: "Enterprise blockchain is about trust and privacy. Shared ledgers transform how businesses collaborate.",
     tags: ["blockchain", "fintech", "technology"],
+    logo: "/r3cev_llc_logo.jpeg",
     date: "Sep 2022"
   },
   {
@@ -767,6 +772,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Antler VC",
     takeaway: "Build fast, validate faster. The best founders are relentlessly resourceful.",
     tags: ["entrepreneurship", "venture-capital", "startups"],
+    logo: "/antlerglobal_logo.jpeg",
     date: "Oct 2023 - Mar 2024"
   },
 
@@ -780,6 +786,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Bachelor's Degree, Economics",
     takeaway: "Economics is about incentives. Understanding how people respond to incentives unlocks human behavior.",
     tags: ["economics", "education", "finance"],
+    logo: "/london_school_of_economics_logo.jpeg",
     date: "2015 - 2018",
     location: "London, UK"
   },
@@ -790,6 +797,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "2019 Accelerator Cohort",
     takeaway: "Execution beats ideas. The best time to start is now, the second best time is also now.",
     tags: ["entrepreneurship", "startups", "education"],
+    logo: "/the_founder_institute_logo.jpeg",
     date: "2019 - 2020"
   },
   {
@@ -799,6 +807,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "High School - Maths (A*), Further Maths (A), Economics (A), Chemistry (A), Biology (A)",
     takeaway: "Hard work compounds. The discipline built in early years pays dividends forever.",
     tags: ["education"],
+    logo: "/ernest_bevin_academy_logo.jpeg",
     date: "2009 - 2015",
     location: "London, UK"
   },
@@ -813,6 +822,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Stealth Startup",
     takeaway: "Build something people want. Everything else is noise.",
     tags: ["entrepreneurship", "startups", "leadership"],
+    logo: "/stealth_startup_51_logo.jpeg",
     date: "Apr 2024 - Present"
   },
   {
@@ -822,6 +832,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Antler",
     takeaway: "Co-founder chemistry is everything. Find someone who complements your weaknesses.",
     tags: ["entrepreneurship", "venture-capital", "startups"],
+    logo: "/antlerglobal_logo.jpeg",
     date: "Oct 2023 - Mar 2024",
     location: "Greater London, UK"
   },
@@ -832,6 +843,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "R3",
     takeaway: "Enterprise sales is about solving real problems. Technology is secondary to business value.",
     tags: ["venture-capital", "enterprise", "blockchain", "strategy"],
+    logo: "/r3cev_llc_logo.jpeg",
     date: "Jun 2022 - Oct 2023",
     location: "Greater London, UK"
   },
@@ -842,6 +854,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Can & Co",
     takeaway: "Go-to-market is where strategy meets reality. Execution reveals truth faster than planning.",
     tags: ["strategy", "consulting", "sales", "operations"],
+    logo: "/canandco_logo.jpeg",
     date: "Nov 2020 - Dec 2022",
     location: "Greater London, UK"
   },
@@ -852,6 +865,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "PitchBook Data",
     takeaway: "Data is power. The best salespeople are consultants who happen to sell.",
     tags: ["sales", "data", "finance", "business-development"],
+    logo: "/pitchbook_logo.jpeg",
     date: "Sep 2018 - Oct 2021"
   },
   {
@@ -861,6 +875,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Woozle Research",
     takeaway: "Dig deeper than the obvious. The edge is in the details others overlook.",
     tags: ["finance", "research", "investing"],
+    logo: "/woozle_research_logo.jpeg",
     date: "Dec 2017 - Nov 2018",
     location: "London, UK"
   },
@@ -871,6 +886,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Talent Capital – Research Consultancy",
     takeaway: "Competitive intelligence is about connecting dots others miss. Deep research creates asymmetric advantages.",
     tags: ["research", "consulting", "talent-acquisition"],
+    logo: "/talent_cap.jpeg",
     date: "Nov 2016 - Nov 2017",
     location: "London, UK"
   },
@@ -881,6 +897,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Man Group – Hedge Fund",
     takeaway: "Alpha comes from seeing what others don't. Diversification and discipline separate winners from losers.",
     tags: ["finance", "investing", "hedge-funds"],
+    logo: "/man_group_plc_logo.jpeg",
     date: "Apr 2016",
     location: "London, UK"
   },
@@ -891,6 +908,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Zadig Asset Management",
     takeaway: "Valuation is part art, part science. The best investors combine rigorous analysis with contrarian thinking.",
     tags: ["finance", "investing", "asset-management"],
+    logo: "/zadig_asset_management_logo.jpeg",
     date: "Feb 2016",
     location: "London, UK"
   },
@@ -901,6 +919,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Barclays Investment Bank",
     takeaway: "Work ethic is table stakes. Learn fast, stay humble, and always be ready.",
     tags: ["finance", "banking", "career"],
+    logo: "/barclays_corporate_and_investment_bank_logo.jpeg",
     date: "Aug 2014 - Sep 2014",
     location: "London, UK"
   },
@@ -915,6 +934,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Gemini 3 Hackathon",
     takeaway: "AI agents can orchestrate complex creative workflows. The future of video is conversational.",
     tags: ["ai", "hackathon", "video", "agents"],
+    domain: "devpost.com",
     date: "2024"
   },
   {
@@ -924,6 +944,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "World's Largest Hackathon by Bolt",
     takeaway: "Voice-first interfaces unlock hands-free productivity. Build for the context where users actually are.",
     tags: ["ai", "hackathon", "voice", "fitness"],
+    domain: "bolt.new",
     date: "2024"
   },
   {
@@ -933,6 +954,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "Google AI Hackathon",
     takeaway: "Your network is your net worth. AI can unlock the hidden value in professional relationships.",
     tags: ["ai", "hackathon", "networking", "social-capital"],
+    domain: "google.com",
     date: "2024"
   },
   {
@@ -942,6 +964,7 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     subtitle: "AI Agents Hack – lablab.ai & MindsDB",
     takeaway: "Agentic AI transforms financial advice. Build tools that democratize expertise.",
     tags: ["ai", "hackathon", "fintech", "agents"],
+    domain: "lablab.ai",
     date: "2024"
   }
 ]
