@@ -59,44 +59,77 @@ export type CompanyStatus = "active" | "live" | "exploring"
 export interface Company {
   slug: string
   name: string
+  tagline: string
   description: string
   longDescription: string
   url: string
   status: CompanyStatus
+  problem: string
+  solution: string
+  whyIBuiltIt: string
+  cta?: string
 }
 
 export const COMPANIES: Company[] = [
   {
+    slug: "coconut",
+    name: "Coconut",
+    tagline: "A brand builder's oasis",
+    description: "Post more without doing more",
+    longDescription: "Content arbitrage for creators - ingest, extract, remix, publish.",
+    url: "https://coconutapp.xyz",
+    status: "active",
+    problem: "Creators are exhausted. The content treadmill demands constant output while quality suffers. You have great ideas trapped in long-form content that never gets repurposed.",
+    solution: "Coconut is content arbitrage. We ingest your existing content, extract the gold, and remix it for every platform. Post more without doing more.",
+    whyIBuiltIt: "As a founder building in public, I experienced content burnout firsthand. I had hours of podcast content, essay drafts, and video scripts - all underutilized. Coconut is the tool I needed.",
+  },
+  {
     slug: "supanova",
     name: "Supanova",
+    tagline: "AI-powered video production",
     description: "AI video production",
     longDescription: "Helping creators produce professional video content with AI-powered tools.",
     url: "https://www.iamsupanova.com",
     status: "active",
+    problem: "Professional video content requires expensive equipment, editing skills, and hours of work. Creators have ideas but lack the means to bring them to life at scale.",
+    solution: "Supanova uses AI to transform your ideas into polished video content. Professional quality, fraction of the time.",
+    whyIBuiltIt: "I wanted to create video content but the barrier was too high. Supanova is the production studio I wished existed.",
   },
   {
     slug: "1z2",
     name: "1z2",
+    tagline: "Content research intelligence",
     description: "Content research intelligence",
     longDescription: "AI-powered platform for content research and competitive analysis.",
     url: "https://www.1z2.app",
-    status: "active",
+    status: "live",
+    problem: "Understanding what content resonates requires hours of manual research across competitors and trends.",
+    solution: "AI-powered content analysis that surfaces what's working and why.",
+    whyIBuiltIt: "Before creating, you need to understand the landscape. This is the research layer that informs everything else.",
   },
   {
     slug: "our-circles",
     name: "Our Circles",
+    tagline: "Private family sharing",
     description: "Family life sharing",
     longDescription: "A private space for families to share moments and stay connected.",
     url: "https://www.our-circles.com",
     status: "live",
+    problem: "Families are scattered, and social media isn't the place to share precious moments with loved ones.",
+    solution: "A private, intimate space where families can share photos, updates, and stay connected - no algorithms, no ads.",
+    whyIBuiltIt: "My family is spread across continents. This keeps us close without the noise of public social networks.",
   },
   {
     slug: "20punches",
     name: "20 Punches",
+    tagline: "AI financial guidance",
     description: "AI financial advisory",
     longDescription: "Making financial advice accessible through AI-powered guidance.",
     url: "https://www.20punches.co.uk",
     status: "live",
+    problem: "Quality financial advice is expensive and inaccessible to most people.",
+    solution: "AI-powered financial guidance that's accessible, clear, and actionable.",
+    whyIBuiltIt: "I believe everyone deserves good financial advice, not just those who can afford advisors.",
   },
 ]
 
