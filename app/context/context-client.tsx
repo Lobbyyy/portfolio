@@ -101,7 +101,7 @@ function ContextPageContent({ items: allItems, tags, categories }: ContextClient
           Context
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl mb-6">
-          Knowledge and experiences that have shaped my thinking.
+          Knowledge and experiences that have shaped my thinking, with one key takeaway from each.
         </p>
 
         {/* Category Tabs */}
@@ -226,8 +226,8 @@ function ContextCard({
             </p>
           )}
 
-          <p className="text-[rgb(var(--text))] mb-3 italic">
-            &ldquo;{item.takeaway}&rdquo;
+          <p className="text-[rgb(var(--muted))] text-sm mb-3">
+            {item.takeaway}
           </p>
 
           <div className="flex flex-wrap gap-2">
