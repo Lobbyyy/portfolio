@@ -1,5 +1,4 @@
 import type { Components } from "react-markdown"
-import Image from "next/image"
 import Link from "next/link"
 
 export const MDXComponents: Components = {

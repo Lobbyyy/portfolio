@@ -56,7 +56,7 @@ const CategoryIcons: Record<ContextCategory, typeof Book> = {
   competition: Trophy,
 }
 
-function ContextPageContent({ items: allItems, tags, categories }: ContextClientProps) {
+function ContextPageContent({ items: allItems, categories }: ContextClientProps) {
   const searchParams = useSearchParams()
   const selectedCategory = (searchParams.get("category") as ContextCategory | null) || "experience"
   const selectedTag = searchParams.get("tag")
