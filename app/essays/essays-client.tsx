@@ -110,7 +110,10 @@ function EssaysPageContent({ essays: allEssays, tags }: EssaysClientProps) {
           </p>
         ) : (
           essays.map((essay) => (
-            <article key={essay.slug} className="group">
+            <article
+              key={essay.slug}
+              className="group border-l-2 border-transparent hover:border-[rgb(var(--primary))] pl-4 -ml-4 transition-colors"
+            >
               <Link href={`/essays/${essay.slug}`} className="block">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="font-mono text-xs text-[rgb(var(--muted))]">{essay.date}</span>
