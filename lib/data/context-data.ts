@@ -1,4 +1,4 @@
-export type ContextCategory = "book" | "course" | "experience"
+export type ContextCategory = "book" | "course" | "experience" | "education"
 
 export interface ContextItem {
   id: string
@@ -8,6 +8,8 @@ export interface ContextItem {
   takeaway: string // The one key learning
   tags: string[]   // Topic tags for filtering
   isbn?: string    // ISBN for book covers (optional)
+  date?: string    // Date range for experiences/education (e.g., "2022 - 2023")
+  location?: string // Location for experiences/education
 }
 
 export const CONTEXT_ITEMS: ContextItem[] = [
@@ -729,27 +731,148 @@ export const CONTEXT_ITEMS: ContextItem[] = [
   },
 
   // ============================================
-  // COURSES
+  // COURSES & CERTIFICATIONS
   // ============================================
+  {
+    id: "harvard-cs50",
+    category: "course",
+    title: "CS50: Introduction to Computer Science",
+    subtitle: "Harvard University",
+    takeaway: "This is CS50. Computational thinking is a superpower that applies far beyond coding.",
+    tags: ["computer-science", "programming", "education"],
+    date: "2023"
+  },
+  {
+    id: "disruptive-strategy",
+    category: "course",
+    title: "Disruptive Strategy",
+    subtitle: "Harvard Business School Online",
+    takeaway: "Disruption comes from below. Incumbents fail not because they're stupid, but because they're rational.",
+    tags: ["strategy", "innovation", "business"],
+    date: "Feb 2023"
+  },
+  {
+    id: "corda-business",
+    category: "course",
+    title: "Corda for Business Professionals",
+    subtitle: "R3",
+    takeaway: "Enterprise blockchain is about trust and privacy. Shared ledgers transform how businesses collaborate.",
+    tags: ["blockchain", "fintech", "technology"],
+    date: "Sep 2022"
+  },
   {
     id: "antler-cohort",
     category: "course",
     title: "Antler London Cohort",
     subtitle: "Antler VC",
     takeaway: "Build fast, validate faster. The best founders are relentlessly resourceful.",
-    tags: ["entrepreneurship", "venture-capital", "startups"]
+    tags: ["entrepreneurship", "venture-capital", "startups"],
+    date: "Oct 2023 - Mar 2024"
+  },
+
+  // ============================================
+  // EDUCATION
+  // ============================================
+  {
+    id: "lse-economics",
+    category: "education",
+    title: "The London School of Economics and Political Science (LSE)",
+    subtitle: "Bachelor's Degree, Economics",
+    takeaway: "Economics is about incentives. Understanding how people respond to incentives unlocks human behavior.",
+    tags: ["economics", "education", "finance"],
+    date: "2015 - 2018",
+    location: "London, UK"
+  },
+  {
+    id: "founder-institute",
+    category: "education",
+    title: "Founder Institute",
+    subtitle: "2019 Accelerator Cohort",
+    takeaway: "Execution beats ideas. The best time to start is now, the second best time is also now.",
+    tags: ["entrepreneurship", "startups", "education"],
+    date: "2019 - 2020"
+  },
+  {
+    id: "ernest-bevin",
+    category: "education",
+    title: "Ernest Bevin Academy",
+    subtitle: "High School - Maths (A*), Further Maths (A), Economics (A), Chemistry (A), Biology (A)",
+    takeaway: "Hard work compounds. The discipline built in early years pays dividends forever.",
+    tags: ["education"],
+    date: "2009 - 2015",
+    location: "London, UK"
   },
 
   // ============================================
   // EXPERIENCES
   // ============================================
   {
-    id: "founder-journey",
+    id: "founder-stealth",
     category: "experience",
-    title: "Founder Journey",
-    subtitle: "Current",
-    takeaway: "The obstacle is the way. Every setback is a setup for growth.",
-    tags: ["entrepreneurship", "leadership"]
+    title: "Founder",
+    subtitle: "Stealth Startup",
+    takeaway: "Build something people want. Everything else is noise.",
+    tags: ["entrepreneurship", "startups", "leadership"],
+    date: "Apr 2024 - Present"
+  },
+  {
+    id: "entrepreneur-antler",
+    category: "experience",
+    title: "Entrepreneur",
+    subtitle: "Antler",
+    takeaway: "Co-founder chemistry is everything. Find someone who complements your weaknesses.",
+    tags: ["entrepreneurship", "venture-capital", "startups"],
+    date: "Oct 2023 - Mar 2024",
+    location: "Greater London, UK"
+  },
+  {
+    id: "venture-dev-r3",
+    category: "experience",
+    title: "Venture Development Lead, EMEA",
+    subtitle: "R3",
+    takeaway: "Enterprise sales is about solving real problems. Technology is secondary to business value.",
+    tags: ["venture-capital", "enterprise", "blockchain", "strategy"],
+    date: "Jun 2022 - Oct 2023",
+    location: "Greater London, UK"
+  },
+  {
+    id: "gtm-can-co",
+    category: "experience",
+    title: "Head of GTM Execution",
+    subtitle: "Can & Co",
+    takeaway: "Go-to-market is where strategy meets reality. Execution reveals truth faster than planning.",
+    tags: ["strategy", "consulting", "sales", "operations"],
+    date: "Nov 2020 - Dec 2022",
+    location: "Greater London, UK"
+  },
+  {
+    id: "bd-pitchbook",
+    category: "experience",
+    title: "Business Development Associate",
+    subtitle: "PitchBook Data",
+    takeaway: "Data is power. The best salespeople are consultants who happen to sell.",
+    tags: ["sales", "data", "finance", "business-development"],
+    date: "Sep 2018 - Oct 2021"
+  },
+  {
+    id: "equity-research-woozle",
+    category: "experience",
+    title: "Equity Research Analyst",
+    subtitle: "Woozle Research",
+    takeaway: "Dig deeper than the obvious. The edge is in the details others overlook.",
+    tags: ["finance", "research", "investing"],
+    date: "Dec 2017 - Nov 2018",
+    location: "London, UK"
+  },
+  {
+    id: "intern-barclays",
+    category: "experience",
+    title: "Investment Banking Intern",
+    subtitle: "Barclays Investment Bank",
+    takeaway: "Work ethic is table stakes. Learn fast, stay humble, and always be ready.",
+    tags: ["finance", "banking", "career"],
+    date: "Aug 2014 - Sep 2014",
+    location: "London, UK"
   }
 ]
 
@@ -759,7 +882,7 @@ export function getAllContextItems(): ContextItem[] {
 }
 
 export function getContextCategories(): ContextCategory[] {
-  return ["book", "course", "experience"]
+  return ["experience", "education", "course", "book"]
 }
 
 export function getAllContextTags(): string[] {
