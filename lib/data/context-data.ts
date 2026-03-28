@@ -1,4 +1,4 @@
-export type ContextCategory = "book" | "course" | "experience" | "education"
+export type ContextCategory = "book" | "course" | "experience" | "education" | "competition"
 
 export interface ContextItem {
   id: string
@@ -865,6 +865,36 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     location: "London, UK"
   },
   {
+    id: "research-analyst-talent-capital",
+    category: "experience",
+    title: "Research Analyst (Intern)",
+    subtitle: "Talent Capital – Research Consultancy",
+    takeaway: "Competitive intelligence is about connecting dots others miss. Deep research creates asymmetric advantages.",
+    tags: ["research", "consulting", "talent-acquisition"],
+    date: "Nov 2016 - Nov 2017",
+    location: "London, UK"
+  },
+  {
+    id: "intern-man-group",
+    category: "experience",
+    title: "Spring Week Intern",
+    subtitle: "Man Group – Hedge Fund",
+    takeaway: "Alpha comes from seeing what others don't. Diversification and discipline separate winners from losers.",
+    tags: ["finance", "investing", "hedge-funds"],
+    date: "Apr 2016",
+    location: "London, UK"
+  },
+  {
+    id: "assistant-zadig",
+    category: "experience",
+    title: "Assistant to Partner",
+    subtitle: "Zadig Asset Management",
+    takeaway: "Valuation is part art, part science. The best investors combine rigorous analysis with contrarian thinking.",
+    tags: ["finance", "investing", "asset-management"],
+    date: "Feb 2016",
+    location: "London, UK"
+  },
+  {
     id: "intern-barclays",
     category: "experience",
     title: "Investment Banking Intern",
@@ -873,6 +903,46 @@ export const CONTEXT_ITEMS: ContextItem[] = [
     tags: ["finance", "banking", "career"],
     date: "Aug 2014 - Sep 2014",
     location: "London, UK"
+  },
+
+  // ============================================
+  // COMPETITIONS & HACKATHONS
+  // ============================================
+  {
+    id: "supanova-hackathon",
+    category: "competition",
+    title: "Supanova",
+    subtitle: "Gemini 3 Hackathon",
+    takeaway: "AI agents can orchestrate complex creative workflows. The future of video is conversational.",
+    tags: ["ai", "hackathon", "video", "agents"],
+    date: "2024"
+  },
+  {
+    id: "lifta-hackathon",
+    category: "competition",
+    title: "Lifta",
+    subtitle: "World's Largest Hackathon by Bolt",
+    takeaway: "Voice-first interfaces unlock hands-free productivity. Build for the context where users actually are.",
+    tags: ["ai", "hackathon", "voice", "fitness"],
+    date: "2024"
+  },
+  {
+    id: "6degrees-hackathon",
+    category: "competition",
+    title: "6degrees",
+    subtitle: "Google AI Hackathon",
+    takeaway: "Your network is your net worth. AI can unlock the hidden value in professional relationships.",
+    tags: ["ai", "hackathon", "networking", "social-capital"],
+    date: "2024"
+  },
+  {
+    id: "20punches-hackathon",
+    category: "competition",
+    title: "20punches (BuffetBot)",
+    subtitle: "AI Agents Hack – lablab.ai & MindsDB",
+    takeaway: "Agentic AI transforms financial advice. Build tools that democratize expertise.",
+    tags: ["ai", "hackathon", "fintech", "agents"],
+    date: "2024"
   }
 ]
 
@@ -882,7 +952,7 @@ export function getAllContextItems(): ContextItem[] {
 }
 
 export function getContextCategories(): ContextCategory[] {
-  return ["experience", "education", "course", "book"]
+  return ["experience", "education", "competition", "course", "book"]
 }
 
 export function getAllContextTags(): string[] {

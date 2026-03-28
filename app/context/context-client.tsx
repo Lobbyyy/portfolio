@@ -4,7 +4,7 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
-import { Book, GraduationCap, Briefcase, School } from "lucide-react"
+import { Book, GraduationCap, Briefcase, School, Trophy } from "lucide-react"
 import { useMemo, Suspense } from "react"
 import type { ContextItem, ContextCategory } from "@/lib/data/context-data"
 
@@ -43,6 +43,7 @@ function ContextPageSkeleton() {
 const categoryLabels: Record<ContextCategory, string> = {
   experience: "Experience",
   education: "Education",
+  competition: "Competitions",
   course: "Courses",
   book: "Books",
 }
@@ -52,6 +53,7 @@ const CategoryIcons: Record<ContextCategory, typeof Book> = {
   course: GraduationCap,
   experience: Briefcase,
   education: School,
+  competition: Trophy,
 }
 
 function ContextPageContent({ items: allItems, tags, categories }: ContextClientProps) {
