@@ -42,6 +42,7 @@ export interface NavItem {
 export const NAVIGATION: NavItem[] = [
   { name: "home.mdx", path: "/", icon: "home", type: "file" },
   { name: "companies/", path: "/companies", icon: "folder", type: "folder" },
+  { name: "context/", path: "/context", icon: "folder", type: "folder" },
   { name: "essays/", path: "/essays", icon: "folder", type: "folder" },
   { name: "localhost/", path: "/localhost", icon: "folder", type: "folder" },
   { name: "resources/", path: "/resources", icon: "folder", type: "folder" },
