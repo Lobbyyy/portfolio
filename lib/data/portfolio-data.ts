@@ -9,11 +9,13 @@
 // PERSONAL INFO
 // ============================================
 export const PERSONAL = {
-  name: "Lobsang",
+  name: "Lobsang Lama",
   initial: "L",
   username: "lobsang", // for terminal prompts
-  tagline: "I build things that matter.",
-  bio: "Entrepreneur with a background in economics, athletics, and venture. Currently building at the intersection of AI and human creativity.",
+  identity: "S.E.C.A",
+  identityExpanded: "Stoic. Entrepreneur. Creative. Athlete.",
+  tagline: "I build things that matter.", // Legacy, kept for compatibility
+  bio: "Top student. Team GB table tennis player. Spent years in corporate soaking up experience. Taught myself to code and now, I'm building products at the intersection of AI and human creativity.",
 
   // Social & Contact
   email: "your@email.com", // TODO: Update
@@ -42,11 +44,12 @@ export interface NavItem {
 export const NAVIGATION: NavItem[] = [
   { name: "home.mdx", path: "/", icon: "home", type: "file" },
   { name: "companies/", path: "/companies", icon: "folder", type: "folder" },
-  { name: "context/", path: "/context", icon: "folder", type: "folder" },
   { name: "essays/", path: "/essays", icon: "folder", type: "folder" },
+  { name: "context/", path: "/context", icon: "folder", type: "folder" },
   { name: "localhost/", path: "/localhost", icon: "folder", type: "folder" },
   { name: "resources/", path: "/resources", icon: "folder", type: "folder" },
   { name: "about.mdx", path: "/about", icon: "user", type: "file" },
+  { name: "changelog.mdx", path: "/changelog", icon: "file", type: "file" },
   { name: "contact.mdx", path: "/contact", icon: "mail", type: "file" },
   { name: "spotify.mdx", path: "/spotify", icon: "music", type: "file" },
 ]
@@ -63,6 +66,7 @@ export interface Company {
   description: string
   longDescription: string
   url: string
+  logo?: string  // Path to logo in public folder (e.g., "/coconut_logo.png")
   status: CompanyStatus
   problem: string
   solution: string
@@ -76,8 +80,9 @@ export const COMPANIES: Company[] = [
     name: "Coconut",
     tagline: "A brand builder's oasis",
     description: "Post more without doing more",
-    longDescription: "Content arbitrage for creators - ingest, extract, remix, publish.",
+    longDescription: "Escape the content treadmill with our intelligent content arbitrage system.",
     url: "https://coconutapp.xyz",
+    logo: "/logos/coconut_logo.webp",
     status: "active",
     problem: "Creators are exhausted. The content treadmill demands constant output while quality suffers. You have great ideas trapped in long-form content that never gets repurposed.",
     solution: "Coconut is content arbitrage. We ingest your existing content, extract the gold, and remix it for every platform. Post more without doing more.",
@@ -90,6 +95,7 @@ export const COMPANIES: Company[] = [
     description: "AI video production",
     longDescription: "Helping creators produce professional video content with AI-powered tools.",
     url: "https://www.iamsupanova.com",
+    logo: "/logos/supanova_logo.svg",
     status: "active",
     problem: "Professional video content requires expensive equipment, editing skills, and hours of work. Creators have ideas but lack the means to bring them to life at scale.",
     solution: "Supanova uses AI to transform your ideas into polished video content. Professional quality, fraction of the time.",
@@ -102,6 +108,7 @@ export const COMPANIES: Company[] = [
     description: "Content research intelligence",
     longDescription: "AI-powered platform for content research and competitive analysis.",
     url: "https://www.1z2.app",
+    logo: "/logos/primary-icon-logo-for-dark-bg.svg",
     status: "live",
     problem: "Understanding what content resonates requires hours of manual research across competitors and trends.",
     solution: "AI-powered content analysis that surfaces what's working and why.",
@@ -114,6 +121,7 @@ export const COMPANIES: Company[] = [
     description: "Family life sharing",
     longDescription: "A private space for families to share moments and stay connected.",
     url: "https://www.our-circles.com",
+    logo: "/logos/circles_logo.png",
     status: "live",
     problem: "Families are scattered, and social media isn't the place to share precious moments with loved ones.",
     solution: "A private, intimate space where families can share photos, updates, and stay connected - no algorithms, no ads.",
@@ -126,6 +134,7 @@ export const COMPANIES: Company[] = [
     description: "AI financial advisory",
     longDescription: "Making financial advice accessible through AI-powered guidance.",
     url: "https://www.20punches.co.uk",
+    logo: "/logos/20-punches.svg",
     status: "live",
     problem: "Quality financial advice is expensive and inaccessible to most people.",
     solution: "AI-powered financial guidance that's accessible, clear, and actionable.",
@@ -207,6 +216,49 @@ export const VALUES = [
   { letter: "C", word: "Competence" },
   { letter: "K", word: "Kindness" },
   { letter: "C", word: "Confidence" },
+]
+
+// ============================================
+// PURSUITS - Three life pursuits for homepage
+// ============================================
+export type PursuitType = "companies" | "essays" | "progress"
+
+export interface Pursuit {
+  id: string
+  title: string
+  subtitle: string
+  type: PursuitType
+  link?: string
+  // For progress type
+  current?: number
+  goal?: number
+  unit?: string
+}
+
+export const PURSUITS: Pursuit[] = [
+  {
+    id: "weapon",
+    title: "To Be a Weapon of Mass Creation",
+    subtitle: "Ideas arrive for a reason. My role is to collapse the distance between imagination and reality.",
+    type: "companies",
+    link: "/companies"
+  },
+  {
+    id: "secrets",
+    title: "To Unlock the Secrets of the Universe",
+    subtitle: "Human lives are fleeting. The questions that drove Galileo, Newton, and Da Vinci still burn.",
+    type: "essays",
+    link: "/essays"
+  },
+  {
+    id: "running",
+    title: "To Run Around the World",
+    subtitle: "A lifetime misogi. One hard challenge, pursued across an entire lifetime. One planet's circumference.",
+    type: "progress",
+    current: 1757,
+    goal: 40075,
+    unit: "km"
+  }
 ]
 
 // ============================================

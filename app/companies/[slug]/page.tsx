@@ -9,8 +9,9 @@ export function generateStaticParams() {
   return COMPANIES.map((company) => ({ slug: company.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const company = COMPANIES.find((c) => c.slug === params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const company = COMPANIES.find((c) => c.slug === slug)
   if (!company) return { title: "Not Found" }
   return {
     title: `${company.name} - ${company.tagline}`,
@@ -24,8 +25,9 @@ const statusConfig: Record<CompanyStatus, { color: string; label: string }> = {
   exploring: { color: "bg-yellow-500", label: "Exploring" },
 }
 
-export default function CompanyPage({ params }: { params: { slug: string } }) {
-  const company = COMPANIES.find((c) => c.slug === params.slug)
+export default async function CompanyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const company = COMPANIES.find((c) => c.slug === slug)
   if (!company) notFound()
 
   return (
@@ -35,6 +37,14 @@ export default function CompanyPage({ params }: { params: { slug: string } }) {
       {/* Hero */}
       <header className="mb-12">
         <div className="flex items-center gap-3 mb-2">
+          {company.logo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={company.logo}
+              alt={`${company.name} logo`}
+              className="w-12 h-12 rounded object-contain"
+            />
+          )}
           <h1 className="font-serif text-4xl md:text-5xl text-[rgb(var(--text))]">
             {company.name}
           </h1>

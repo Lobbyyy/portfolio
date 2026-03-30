@@ -43,7 +43,16 @@ export default function CompaniesPage() {
 
       <div className="space-y-6">
         {COMPANIES.map((company) => (
-          <CompanyCard key={company.slug} {...company} />
+          <CompanyCard
+            key={company.slug}
+            slug={company.slug}
+            name={company.name}
+            description={company.description}
+            longDescription={company.longDescription}
+            url={company.url}
+            logo={company.logo}
+            status={company.status}
+          />
         ))}
       </div>
     </EditorialLayout>
@@ -56,6 +65,7 @@ function CompanyCard({
   description,
   longDescription,
   url,
+  logo,
   status,
 }: {
   slug: string
@@ -63,6 +73,7 @@ function CompanyCard({
   description: string
   longDescription: string
   url: string
+  logo?: string
   status: CompanyStatus
 }) {
   const router = useRouter()
@@ -79,6 +90,14 @@ function CompanyCard({
     >
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-3">
+          {logo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={logo}
+              alt={`${name} logo`}
+              className="w-8 h-8 rounded object-contain"
+            />
+          )}
           <h2 className="font-serif text-2xl text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors">{name}</h2>
           <span className="flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-mono bg-[rgb(var(--border))]">
             <span className={`w-1.5 h-1.5 rounded-full ${statusConfig[status].color}`} />
