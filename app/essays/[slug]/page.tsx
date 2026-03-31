@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/editorial/Breadcrumb"
 import MarkdownRenderer from "@/components/mdx/MarkdownRenderer"
 import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
-import { ArrowLeft, ArrowUpRight, ArrowRight, Clock, Calendar } from "lucide-react"
+import { ArrowLeft, ArrowRight, Clock, Calendar } from "lucide-react"
 import { getAllEssays, getEssayBySlug, EssayContent } from "@/lib/essays"
 
 interface Props {
@@ -106,21 +106,6 @@ export default async function EssayPage({ params }: Props) {
       {/* Essay Content */}
       <MarkdownRenderer content={essay.content} />
 
-      {/* Read on Substack */}
-      {essay.substackUrl && (
-        <div className="mt-12 pt-8 border-t border-[rgb(var(--border))]">
-          <a
-            href={essay.substackUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[rgb(var(--primary))] hover:underline"
-          >
-            Read original on Substack
-            <ArrowUpRight className="w-4 h-4" />
-          </a>
-        </div>
-      )}
-
       {/* Prev/Next Navigation */}
       {(prev || next) && (
         <nav className="mt-12 pt-8 border-t border-[rgb(var(--border))]">
@@ -128,8 +113,9 @@ export default async function EssayPage({ params }: Props) {
             {prev ? (
               <Link
                 href={`/essays/${prev.slug}`}
-                className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+                className="group flex items-center p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
               >
+                <ArrowLeft className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors flex-shrink-0 mr-4" />
                 <div>
                   <span className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-1 block">
                     Previous
@@ -138,7 +124,6 @@ export default async function EssayPage({ params }: Props) {
                     {prev.title}
                   </span>
                 </div>
-                <ArrowLeft className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors flex-shrink-0 ml-4" />
               </Link>
             ) : (
               <div />
