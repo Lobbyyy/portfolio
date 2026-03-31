@@ -124,39 +124,43 @@ export default async function EssayPage({ params }: Props) {
       {/* Prev/Next Navigation */}
       {(prev || next) && (
         <nav className="mt-12 pt-8 border-t border-[rgb(var(--border))]">
-          <div className="flex justify-between items-start gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {prev ? (
               <Link
                 href={`/essays/${prev.slug}`}
-                className="group flex-1 max-w-[45%]"
+                className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
               >
-                <span className="flex items-center gap-1 text-xs font-mono text-[rgb(var(--muted))] mb-2">
-                  <ArrowLeft className="w-3 h-3" />
-                  Previous
-                </span>
-                <span className="block text-sm text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
-                  {prev.title}
-                </span>
+                <div>
+                  <span className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-1 block">
+                    Previous
+                  </span>
+                  <span className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
+                    {prev.title}
+                  </span>
+                </div>
+                <ArrowLeft className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors flex-shrink-0 ml-4" />
               </Link>
             ) : (
-              <div className="flex-1" />
+              <div />
             )}
 
             {next ? (
               <Link
                 href={`/essays/${next.slug}`}
-                className="group flex-1 max-w-[45%] text-right"
+                className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
               >
-                <span className="flex items-center justify-end gap-1 text-xs font-mono text-[rgb(var(--muted))] mb-2">
-                  Next
-                  <ArrowRight className="w-3 h-3" />
-                </span>
-                <span className="block text-sm text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
-                  {next.title}
-                </span>
+                <div>
+                  <span className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-1 block">
+                    Next
+                  </span>
+                  <span className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
+                    {next.title}
+                  </span>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors flex-shrink-0 ml-4" />
               </Link>
             ) : (
-              <div className="flex-1" />
+              <div />
             )}
           </div>
         </nav>

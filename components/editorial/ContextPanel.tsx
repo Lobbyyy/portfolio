@@ -57,9 +57,9 @@ export default function ContextPanel({ children }: ContextPanelProps) {
                   href={company.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-2 py-1 text-xs font-medium rounded-full bg-[rgb(var(--surface))] text-[rgb(var(--text))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors border border-[rgb(var(--border))]"
+                  className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors"
                 >
-                  {company.name}
+                  #{company.name.toLowerCase().replace(/\s+/g, '-')}
                 </a>
               ))}
             </div>
