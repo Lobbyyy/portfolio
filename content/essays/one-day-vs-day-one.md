@@ -4,7 +4,7 @@ excerpt: "no-thing matters vs every-thing matters"
 date: "Sep 17, 2025"
 readTime: "1 min"
 tags: ["mortality","acceptance","stoicism"]
-substackUrl: "https://deckandadream.substack.com/p/one-day-vs-day-one"
+substackUrl: "/essays/one-day-vs-day-one"
 featured: false
 ---
 
@@ -58,4 +58,3 @@ Because today every-thing matters,
 
 And one day it might be one day.
 
-[![](https://substackcdn.com/image/fetch/$s_!-c5u!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F91e9becd-605d-4c67-92d2-40049e31a2a5_1167x175.png)](https://substackcdn.com/image/fetch/$s_!-c5u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F91e9becd-605d-4c67-92d2-40049e31a2a5_1167x175.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

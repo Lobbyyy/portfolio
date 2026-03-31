@@ -4,7 +4,7 @@ excerpt: "no, but do you really understand?"
 date: "Sep 18, 2025"
 readTime: "2 min"
 tags: ["character","empathy"]
-substackUrl: "https://deckandadream.substack.com/p/do-you-understand"
+substackUrl: "/essays/do-you-understand"
 featured: false
 ---
 
@@ -44,4 +44,3 @@ know this: they weren't born that way.
 
 Their character was born from the labours of pain you will never see.
 
-[![](https://substackcdn.com/image/fetch/$s_!JSf7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd58b1613-c415-4302-ab53-6f437aea5a5a_2726x408.png)](https://substackcdn.com/image/fetch/$s_!JSf7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd58b1613-c415-4302-ab53-6f437aea5a5a_2726x408.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

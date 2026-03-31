@@ -4,7 +4,7 @@ excerpt: "I was once a fortunate man but at some point fortune abandoned me - Ma
 date: "Nov 21, 2024"
 readTime: "28 min"
 tags: ["death","mortality","wellbeing","life","stoicism","obstacles","meditations","mental-health","stoic","marcus-aurelius"]
-substackUrl: "https://deckandadream.substack.com/p/do-you-ever-question-your-mortality"
+substackUrl: "/essays/do-you-ever-question-your-mortality"
 featured: false
 ---
 
@@ -633,4 +633,3 @@ Keep all that in mind, and don’t treat anything as important except doing what
 
 [![](https://substackcdn.com/image/fetch/$s_!ZsCQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79951deb-25fa-4073-bd57-56553d002dbe_2936x414.png)](https://substackcdn.com/image/fetch/$s_!ZsCQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79951deb-25fa-4073-bd57-56553d002dbe_2936x414.png)**I hope this post brings you and your loved ones comfort during difficult times 🫶🏻**
 
-[Share](https://deckandadream.substack.com/p/do-you-ever-question-your-mortality?utm_source=substack&utm_medium=email&utm_content=share&action=share)

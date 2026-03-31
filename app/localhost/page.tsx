@@ -3,39 +3,39 @@ import Breadcrumb from "@/components/editorial/Breadcrumb"
 
 const EXPERIMENTS = [
   {
-    name: "ai-journaling-companion",
-    description: "A thoughtful AI that helps you reflect and write",
-    progress: 60,
-    status: "paused",
-    reason: "Exploring different interaction models",
-  },
-  {
-    name: "founder-matching-algo",
-    description: "Better cofounder matching based on working styles",
+    name: "midas",
+    description: "In the future, there will be no UI. Gesture-based HCI using computer vision — control your desktop with hand movements.",
     progress: 40,
-    status: "paused",
-    reason: "Need more data to validate approach",
+    status: "building",
+    reason: "Core tech de-risked. One game working. Expanding use cases.",
   },
   {
-    name: "voice-memo-to-blog",
-    description: "Turn rambling voice notes into polished posts",
-    progress: 25,
-    status: "exploring",
-    reason: "Early prototype stage",
+    name: "themis",
+    description: "Polymarket meets LLM Arena. Pick a question, select AI agents for/against, watch them debate, vote on the winner.",
+    progress: 85,
+    status: "ready",
+    reason: "UI complete. Needs production deployment.",
   },
   {
-    name: "habit-streaks-api",
-    description: "Simple API for tracking streaks in any app",
-    progress: 80,
-    status: "paused",
-    reason: "Works but needs a home",
+    name: "lifta",
+    description: "Your AI weightlifting coach. Voice-based, science-backed training tracking.",
+    progress: 70,
+    status: "building",
+    reason: "Demo done. UI refreshed. Needs wiring + App Store launch.",
   },
   {
-    name: "startup-idea-validator",
-    description: "Quick validation framework for new ideas",
-    progress: 15,
-    status: "exploring",
-    reason: "Just started",
+    name: "scoutr",
+    description: "Find your first 100 users. Reddit community discovery for founders who hate cold outreach.",
+    progress: 75,
+    status: "ready",
+    reason: "Flows validated. Needs production push.",
+  },
+  {
+    name: "sands",
+    description: "Visualize your life. A memento mori app that makes time tangible. Harvard CS50 project.",
+    progress: 100,
+    status: "live",
+    reason: "Live. UI refresh planned with new skills.",
   },
 ]
 
@@ -49,8 +49,8 @@ export default function LocalhostPage() {
           ~/localhost
         </h1>
         <p className="text-[rgb(var(--muted))] max-w-xl">
-          Experiments that may never leave localhost. Unfinished ideas, paused projects,
-          and things I&apos;m tinkering with. The graveyard and the nursery.
+          Side projects and experiments. Some will ship, some won&apos;t.
+          The best ideas often start here.
         </p>
       </header>
 

@@ -4,7 +4,7 @@ excerpt: "A Binary Constraint Framework for Understanding Quantum Mechanics, Tim
 date: "Oct 18, 2025"
 readTime: "7 min"
 tags: ["storytime","philosophy","quantum-mechanics"]
-substackUrl: "https://deckandadream.substack.com/p/the-presentnot-present-hypothesis"
+substackUrl: "/essays/the-presentnot-present-hypothesis"
 featured: false
 ---
 
@@ -218,4 +218,3 @@ This framework suggests that the Matrix’s Oracle was correct: You’ve already
 
 The question isn’t whether we have free will OR whether everything is determined. The question is: can we understand that these are two words for the same thing?
 
-[![](https://substackcdn.com/image/fetch/$s_!t1un!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89c1e213-cafb-4837-8b35-d0df2eefebaa_2124x282.png)](https://substackcdn.com/image/fetch/$s_!t1un!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89c1e213-cafb-4837-8b35-d0df2eefebaa_2124x282.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

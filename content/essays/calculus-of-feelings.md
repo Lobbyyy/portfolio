@@ -4,7 +4,7 @@ excerpt: "the atomic theory of emotions"
 date: "Sep 19, 2025"
 readTime: "3 min"
 tags: ["first-principle-thinking","calculus","emotions","feelings"]
-substackUrl: "https://deckandadream.substack.com/p/calculus-of-feelings"
+substackUrl: "/essays/calculus-of-feelings"
 featured: false
 ---
 

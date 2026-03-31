@@ -4,7 +4,7 @@ excerpt: "the only things you need to do as an entrepreneur"
 date: "Nov 7, 2024"
 readTime: "4 min"
 tags: ["ford","bridging-the-gap","cars","henry-ford","entrepreneur","horses","venture-capital","startups","technology","finding-ideas","guide-to-being-an-entrepreneur"]
-substackUrl: "https://deckandadream.substack.com/p/observe-imagine-and-build-the-bridge"
+substackUrl: "/essays/observe-imagine-and-build-the-bridge"
 featured: false
 ---
 
@@ -90,7 +90,6 @@ Automobiles existed then, but their production was manual and time-consuming.
 
 It was inaccessible, and only the wealthy elite could afford them.
 
-[![](https://substackcdn.com/image/fetch/$s_!rg5i!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3741738c-f61d-45f0-941f-c758f8ac8a8b_1330x202.png)](https://substackcdn.com/image/fetch/$s_!rg5i!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3741738c-f61d-45f0-941f-c758f8ac8a8b_1330x202.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!mpHV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb450ebd-6e43-45e5-996f-15fbcc24a112_1330x202.png)](https://substackcdn.com/image/fetch/$s_!mpHV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb450ebd-6e43-45e5-996f-15fbcc24a112_1330x202.png)However, one man wasn't satisfied with this current state.
 
@@ -164,4 +163,3 @@ and build the bridge.
 
 ***– Henry Ford** **did not say this***
 
-**Subscribe for access to practical business frameworks and startup insights! 🚀**

@@ -4,7 +4,7 @@ excerpt: "mine comes from slaying the unslayable dragons"
 date: "Nov 2, 2024"
 readTime: "10 min"
 tags: ["university","storytime","entrepreneur","david-goggins","exploration","top-boy","startups","lord-of-the-flies","belief"]
-substackUrl: "https://deckandadream.substack.com/p/where-does-your-belief-come-from"
+substackUrl: "/essays/where-does-your-belief-come-from"
 featured: false
 ---
 
@@ -25,7 +25,7 @@ Here are my answers.[![](https://substackcdn.com/image/fetch/$s_!FDyN!,w_1456,c_
 
 Luckily for me,
 
-[my whole life](https://deckandadream.substack.com/p/my-story) has been an uphill battle.
+[my whole life](/essays/my-story) has been an uphill battle.
 
 The cards have *always* been stacked against me,
 
@@ -237,7 +237,6 @@ and I loved how there was always an absolute answer in maths
 
 and the answer never involved writing words.
 
-[![](https://substackcdn.com/image/fetch/$s_!sTvJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F87d6f555-759c-4375-8268-bf068d3c6ce1_2394x340.png)](https://substackcdn.com/image/fetch/$s_!sTvJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F87d6f555-759c-4375-8268-bf068d3c6ce1_2394x340.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!5JSb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bf5b557-8695-4c68-abc5-d74378d118ab_2394x340.png)](https://substackcdn.com/image/fetch/$s_!5JSb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bf5b557-8695-4c68-abc5-d74378d118ab_2394x340.png)I started my AS year with 4 subjects - Biology, Chemistry, Maths and Economics.
 
@@ -421,7 +420,6 @@ No better feeling than having slain the unslayable dragon
 
 and lived to tell the tale.
 
-[![](https://substackcdn.com/image/fetch/$s_!OnRP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83907629-e20c-4fb3-8eb9-e69d02efb5ae_2394x340.png)](https://substackcdn.com/image/fetch/$s_!OnRP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83907629-e20c-4fb3-8eb9-e69d02efb5ae_2394x340.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!YvVa!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb6763487-ab80-40c1-b407-f285e8b3b6af_2394x340.png)](https://substackcdn.com/image/fetch/$s_!YvVa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb6763487-ab80-40c1-b407-f285e8b3b6af_2394x340.png)If you're thinking about embarking on a daunting journey,
 
@@ -451,7 +449,7 @@ Believe you can complete those journeys.
 
 "We all need small sparks, small accomplishments in our lives to fuel the big ones [...] Because its the small sparks, which start small fires, that eventually build enough heat to burn the whole f*cking forest down."
 
-David Goggins, [my board member](https://deckandadream.substack.com/p/half-my-board-is-dead)
+David Goggins, [my board member](/essays/half-my-board-is-dead)
 
 [![](https://substackcdn.com/image/fetch/$s_!Av2P!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb0374cdd-eab3-4f5d-9796-5f13dfa0a45b_2394x340.png)](https://substackcdn.com/image/fetch/$s_!Av2P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb0374cdd-eab3-4f5d-9796-5f13dfa0a45b_2394x340.png)If you're struggling with believing in yourself,
 
@@ -483,4 +481,3 @@ It doesn't matter if you think your accomplishments are small and insignificant 
 **Answer:** Because I believe I can.
 
 **Q2:** Why do you think you can succeed where most fail?
-**Answer:** Because I believe I can.[![](https://substackcdn.com/image/fetch/$s_!tLtR!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe02f3dc-babf-46c1-83a7-5b6731e74731_2394x340.png)](https://substackcdn.com/image/fetch/$s_!tLtR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe02f3dc-babf-46c1-83a7-5b6731e74731_2394x340.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

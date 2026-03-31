@@ -4,7 +4,7 @@ excerpt: "recipe for doing great work"
 date: "Nov 5, 2024"
 readTime: "6 min"
 tags: ["professional-life","how-to-do-great-work","entrepreneur","paul-graham","life-decision","career-navigation","career","joy","olympics","technology","happiness"]
-substackUrl: "https://deckandadream.substack.com/p/first-work-wide-then-work-hard"
+substackUrl: "/essays/first-work-wide-then-work-hard"
 featured: false
 ---
 
@@ -64,7 +64,7 @@ by trying out different lanes and seeing what running in that lane is like.
 
 This is what I mean by 'first work wide'.
 
-If you read [my story](https://deckandadream.substack.com/p/my-story) or [why startup founders should be more like thanos](https://deckandadream.substack.com/p/what-thanos-and-i-have-in-common), you'll observe that I have been constantly experimenting.
+If you read [my story](/essays/my-story) or [why startup founders should be more like thanos](/essays/what-thanos-and-i-have-in-common), you'll observe that I have been constantly experimenting.
 
 I've been constantly trying out different lanes to see if that is the lane I want to be on.
 
@@ -116,7 +116,6 @@ you'll love what you do, and it doesn't feel like work when you love what you do
 
 [![](https://substackcdn.com/image/fetch/$s_!LMvk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3fe22a-1c74-44a8-b925-232877091860_1416x213.png)](https://substackcdn.com/image/fetch/$s_!LMvk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3fe22a-1c74-44a8-b925-232877091860_1416x213.png)So work wide, then work hard.
 
-[![](https://substackcdn.com/image/fetch/$s_!JOxU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F53c8b506-090c-41e0-ba43-b0f0b13884ce_1416x213.png)](https://substackcdn.com/image/fetch/$s_!JOxU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F53c8b506-090c-41e0-ba43-b0f0b13884ce_1416x213.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!0WJJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16982178-a895-4f63-9251-62e3daa7186e_1416x213.png)](https://substackcdn.com/image/fetch/$s_!0WJJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16982178-a895-4f63-9251-62e3daa7186e_1416x213.png)If you do it the opposite way - working hard, then working wide, 
 
@@ -228,4 +227,3 @@ and your work becomes record-breaking.
 
 Your work becomes great.
 
-[![](https://substackcdn.com/image/fetch/$s_!GYVt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8dc76ee5-0f9a-4d6e-88ff-a0a40b13dfe0_1416x213.png)](https://substackcdn.com/image/fetch/$s_!GYVt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8dc76ee5-0f9a-4d6e-88ff-a0a40b13dfe0_1416x213.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

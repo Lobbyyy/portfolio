@@ -4,7 +4,7 @@ excerpt: "wbu?"
 date: "Nov 1, 2024"
 readTime: "3 min"
 tags: ["universe","physics","astrophysics","gut-bacteria","health","philosophy","astronomy","scientific-observations","microbiology","biology"]
-substackUrl: "https://deckandadream.substack.com/p/wya-in-the-universes-gut"
+substackUrl: "/essays/wya-in-the-universes-gut"
 featured: false
 ---
 
@@ -128,7 +128,6 @@ It's a confirmation of our dominance.
 
 Kings and Queens of Earth.
 
-[![](https://substackcdn.com/image/fetch/$s_!cQQK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e3bfd21-8efa-4061-8d70-30f84b302b7a_2856x272.png)](https://substackcdn.com/image/fetch/$s_!cQQK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e3bfd21-8efa-4061-8d70-30f84b302b7a_2856x272.png)**Subscribe for access to practical business frameworks and startup insights! 🚀** 
 
 [![](https://substackcdn.com/image/fetch/$s_!VpXO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc279cf2-cdf1-438f-8607-46d90ec5f0df_2856x272.png)](https://substackcdn.com/image/fetch/$s_!VpXO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc279cf2-cdf1-438f-8607-46d90ec5f0df_2856x272.png)The universe is quick to serve us some humble pie, though,
 
@@ -188,4 +187,3 @@ and we may interact with other planetary species.
 
 But what happens when we make it out of the stomach?
 
-[![](https://substackcdn.com/image/fetch/$s_!Og5b!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb4e4b5ee-8679-4d2c-a7ba-d1a19b6cc1af_2856x272.png)](https://substackcdn.com/image/fetch/$s_!Og5b!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb4e4b5ee-8679-4d2c-a7ba-d1a19b6cc1af_2856x272.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

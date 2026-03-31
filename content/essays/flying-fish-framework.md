@@ -4,7 +4,7 @@ excerpt: "how to stop comparing yourself "
 date: "Nov 8, 2024"
 readTime: "9 min"
 tags: ["comparing","birds","fish","flying-fish-framework","joy","framework","animal-kingdom","happiness","mental-health","mental-model"]
-substackUrl: "https://deckandadream.substack.com/p/flying-fish-framework"
+substackUrl: "/essays/flying-fish-framework"
 featured: false
 ---
 
@@ -88,7 +88,6 @@ or how big its wings are,
 
 but even that is not useful if you're the bird.
 
-[![](https://substackcdn.com/image/fetch/$s_!k4Ry!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F53a2dad0-107c-4426-8d41-39845c3861f4_1331x180.png)](https://substackcdn.com/image/fetch/$s_!k4Ry!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F53a2dad0-107c-4426-8d41-39845c3861f4_1331x180.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!5uA5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8646f575-6251-45ff-a629-e57db87deb09_1331x180.png)](https://substackcdn.com/image/fetch/$s_!5uA5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8646f575-6251-45ff-a629-e57db87deb09_1331x180.png)Take two different types of birds - The Peregrine Falcon and the Great Horned Owl.
 
@@ -168,7 +167,6 @@ and comparing different orders within the same class - like a falcon to an owl -
 
 comparing yourself to other humans is an equally pointless exercise.
 
-[![](https://substackcdn.com/image/fetch/$s_!Vhuz!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fde8ebbb1-8917-4f9d-be68-434727fc3958_1331x180.png)](https://substackcdn.com/image/fetch/$s_!Vhuz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fde8ebbb1-8917-4f9d-be68-434727fc3958_1331x180.png)[Share](https://deckandadream.substack.com/p/flying-fish-framework?utm_source=substack&utm_medium=email&utm_content=share&action=share)
 
 [![](https://substackcdn.com/image/fetch/$s_!Sd6e!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9eda19d9-bb80-4aa2-8efb-60528768aece_1331x180.png)](https://substackcdn.com/image/fetch/$s_!Sd6e!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9eda19d9-bb80-4aa2-8efb-60528768aece_1331x180.png)Humans are special; what makes us unique is our mammalian brain.
 
@@ -380,4 +378,3 @@ and more empathy.
 
 You end up caring more about people, and this energy is reciprocated.
 
-[![](https://substackcdn.com/image/fetch/$s_!_WV6!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7d008be-05f6-4c5b-99b1-5b2c0d611093_1331x180.png)](https://substackcdn.com/image/fetch/$s_!_WV6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7d008be-05f6-4c5b-99b1-5b2c0d611093_1331x180.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

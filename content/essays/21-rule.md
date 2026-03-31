@@ -4,7 +4,7 @@ excerpt: "do you hate 79% of the atmosphere?"
 date: "Oct 14, 2025"
 readTime: "2 min"
 tags: ["stoicism"]
-substackUrl: "https://deckandadream.substack.com/p/21-rule"
+substackUrl: "/essays/21-rule"
 featured: false
 ---
 
@@ -98,4 +98,3 @@ do you hate 79% of the atmosphere?
 
 or do you simply choose to ignore it?
 
-[![](https://substackcdn.com/image/fetch/$s_!Exkh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c400c10-9772-4df0-816e-ce971a7a7889_1007x147.png)](https://substackcdn.com/image/fetch/$s_!Exkh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c400c10-9772-4df0-816e-ce971a7a7889_1007x147.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

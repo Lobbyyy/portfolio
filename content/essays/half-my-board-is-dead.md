@@ -4,7 +4,7 @@ excerpt: "and the other half don't know i exist "
 date: "Oct 28, 2024"
 readTime: "12 min"
 tags: ["startup","rosa-parks","edward-snowden","philosophy","entrepreneur","isaac-newton","david-goggins","leonardo-da-vinci","lebron-james","venture-capital","bruce-lee","career-navigation","thomas-edison","galileo-galilei","gary-vaynerchuk","technology","elon-musk","board-members","simon-sinek","marcus-aurelius"]
-substackUrl: "https://deckandadream.substack.com/p/half-my-board-is-dead"
+substackUrl: "/essays/half-my-board-is-dead"
 featured: false
 ---
 
@@ -82,7 +82,6 @@ Lebron James
 
 Bruce Lee
 
-[![](https://substackcdn.com/image/fetch/$s_!T0j8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1bc0432-c71d-4df0-9127-684f4f3af925_1081x167.png)](https://substackcdn.com/image/fetch/$s_!T0j8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1bc0432-c71d-4df0-9127-684f4f3af925_1081x167.png)**Subscribe for access to practical business frameworks and startup insights!** 🚀
 
 [![](https://substackcdn.com/image/fetch/$s_!-ECk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff59adb85-28d5-4ee0-ac50-2ce5af05776f_1081x167.png)](https://substackcdn.com/image/fetch/$s_!-ECk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff59adb85-28d5-4ee0-ac50-2ce5af05776f_1081x167.png)### Why are they on my board? 
 
@@ -500,4 +499,3 @@ He found his way and made his technique.
 
 I apply this approach to entrepreneurship by combining all startup principles (marketing, sales, engineering, etc.) to be a full-stack founder.
 
-[![](https://substackcdn.com/image/fetch/$s_!a4hv!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F31864a86-5a2e-47c7-8302-090553ffe760_1081x167.png)](https://substackcdn.com/image/fetch/$s_!a4hv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F31864a86-5a2e-47c7-8302-090553ffe760_1081x167.png)**Subscribe for access to practical business frameworks and startup insights!** 🚀

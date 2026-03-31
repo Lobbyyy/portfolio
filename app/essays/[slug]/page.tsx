@@ -2,8 +2,9 @@ import { notFound } from "next/navigation"
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import MarkdownRenderer from "@/components/mdx/MarkdownRenderer"
+import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
-import { ArrowLeft, ArrowUpRight, Clock, Calendar } from "lucide-react"
+import { ArrowLeft, ArrowUpRight, ArrowRight, Clock, Calendar } from "lucide-react"
 import { getAllEssays, getEssayBySlug, EssayContent } from "@/lib/essays"
 
 interface Props {
@@ -31,6 +32,16 @@ export async function generateMetadata({ params }: Props) {
   }
 }
 
+function getAdjacentEssays(currentSlug: string) {
+  const essays = getAllEssays()
+  const currentIndex = essays.findIndex(e => e.slug === currentSlug)
+
+  return {
+    prev: currentIndex > 0 ? essays[currentIndex - 1] : null,
+    next: currentIndex < essays.length - 1 ? essays[currentIndex + 1] : null,
+  }
+}
+
 export default async function EssayPage({ params }: Props) {
   const { slug } = await params
   const essay = getEssayBySlug(slug)
@@ -38,6 +49,8 @@ export default async function EssayPage({ params }: Props) {
   if (!essay) {
     notFound()
   }
+
+  const { prev, next } = getAdjacentEssays(slug)
 
   return (
     <EditorialLayout
@@ -107,6 +120,50 @@ export default async function EssayPage({ params }: Props) {
           </a>
         </div>
       )}
+
+      {/* Prev/Next Navigation */}
+      {(prev || next) && (
+        <nav className="mt-12 pt-8 border-t border-[rgb(var(--border))]">
+          <div className="flex justify-between items-start gap-4">
+            {prev ? (
+              <Link
+                href={`/essays/${prev.slug}`}
+                className="group flex-1 max-w-[45%]"
+              >
+                <span className="flex items-center gap-1 text-xs font-mono text-[rgb(var(--muted))] mb-2">
+                  <ArrowLeft className="w-3 h-3" />
+                  Previous
+                </span>
+                <span className="block text-sm text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
+                  {prev.title}
+                </span>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+
+            {next ? (
+              <Link
+                href={`/essays/${next.slug}`}
+                className="group flex-1 max-w-[45%] text-right"
+              >
+                <span className="flex items-center justify-end gap-1 text-xs font-mono text-[rgb(var(--muted))] mb-2">
+                  Next
+                  <ArrowRight className="w-3 h-3" />
+                </span>
+                <span className="block text-sm text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors line-clamp-2">
+                  {next.title}
+                </span>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+          </div>
+        </nav>
+      )}
+
+      {/* Support Footer */}
+      <SupportFooter />
     </EditorialLayout>
   )
 }
@@ -152,7 +209,7 @@ function EssayContext({ essay }: { essay: EssayContent }) {
           Subscribe
         </h3>
         <a
-          href="https://deckandadream.substack.com"
+          href="https://substack.com/@lobsanglama"
           target="_blank"
           rel="noopener noreferrer"
           className="block text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] transition-colors"

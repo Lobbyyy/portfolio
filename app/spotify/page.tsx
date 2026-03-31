@@ -1,42 +1,25 @@
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import { Play, ExternalLink } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
+// Spotify playlist embeds - add more playlist IDs as needed
+// To get a playlist ID: open playlist in Spotify, click Share > Copy link
+// URL format: https://open.spotify.com/playlist/PLAYLIST_ID
 const PLAYLISTS = [
   {
-    name: "Running",
-    emoji: "🏃",
-    description: "Team GB training energy",
-    trackCount: 45,
-    href: "https://open.spotify.com",
-  },
-  {
     name: "Deep Work",
-    emoji: "🧠",
     description: "What I code to",
-    trackCount: 120,
-    href: "https://open.spotify.com",
+    embedId: "37i9dQZF1E8CQBn1BWn6gw", // TODO: Replace with actual playlist ID
   },
   {
-    name: "Morning Pages",
-    emoji: "🌅",
-    description: "Journaling soundtrack",
-    trackCount: 30,
-    href: "https://open.spotify.com",
+    name: "Running",
+    description: "Team GB training energy",
+    embedId: "37i9dQZF1E8CQBn1BWn6gw", // TODO: Replace with actual playlist ID
   },
   {
-    name: "Sunday Build",
-    emoji: "☕",
-    description: "Weekend hacking vibes",
-    trackCount: 80,
-    href: "https://open.spotify.com",
-  },
-  {
-    name: "Wind Down",
-    emoji: "🌙",
-    description: "End of day decompression",
-    trackCount: 25,
-    href: "https://open.spotify.com",
+    name: "Feeling Good",
+    description: "Positive vibes only",
+    embedId: "37i9dQZF1E8CQBn1BWn6gw", // TODO: Replace with actual playlist ID
   },
 ]
 
@@ -54,40 +37,32 @@ export default function SpotifyPage() {
         </p>
       </header>
 
-      {/* Now Playing - Placeholder */}
-      <section className="mb-12">
-        <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-4">
-          Now Playing
-        </h2>
-        <div className="flex items-center gap-4 p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))]">
-          <div className="w-16 h-16 rounded bg-[rgb(var(--border))] flex items-center justify-center">
-            <Play className="w-6 h-6 text-[rgb(var(--muted))]" />
+      {/* Playlists with Embeds */}
+      <section className="space-y-8">
+        {PLAYLISTS.map((playlist) => (
+          <div key={playlist.name}>
+            <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
+              {playlist.name}
+            </h2>
+            <p className="text-sm text-[rgb(var(--muted))] mb-4">{playlist.description}</p>
+            <iframe
+              src={`https://open.spotify.com/embed/playlist/${playlist.embedId}?utm_source=generator&theme=0`}
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              className="rounded-xl"
+            />
           </div>
-          <div>
-            <p className="text-sm text-[rgb(var(--muted))]">Not currently playing</p>
-            <p className="text-xs text-[rgb(var(--muted))] mt-1 font-mono">
-              Check back later
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Playlists */}
-      <section>
-        <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-4">
-          Playlists
-        </h2>
-        <div className="grid gap-4">
-          {PLAYLISTS.map((playlist) => (
-            <PlaylistCard key={playlist.name} {...playlist} />
-          ))}
-        </div>
+        ))}
       </section>
 
       {/* Footer */}
       <footer className="mt-12">
         <a
-          href="https://open.spotify.com"
+          href="https://open.spotify.com/user/lobsanglama"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-[rgb(var(--primary))] hover:underline"
@@ -97,44 +72,5 @@ export default function SpotifyPage() {
         </a>
       </footer>
     </EditorialLayout>
-  )
-}
-
-function PlaylistCard({
-  name,
-  emoji,
-  description,
-  trackCount,
-  href,
-}: {
-  name: string
-  emoji: string
-  description: string
-  trackCount: number
-  href: string
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex items-center justify-between p-4 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
-    >
-      <div className="flex items-center gap-4">
-        <span className="text-2xl">{emoji}</span>
-        <div>
-          <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors">
-            {name}
-          </h3>
-          <p className="text-sm text-[rgb(var(--muted))]">{description}</p>
-        </div>
-      </div>
-      <div className="flex items-center gap-3">
-        <span className="font-mono text-xs text-[rgb(var(--muted))]">
-          {trackCount} tracks
-        </span>
-        <ExternalLink className="w-4 h-4 text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors" />
-      </div>
-    </a>
   )
 }

@@ -18,13 +18,14 @@ export const PERSONAL = {
   bio: "Top student. Team GB table tennis player. Spent years in corporate soaking up experience. Taught myself to code and now, I'm building products at the intersection of AI and human creativity.",
 
   // Social & Contact
-  email: "your@email.com", // TODO: Update
+  email: "your@email.com", // TODO: Update when Gmail is set up
   github: "Lobbyyy",
-  linkedin: "your-linkedin", // TODO: Update
-  twitter: "your-twitter", // TODO: Update
-  youtube: "", // Leave empty if not applicable
-  website: "your-site.com", // TODO: Update
-  substack: "your-substack", // TODO: Update
+  linkedin: "lobsang-lama-42a76b63",
+  twitter: "Lobbyyyyyy",
+  youtube: "lobsang_lama",
+  tiktok: "seca.mp4",
+  website: "lobsang-lama.com",
+  substack: "lobsanglama"
 }
 
 // ============================================

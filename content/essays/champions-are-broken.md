@@ -4,7 +4,7 @@ excerpt: "it is a feature, not a bug"
 date: "Nov 5, 2024"
 readTime: "2 min"
 tags: ["acceptance","champions","motivation","alex-hormozi","technology","human-psychology","the-last-dance","belief"]
-substackUrl: "https://deckandadream.substack.com/p/champions-are-broken"
+substackUrl: "/essays/champions-are-broken"
 featured: false
 ---
 
@@ -68,12 +68,11 @@ I accepted it as a feature, not a bug.
 
 My life situation doesn't reflect this right now,
 
-but it's only a matter of time before [my visions](https://deckandadream.substack.com/p/the-vision), goals, and dreams become a reality. 
+but it's only a matter of time before [my visions](/essays/the-vision), goals, and dreams become a reality. 
 
 [![](https://substackcdn.com/image/fetch/$s_!_DDo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0a54d80-0361-49e4-9656-a3a68a8bdbc5_2938x360.png)](https://substackcdn.com/image/fetch/$s_!_DDo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0a54d80-0361-49e4-9656-a3a68a8bdbc5_2938x360.png)How do I know this?
 
-[Because I believe](https://deckandadream.substack.com/p/where-does-your-belief-come-from).
+[Because I believe](/essays/where-does-your-belief-come-from).
 
 Because I refuse to stop.
 
-[![](https://substackcdn.com/image/fetch/$s_!Ed9b!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F270558f4-5f45-44a4-9e7e-7e8cc2052664_2938x360.png)](https://substackcdn.com/image/fetch/$s_!Ed9b!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F270558f4-5f45-44a4-9e7e-7e8cc2052664_2938x360.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

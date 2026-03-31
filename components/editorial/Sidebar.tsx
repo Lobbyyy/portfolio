@@ -9,6 +9,7 @@ import {
   User,
   Mail,
   Music,
+  Coffee,
 } from "lucide-react"
 import { NAVIGATION, NavIcon } from "@/lib/data/portfolio-data"
 
@@ -73,6 +74,22 @@ export default function Sidebar() {
           ))}
         </ul>
       </nav>
+
+      {/* Support Section */}
+      <div className="border-t border-[rgb(var(--border))] p-4">
+        <a
+          href="https://buymeacoffee.com/lobsanglama"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-mono text-[rgb(var(--muted))] hover:bg-[rgb(var(--border))] hover:text-[rgb(var(--text))] transition-colors group"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-transparent" />
+          <span className="text-[rgb(var(--muted))] group-hover:text-[rgb(var(--text))]">
+            <Coffee className="w-4 h-4" />
+          </span>
+          <span className="truncate">support.mdx</span>
+        </a>
+      </div>
     </aside>
   )
 }

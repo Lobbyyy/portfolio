@@ -1,5 +1,6 @@
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
+import SupportFooter from "@/components/editorial/SupportFooter"
 import { Download, ExternalLink, Folder, FileText } from "lucide-react"
 
 const RESOURCE_CATEGORIES = [
@@ -77,6 +78,9 @@ export default function ResourcesPage() {
           <ResourceCategory key={category.name} {...category} />
         ))}
       </div>
+
+      {/* Support Footer */}
+      <SupportFooter />
     </EditorialLayout>
   )
 }

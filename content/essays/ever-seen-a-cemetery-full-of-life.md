@@ -4,7 +4,7 @@ excerpt: "celebrating life and death"
 date: "Nov 5, 2024"
 readTime: "3 min"
 tags: ["death","mortality","poland","all-saints-day","time","love","life","cemetery"]
-substackUrl: "https://deckandadream.substack.com/p/ever-seen-a-cemetery-full-of-life"
+substackUrl: "/essays/ever-seen-a-cemetery-full-of-life"
 featured: false
 ---
 
@@ -120,4 +120,3 @@ love transcends time;
 
 and family will always be family.
 
-[![](https://substackcdn.com/image/fetch/$s_!7ElQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7af6b6e2-3052-473a-8412-693e310ff814_2936x360.png)](https://substackcdn.com/image/fetch/$s_!7ElQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7af6b6e2-3052-473a-8412-693e310ff814_2936x360.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

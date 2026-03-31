@@ -4,7 +4,7 @@ excerpt: "people don't buy products or service, they hire them"
 date: "Oct 30, 2024"
 readTime: "4 min"
 tags: ["consumer-psychology","design-thinking","marketing","product-marketing","tony-ulwick","harvard-business-school","disruptive-strategy","startups","clayton-christensen","technology","job-to-be-done"]
-substackUrl: "https://deckandadream.substack.com/p/what-job-does-your-product-do"
+substackUrl: "/essays/what-job-does-your-product-do"
 featured: false
 ---
 
@@ -66,7 +66,6 @@ Clayton was also my lecturer for the Harvard Course.
 
 He is a great teacher.
 
-[![](https://substackcdn.com/image/fetch/$s_!mvmO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc559f51a-c51e-4e5c-bf63-91cb6cdca721_2856x396.png)](https://substackcdn.com/image/fetch/$s_!mvmO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc559f51a-c51e-4e5c-bf63-91cb6cdca721_2856x396.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!Zmqf!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F097e993f-6a79-415f-b367-525f8bce1a1b_2856x396.png)](https://substackcdn.com/image/fetch/$s_!Zmqf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F097e993f-6a79-415f-b367-525f8bce1a1b_2856x396.png)The easiest way to understand this framework is to know how it came about.
 
@@ -178,4 +177,3 @@ Understand your product and the job it does.
 
 Pistachio, Ferrero Roche and Kinder Bueno are fire combos for a milkshake.
 
-[![](https://substackcdn.com/image/fetch/$s_!Iquj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4b813a07-e844-4166-aac6-f8c41b713adb_2856x396.png)](https://substackcdn.com/image/fetch/$s_!Iquj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4b813a07-e844-4166-aac6-f8c41b713adb_2856x396.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

@@ -4,7 +4,7 @@ excerpt: "repeat after me x3"
 date: "Sep 23, 2025"
 readTime: "1 min"
 tags: ["entrepreneur","entrepreneurship","mantras","you-got-this","mental-health"]
-substackUrl: "https://deckandadream.substack.com/p/mantras-for-your-entrepreneurial"
+substackUrl: "/essays/mantras-for-your-entrepreneurial"
 featured: false
 ---
 
@@ -58,4 +58,3 @@ I gather more data, I understand, and I follow my instinct,
 
 That is all I can do.&nbsp;
 
-[![](https://substackcdn.com/image/fetch/$s_!lH5e!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fab22d5df-ca29-4ee9-8b28-45316ce2804c_2058x364.png)](https://substackcdn.com/image/fetch/$s_!lH5e!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fab22d5df-ca29-4ee9-8b28-45316ce2804c_2058x364.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

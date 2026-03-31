@@ -1,10 +1,20 @@
 "use client"
 
 import { ReactNode } from "react"
+import { COMPANIES } from "@/lib/data/portfolio-data"
 
 interface ContextPanelProps {
   children?: ReactNode
 }
+
+const SOCIAL_LINKS = [
+  { name: "Twitter/X", url: "https://x.com/Lobbyyyyyy" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/lobsang-lama-42a76b63/" },
+  { name: "GitHub", url: "https://github.com/Lobbyyy" },
+  { name: "YouTube", url: "https://www.youtube.com/@lobsang_lama" },
+  { name: "TikTok", url: "https://www.tiktok.com/@seca.mp4" },
+  { name: "Substack", url: "https://substack.com/@lobsanglama" },
+]
 
 export default function ContextPanel({ children }: ContextPanelProps) {
   return (
@@ -20,37 +30,39 @@ export default function ContextPanel({ children }: ContextPanelProps) {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] link-underline"
-                >
-                  Twitter/X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] link-underline"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] link-underline"
-                >
-                  GitHub
-                </a>
-              </li>
+              {SOCIAL_LINKS.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] link-underline"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
+          </div>
+
+          {/* Companies */}
+          <div>
+            <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
+              Companies
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {COMPANIES.map((company) => (
+                <a
+                  key={company.slug}
+                  href={company.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-2 py-1 text-xs font-medium rounded-full bg-[rgb(var(--surface))] text-[rgb(var(--text))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors border border-[rgb(var(--border))]"
+                >
+                  {company.name}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Last Updated */}

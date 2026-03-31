@@ -1,0 +1,216 @@
+[    4698ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[    5069ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[    6357ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[    6570ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[    8036ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[    8250ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[    9586ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[    9808ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   11185ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   11409ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   13054ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   13294ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   14641ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   14831ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   16175ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   16428ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   17903ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   18468ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   20261ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   20897ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   22353ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   22549ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   23916ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   24108ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   25409ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   25651ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   27114ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   27386ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   28941ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   29235ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   30718ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   30932ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   32489ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   32647ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   33985ms] Error: Event handlers cannot be passed to Client Component props.
+  <img src=... alt=... className=... onError={function onError}>
+                                             ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at resolveErrorDev (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1845:46)
+    at processFullStringRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2225:17)
+    at processFullBinaryRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2213:7)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2459:17)
+    at CompanyLink (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?44:344:87)
+    at eval (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?0:184:150)
+    at Home (rsc://React/Server/webpack-internal:///(rsc)/./app/page.tsx?1:184:60)
+[   34217ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146

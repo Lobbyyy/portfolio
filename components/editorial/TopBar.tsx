@@ -7,7 +7,7 @@ import Link from "next/link"
 import SearchModal from "./SearchModal"
 import { PERSONAL } from "@/lib/data/portfolio-data"
 
-const IDENTITY_WORDS = ["builder", "athlete", "founder", "curious"]
+const IDENTITY_WORDS = ["Stoic", "Entrepreneur", "Creative", "Athlete"]
 const WORD_DISPLAY_TIME = 150 // ms per word
 
 export default function TopBar() {

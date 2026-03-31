@@ -4,7 +4,7 @@ excerpt: "help your users survive, and they will help you survive"
 date: "Oct 26, 2024"
 readTime: "5 min"
 tags: ["startup","anthropology","marketing","venture-capital","sales","human-psychology"]
-substackUrl: "https://deckandadream.substack.com/p/dont-waste-my-calories"
+substackUrl: "/essays/dont-waste-my-calories"
 featured: false
 ---
 
@@ -110,7 +110,6 @@ If person ten repeats the same message, your message is simple enough to be reme
 
 If a person ten says something wildly different, this is a clear signal that your idea is too complex.
 
-[![](https://substackcdn.com/image/fetch/$s_!xDWD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e78ccb1-3e85-4a17-aa83-2edccc7f119b_2858x502.png)](https://substackcdn.com/image/fetch/$s_!xDWD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e78ccb1-3e85-4a17-aa83-2edccc7f119b_2858x502.png)Subscribe for access to practical business frameworks and startup insights! 🚀
 
 [![](https://substackcdn.com/image/fetch/$s_!ACGZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F09143cb8-91d3-4c83-a6b2-5f5160b96062_2858x502.png)](https://substackcdn.com/image/fetch/$s_!ACGZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F09143cb8-91d3-4c83-a6b2-5f5160b96062_2858x502.png)Why does this happen?
 
@@ -202,4 +201,3 @@ Help them survive,
 
 and they will help you survive.&nbsp;
 
-[![](https://substackcdn.com/image/fetch/$s_!hfMc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F157c0a42-917d-41e4-96e6-a6b28eec0a4b_2858x502.png)](https://substackcdn.com/image/fetch/$s_!hfMc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F157c0a42-917d-41e4-96e6-a6b28eec0a4b_2858x502.png)Subscribe for access to practical business frameworks and startup insights! 🚀

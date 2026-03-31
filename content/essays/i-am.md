@@ -4,7 +4,7 @@ excerpt: "who are you?"
 date: "Nov 4, 2024"
 readTime: "1 min"
 tags: ["identity","you-can-be-a-feeling","mindfullness","who-are-you","belief","empathy"]
-substackUrl: "https://deckandadream.substack.com/p/i-am"
+substackUrl: "/essays/i-am"
 featured: false
 ---
 
@@ -54,4 +54,3 @@ I am imagination.
 
 [![](https://substackcdn.com/image/fetch/$s_!eCpZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2087be0-f1db-4915-ad4b-c95fd2ec3edb_2856x356.png)](https://substackcdn.com/image/fetch/$s_!eCpZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2087be0-f1db-4915-ad4b-c95fd2ec3edb_2856x356.png)I am a cosmic force.
 
-[![](https://substackcdn.com/image/fetch/$s_!5CUo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5eebbc6a-8cc0-4150-bac4-aa4df560fb06_2856x356.png)](https://substackcdn.com/image/fetch/$s_!5CUo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5eebbc6a-8cc0-4150-bac4-aa4df560fb06_2856x356.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

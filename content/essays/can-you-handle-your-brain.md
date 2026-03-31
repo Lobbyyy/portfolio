@@ -4,7 +4,7 @@ excerpt: "a ferrari engine in a mini cooper chassis"
 date: "Sep 25, 2025"
 readTime: "4 min"
 tags: ["ferrari","wellbeing","physical-health","mini-cooper","mental-health"]
-substackUrl: "https://deckandadream.substack.com/p/can-you-handle-your-brain"
+substackUrl: "/essays/can-you-handle-your-brain"
 featured: false
 ---
 
@@ -174,4 +174,3 @@ your brain and body are compatible.
 
 You *are* your nature, *fully expressed*.
 
-[![](https://substackcdn.com/image/fetch/$s_!4cAK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c0e202c-8b13-48e7-a43f-1952baa5c615_945x162.png)](https://substackcdn.com/image/fetch/$s_!4cAK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c0e202c-8b13-48e7-a43f-1952baa5c615_945x162.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

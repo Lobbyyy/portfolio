@@ -1,0 +1,66 @@
+[  671532ms] [ERROR] Not allowed to launch 'mailto:mail@danielprior.dk' because a user gesture is required. @ http://localhost:3000/macos:0
+[ 1570059ms] [ERROR] ./components/apps/notes.tsx
+Error:   x Expected ';', got 'popular'
+    ,-[/Users/lobby/Desktop/apps/portfolio/components/apps/notes.tsx:91:1]
+ 88 |       </div>
+ 89 |     </div>
+ 90 |   )
+ 91 | - Make popular games with Unity and Unreal Engine
+    :        ^^^^^^^
+ 92 | 
+ 93 | ## Personal Projects
+ 94 | - Develop an indie game from concept to release
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/apps/notes.tsx
+./components/window.tsx
+./components/desktop.tsx
+./app/macos/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[ 1570208ms] [ERROR] ./components/apps/notes.tsx
+Error:   x Expected ';', got 'popular'
+    ,-[/Users/lobby/Desktop/apps/portfolio/components/apps/notes.tsx:91:1]
+ 88 |       </div>
+ 89 |     </div>
+ 90 |   )
+ 91 | - Make popular games with Unity and Unreal Engine
+    :        ^^^^^^^
+ 92 | 
+ 93 | ## Personal Projects
+ 94 | - Develop an indie game from concept to release
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/apps/notes.tsx
+./components/window.tsx
+./components/desktop.tsx
+./app/macos/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[ 1673593ms] [ERROR] ./components/apps/notes.tsx
+Error:   x Expected ';', got 'popular'
+    ,-[/Users/lobby/Desktop/apps/portfolio/components/apps/notes.tsx:91:1]
+ 88 |       </div>
+ 89 |     </div>
+ 90 |   )
+ 91 | - Make popular games with Unity and Unreal Engine
+    :        ^^^^^^^
+ 92 | 
+ 93 | ## Personal Projects
+ 94 | - Develop an indie game from concept to release
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/apps/notes.tsx
+./components/window.tsx
+./components/desktop.tsx
+./app/macos/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[ 1835556ms] [ERROR] Error accessing camera: NotAllowedError: Permission dismissed @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[ 1837908ms] [ERROR] Error accessing camera: NotAllowedError: Permission dismissed @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49

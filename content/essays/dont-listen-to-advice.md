@@ -4,7 +4,7 @@ excerpt: "this is not advice"
 date: "Sep 28, 2025"
 readTime: "1 min"
 tags: ["stoicism","mental-model"]
-substackUrl: "https://deckandadream.substack.com/p/dont-listen-to-advice"
+substackUrl: "/essays/dont-listen-to-advice"
 featured: false
 ---
 
@@ -60,4 +60,3 @@ Choose your advisors and friends as carefully as you choose your direction.
 
 Both determine where you end up.
 
-[![](https://substackcdn.com/image/fetch/$s_!c-Q4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52ab0702-91ec-45ca-8fb8-a2e257932846_1220x212.png)](https://substackcdn.com/image/fetch/$s_!c-Q4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52ab0702-91ec-45ca-8fb8-a2e257932846_1220x212.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

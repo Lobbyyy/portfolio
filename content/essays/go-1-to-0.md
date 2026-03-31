@@ -4,7 +4,7 @@ excerpt: "before you go from 0 to 1"
 date: "Oct 17, 2025"
 readTime: "4 min"
 tags: ["founder-life","learning","startups"]
-substackUrl: "https://deckandadream.substack.com/p/go-1-to-0"
+substackUrl: "/essays/go-1-to-0"
 featured: false
 ---
 
@@ -194,4 +194,3 @@ you will be prepared for the journey ahead,
 
 because you know you’ve already completed the climb before the climb.
 
-[![](https://substackcdn.com/image/fetch/$s_!_O5G!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a43c48c-1ea2-41d7-916c-6c36deb8e97d_1008x176.png)](https://substackcdn.com/image/fetch/$s_!_O5G!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a43c48c-1ea2-41d7-916c-6c36deb8e97d_1008x176.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

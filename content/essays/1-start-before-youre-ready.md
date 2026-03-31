@@ -4,7 +4,7 @@ excerpt: "Just start. Take the first step. It's probably going to be bad, but do
 date: "Apr 4, 2024"
 readTime: "2 min"
 tags: ["startup","entrepreneur","venture-capital","founder"]
-substackUrl: "https://deckandadream.substack.com/p/1-start-before-youre-ready"
+substackUrl: "/essays/1-start-before-youre-ready"
 featured: false
 ---
 
@@ -12,7 +12,6 @@ It’s 3:25 am on a Thursday,
 
 I went to bed at 11 pm and I’m still up.
 
-Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
 
 I’m struggling to sleep.
 
@@ -86,4 +85,3 @@ What’s stopping you from taking that step today?
 
 Let me know your answers!
 
-Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

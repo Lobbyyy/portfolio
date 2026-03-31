@@ -4,7 +4,7 @@ excerpt: " ikigai translates to 'reason for life'"
 date: "Nov 5, 2024"
 readTime: "4 min"
 tags: ["reason-for-life","japanese-philosophy","technolgy","self-discovery","waterstones","longevity","book-summary","japan","book-series","happiness","ikigai"]
-substackUrl: "https://deckandadream.substack.com/p/do-you-want-a-long-and-happy-life"
+substackUrl: "/essays/do-you-want-a-long-and-happy-life"
 featured: false
 ---
 
@@ -38,7 +38,6 @@ Each idea is significant and deserves its own post.
 
 This post aims to introduce you to the third idea - ikigai.
 
-[![](https://substackcdn.com/image/fetch/$s_!T1zm!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F81e28bec-b3df-4c12-9e8f-47c52160b502_1468x171.png)](https://substackcdn.com/image/fetch/$s_!T1zm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F81e28bec-b3df-4c12-9e8f-47c52160b502_1468x171.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!9NVQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9438d7e-b63d-4b69-8539-bda192a8f13f_1468x171.png)](https://substackcdn.com/image/fetch/$s_!9NVQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9438d7e-b63d-4b69-8539-bda192a8f13f_1468x171.png)The book ikigai is often cited as a 'self-improvement book'.
 
@@ -176,4 +175,3 @@ I'm curious,
 
 what is your ikigai?
 
-[![](https://substackcdn.com/image/fetch/$s_!6qYB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F833cdf21-7ec9-4f10-a021-53193f0167a2_1468x171.png)](https://substackcdn.com/image/fetch/$s_!6qYB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F833cdf21-7ec9-4f10-a021-53193f0167a2_1468x171.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

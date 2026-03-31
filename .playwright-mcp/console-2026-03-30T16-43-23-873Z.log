@@ -1,0 +1,41 @@
+[    1990ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[    2439ms] Error: ENOENT: no such file or directory, open '/Users/lobby/Desktop/apps/portfolio/.next/server/next-font-manifest.json'
+    at readFileSync (node:fs:448:20)
+    at loadManifest (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/load-manifest.js:36:52)
+    at DevServer.getNextFontManifest (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/next-server.js:839:47)
+    at DevServer.findPageComponents (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/dev/next-dev-server.js:627:39)
+    at async DevServer.renderPageComponent (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/base-server.js:2379:24)
+    at async DevServer.renderToResponseImpl (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/base-server.js:2430:32)
+    at async DevServer.pipeImpl (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/base-server.js:1003:25)
+    at async NextNodeServer.handleCatchallRenderRequest (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/next-server.js:304:17)
+    at async DevServer.handleRequestImpl (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/base-server.js:895:17)
+    at async (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/dev/next-dev-server.js:371:20)
+    at async Span.traceAsyncFn (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/dev/next-dev-server.js:368:24)
+    at async invokeRender (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/lib/router-server.js:235:21)
+    at async handleRequest (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/lib/router-server.js:426:24)
+    at async requestHandlerImpl (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/lib/router-server.js:450:13)
+    at async Server.requestListener (file:///Users/lobby/Desktop/apps/portfolio/node_modules/next/dist/server/lib/start-server.js:158:13)
+[    2442ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{"/about":true,"/contact":true,"/changelog":true,"/resources":true,"/essays":true,"/context":true,"/companies":true,"/localhost":true,"/companies/coconut":true}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[    2627ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:392
+[    2690ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{"/about":true,"/contact":true,"/changelog":true,"/resources":true,"/essays":true,"/context":true,"/companies":true,"/localhost":true,"/companies/coconut":true}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[    3624ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{"/about":true,"/contact":true,"/changelog":true,"/resources":true,"/essays":true,"/context":true,"/companies":true,"/localhost":true,"/companies/coconut":true}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[    4633ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/css/app/layout.css?v=1774889007495:0
+[    4646ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/chunks/main-app.js?v=1774889007495:0
+[    4647ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/chunks/app-pages-internals.js:0
+[    4647ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/_next/static/chunks/app/page.js:0

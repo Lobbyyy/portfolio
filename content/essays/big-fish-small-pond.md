@@ -4,7 +4,7 @@ excerpt: "or small fish, big pond?"
 date: "Sep 20, 2025"
 readTime: "1 min"
 tags: ["philosophy","think-outside-of-the-box"]
-substackUrl: "https://deckandadream.substack.com/p/big-fish-small-pond"
+substackUrl: "/essays/big-fish-small-pond"
 featured: false
 ---
 

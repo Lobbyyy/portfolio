@@ -4,7 +4,7 @@ excerpt: "be the sun, be the moon"
 date: "Nov 22, 2024"
 readTime: "3 min"
 tags: ["astrophysics","spreading-positivity","spreading-light","astronomy","mental-wellbeing","sun","moon","alchemy","mental-health","mental-model"]
-substackUrl: "https://deckandadream.substack.com/p/do-you-want-to-spread-light"
+substackUrl: "/essays/do-you-want-to-spread-light"
 featured: false
 ---
 
@@ -46,7 +46,6 @@ but in the beginning, I didn't know how,
 
 so I first learnt to be the Moon instead.
 
-[![](https://substackcdn.com/image/fetch/$s_!OzVL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb997fca7-b6c2-4a49-9ef6-77aad3003a82_878x127.png)](https://substackcdn.com/image/fetch/$s_!OzVL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb997fca7-b6c2-4a49-9ef6-77aad3003a82_878x127.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!t9Em!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F157e9b90-5087-4155-97b8-cd7dbf7d25fa_878x127.png)](https://substackcdn.com/image/fetch/$s_!t9Em!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F157e9b90-5087-4155-97b8-cd7dbf7d25fa_878x127.png)In the Sun's core, atoms are being joined together in the process of nuclear fusion.
 
@@ -140,6 +139,4 @@ perhaps without you noticing,
 
 you'll find your own inner Sun beginning to glow.
 
-[![](https://substackcdn.com/image/fetch/$s_!FZpX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F118c3d32-dd9b-4ff9-89e2-7c9488252d47_878x127.png)](https://substackcdn.com/image/fetch/$s_!FZpX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F118c3d32-dd9b-4ff9-89e2-7c9488252d47_878x127.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
-[Share](https://deckandadream.substack.com/p/do-you-want-to-spread-light?utm_source=substack&utm_medium=email&utm_content=share&action=share)

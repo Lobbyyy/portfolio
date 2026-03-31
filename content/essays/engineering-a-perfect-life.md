@@ -4,7 +4,7 @@ excerpt: "count every moment and make every moment count"
 date: "Oct 31, 2024"
 readTime: "2 min"
 tags: ["first-principle-thinking","physics","philosophy","thoughts","engineering","life","economics","elon-musk"]
-substackUrl: "https://deckandadream.substack.com/p/engineering-a-perfect-life"
+substackUrl: "/essays/engineering-a-perfect-life"
 featured: false
 ---
 
@@ -60,7 +60,7 @@ I’m referring to the time spent animated between life and death.
 
 [![](https://substackcdn.com/image/fetch/$s_!2kXB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3a34ab8-4ddd-4540-86f1-9b81ddbf11b1_2856x328.png)](https://substackcdn.com/image/fetch/$s_!2kXB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3a34ab8-4ddd-4540-86f1-9b81ddbf11b1_2856x328.png)In Physics, you’re taught first principles thinking.
 
-I didn’t study physics but learned this principle from [my board member](https://deckandadream.substack.com/p/half-my-board-is-dead?r=r7j0y), Elon Musk.
+I didn’t study physics but learned this principle from [my board member](/essays/half-my-board-is-dead?r=r7j0y), Elon Musk.
 
 This line of thinking involves breaking down complex ideas and problems into their fundamental parts.
 
@@ -110,4 +110,3 @@ If every year is perfect,
 
 then you’ve lived a perfect life.
 
-[![](https://substackcdn.com/image/fetch/$s_!r4X-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F34a712dd-8663-4e3d-b1ef-f29ff8757467_2856x328.png)](https://substackcdn.com/image/fetch/$s_!r4X-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F34a712dd-8663-4e3d-b1ef-f29ff8757467_2856x328.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

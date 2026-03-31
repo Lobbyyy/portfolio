@@ -1,0 +1,138 @@
+[     782ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+            <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+              <CompaniesPage params={Promise} searchParams={Promise}>
+                <EditorialLayout currentPath="companies/">
+                  <div className="editorial-...">
+                    <TopBar>
+                    <Sidebar>
+                    <ContextPanel>
+                    <main className="editorial-...">
+                      <div className="max-w-3xl ...">
+                        <Breadcrumb>
+                        <header>
+                        <div className="space-y-6">
+                          <CompanyCard slug="coconut" name="Coconut" tagline={"A brand ..."} description="Post more ..." ...>
+                            <LinkComponent href="/companies..." className="group bloc...">
+>                             <a
+>                               className="group block p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(-..."
+>                               ref={function}
+>                               onClick={function onClick}
+>                               onMouseEnter={function onMouseEnter}
+>                               onTouchStart={function onTouchStart}
+>                               href="/companies/coconut"
+>                             >
+                                <div className="flex items...">
+                                  <div>
+>                                 <a
+>                                   href="https://coconutapp.xyz"
+>                                   target="_blank"
+>                                   rel="noopener noreferrer"
+>                                   onClick={function onClick}
+>                                   className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-..."
+>                                   aria-label="Visit Coconut"
+>                                 >
+                                ...
+                          ...
+                    ...
+            ...
+ @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[     783ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a> @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[   47175ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:144:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:144:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   47178ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   48232ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   49618ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   51236ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   51744ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   52796ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   53377ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   54475ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   54889ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   55817ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   56142ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   57048ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   57475ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   58627ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   59144ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   60387ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   60763ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   61651ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   61998ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   62886ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   63196ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   64128ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   64495ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[   65322ms] Error: Link is not defined
+    at CompanyCard (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:177:88)
+    at eval (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:181)
+    at Array.map (<anonymous>)
+    at CompaniesPage (webpack-internal:///(app-pages-browser)/./app/companies/page.tsx:141:91)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[   65601ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146

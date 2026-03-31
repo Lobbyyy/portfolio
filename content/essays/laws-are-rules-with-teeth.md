@@ -4,7 +4,7 @@ excerpt: "continuum of rules and laws"
 date: "Oct 15, 2025"
 readTime: "1 min"
 tags: ["stoicism"]
-substackUrl: "https://deckandadream.substack.com/p/laws-are-rules-with-teeth"
+substackUrl: "/essays/laws-are-rules-with-teeth"
 featured: false
 ---
 
@@ -50,4 +50,3 @@ you may be penalised legally.
 
 laws are rules with teeth.
 
-[![](https://substackcdn.com/image/fetch/$s_!pMV3!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F971362d8-e4ae-4898-a34b-6a74d4814aeb_1004x164.png)](https://substackcdn.com/image/fetch/$s_!pMV3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F971362d8-e4ae-4898-a34b-6a74d4814aeb_1004x164.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

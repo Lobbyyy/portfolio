@@ -4,7 +4,7 @@ excerpt: " acquire and develop skills to make your visions a reality"
 date: "Nov 4, 2024"
 readTime: "9 min"
 tags: ["upskilling","entrepreneur","marvel","venture-capital","avengers","startups","thanos"]
-substackUrl: "https://deckandadream.substack.com/p/what-thanos-and-i-have-in-common"
+substackUrl: "/essays/what-thanos-and-i-have-in-common"
 featured: false
 ---
 
@@ -74,7 +74,6 @@ He thinks his actions are for the greater good.
 
 He must acquire 6 infinity stones scattered across the universe to achieve his objective.
 
-[![](https://substackcdn.com/image/fetch/$s_!ZpBl!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F97f6715b-8530-4969-91eb-3fdcf2f73d5b_2862x388.png)](https://substackcdn.com/image/fetch/$s_!ZpBl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F97f6715b-8530-4969-91eb-3fdcf2f73d5b_2862x388.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!QnOr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fade44de3-547b-45da-9e64-4e427faca626_2862x388.png)](https://substackcdn.com/image/fetch/$s_!QnOr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fade44de3-547b-45da-9e64-4e427faca626_2862x388.png)Each infinity stone possesses universal power.
 
@@ -244,7 +243,6 @@ Legal: you need patience, precision and attention to detail.
 
 Human Resources: you need to be a good judge of character.
 
-[![](https://substackcdn.com/image/fetch/$s_!pfyO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe556deda-cecf-4660-a59c-ebc82745492a_2862x388.png)](https://substackcdn.com/image/fetch/$s_!pfyO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe556deda-cecf-4660-a59c-ebc82745492a_2862x388.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!sSEM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45f3a687-c60f-4a7b-a9fe-e6d85e97b724_2862x388.png)](https://substackcdn.com/image/fetch/$s_!sSEM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45f3a687-c60f-4a7b-a9fe-e6d85e97b724_2862x388.png)Here are some scenarios that highlight the importance of the distribution of these skills:
 
@@ -304,7 +302,7 @@ We can all learn from Thanos.
 
 We all crave the power to make our visions a reality, and the most effective way to do this is by acquiring and developing skill sets. 
 
-[![](https://substackcdn.com/image/fetch/$s_!-3z_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7544c01f-734d-4582-ae3e-24d6c816e56d_2862x388.png)](https://substackcdn.com/image/fetch/$s_!-3z_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7544c01f-734d-4582-ae3e-24d6c816e56d_2862x388.png)I've always had this in mind over the last seven years, and [my story](https://deckandadream.substack.com/p/my-story) reflect this.
+[![](https://substackcdn.com/image/fetch/$s_!-3z_!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7544c01f-734d-4582-ae3e-24d6c816e56d_2862x388.png)](https://substackcdn.com/image/fetch/$s_!-3z_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7544c01f-734d-4582-ae3e-24d6c816e56d_2862x388.png)I've always had this in mind over the last seven years, and [my story](/essays/my-story) reflect this.
 
 It's affected how I've navigated my career and extra-curricular activities.
 
@@ -354,6 +352,5 @@ I choose who I work with and the ideas I work on.
 
 I work with people I care about and fit around their skill sets.
 
-This, in turn, has helped me [engineer a perfect life](https://deckandadream.substack.com/p/engineering-a-perfect-life).
+This, in turn, has helped me [engineer a perfect life](/essays/engineering-a-perfect-life).
 
-[![](https://substackcdn.com/image/fetch/$s_!ucIy!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4751bfa9-87df-4156-b4cb-c2b4e0eddf86_2862x388.png)](https://substackcdn.com/image/fetch/$s_!ucIy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4751bfa9-87df-4156-b4cb-c2b4e0eddf86_2862x388.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

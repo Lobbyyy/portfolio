@@ -4,11 +4,11 @@ excerpt: "or bigger than 8,800,000,000,000,000,000,000,000,000 meters"
 date: "Nov 2, 2024"
 readTime: "2 min"
 tags: ["universe","physics","astrophysics","logic","god","philosophy","exploration","astronomy","theology"]
-substackUrl: "https://deckandadream.substack.com/p/god-is-smaller-than-001-cm"
+substackUrl: "/essays/god-is-smaller-than-001-cm"
 featured: false
 ---
 
-[![](https://substackcdn.com/image/fetch/$s_!8oW4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac90c1d2-ad12-4ec1-93c3-1eb99fcc551a_2858x420.png)](https://substackcdn.com/image/fetch/$s_!8oW4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac90c1d2-ad12-4ec1-93c3-1eb99fcc551a_2858x420.png)[I wrote an essay yesterday](https://deckandadream.substack.com/p/wya-in-the-universes-gut) where I explored a notion.
+[![](https://substackcdn.com/image/fetch/$s_!8oW4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac90c1d2-ad12-4ec1-93c3-1eb99fcc551a_2858x420.png)](https://substackcdn.com/image/fetch/$s_!8oW4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac90c1d2-ad12-4ec1-93c3-1eb99fcc551a_2858x420.png)[I wrote an essay yesterday](/essays/wya-in-the-universes-gut) where I explored a notion.
 
 The notion was that humans aren't too different from the bacteria in our gut.
 
@@ -100,7 +100,6 @@ hmmm
 
 [![](https://substackcdn.com/image/fetch/$s_!f1Og!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9ef41d1-74d8-4b5d-8f89-e6156ef33c0b_2858x420.png)](https://substackcdn.com/image/fetch/$s_!f1Og!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9ef41d1-74d8-4b5d-8f89-e6156ef33c0b_2858x420.png)Share post if you think option B 🎉
 
-[Share](https://deckandadream.substack.com/p/god-is-smaller-than-001-cm?utm_source=substack&utm_medium=email&utm_content=share&action=share)
 
 [![](https://substackcdn.com/image/fetch/$s_!utT4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa640f141-f990-41e9-a0ad-703cbd3a5df6_2858x420.png)](https://substackcdn.com/image/fetch/$s_!utT4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa640f141-f990-41e9-a0ad-703cbd3a5df6_2858x420.png)The other outcome is that God exists on a different wavelength to us,
 
@@ -128,6 +127,6 @@ What do you think?
 
 Let me know in the comments section!
 
-[Leave a comment](https://deckandadream.substack.com/p/god-is-smaller-than-001-cm/comments)
+[Leave a comment](/essays/god-is-smaller-than-001-cm/comments)
 
 [![](https://substackcdn.com/image/fetch/$s_!4Jgs!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F555f7ce9-187f-412d-9c65-db16b1e0e999_2858x420.png)](https://substackcdn.com/image/fetch/$s_!4Jgs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F555f7ce9-187f-412d-9c65-db16b1e0e999_2858x420.png)

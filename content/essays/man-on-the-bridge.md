@@ -4,7 +4,7 @@ excerpt: "a short story about choices"
 date: "Sep 22, 2025"
 readTime: "6 min"
 tags: ["short-story","wellbeing","mental-health"]
-substackUrl: "https://deckandadream.substack.com/p/man-on-the-bridge"
+substackUrl: "/essays/man-on-the-bridge"
 featured: false
 ---
 
@@ -336,4 +336,3 @@ Even if it is just for 24 hours,
 
 the man on the bridge knows exactly he is going to spend the rest of his life.
 
-[![](https://substackcdn.com/image/fetch/$s_!0GfP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F30da4d75-330b-4511-ad37-2230968633fd_2846x462.png)](https://substackcdn.com/image/fetch/$s_!0GfP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F30da4d75-330b-4511-ad37-2230968633fd_2846x462.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

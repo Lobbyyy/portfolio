@@ -4,7 +4,7 @@ excerpt: "disclaimer: lots of training required + you might break your brain"
 date: "Sep 26, 2025"
 readTime: "7 min"
 tags: ["dimensional-thinking","self-discovery","exploration","scientific-observations","self-development","mental-model"]
-substackUrl: "https://deckandadream.substack.com/p/guide-to-being-4th-dimensional-beings"
+substackUrl: "/essays/guide-to-being-4th-dimensional-beings"
 featured: false
 ---
 
@@ -556,4 +556,3 @@ They're proof that higher-dimensional computation isn't impossible.
 
 Just untrained.
 
-[![](https://substackcdn.com/image/fetch/$s_!GCTl!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe25095d2-c506-4b28-be6b-d62630faefe6_943x154.png)](https://substackcdn.com/image/fetch/$s_!GCTl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe25095d2-c506-4b28-be6b-d62630faefe6_943x154.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

@@ -4,7 +4,7 @@ excerpt: "are you in or out?"
 date: "Sep 24, 2025"
 readTime: "1 min"
 tags: ["sanity","insanity"]
-substackUrl: "https://deckandadream.substack.com/p/insanity"
+substackUrl: "/essays/insanity"
 featured: false
 ---
 
@@ -18,4 +18,3 @@ Nothing gets accomplished being sane,
 
 nothing great anyway.
 
-[![](https://substackcdn.com/image/fetch/$s_!LkCL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F176580c2-3099-4c3e-8c27-cfd7c21c12be_1250x170.png)](https://substackcdn.com/image/fetch/$s_!LkCL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F176580c2-3099-4c3e-8c27-cfd7c21c12be_1250x170.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

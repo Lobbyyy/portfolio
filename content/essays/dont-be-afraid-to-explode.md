@@ -4,7 +4,7 @@ excerpt: "just make sure you channel it"
 date: "Sep 27, 2025"
 readTime: "2 min"
 tags: ["space-travel","self-development","mental-model","rocket-science"]
-substackUrl: "https://deckandadream.substack.com/p/dont-be-afraid-to-explode"
+substackUrl: "/essays/dont-be-afraid-to-explode"
 featured: false
 ---
 
@@ -86,4 +86,3 @@ Don't be afraid to explode.
 
 Just make sure you're channeling it towards your goals.
 
-[![](https://substackcdn.com/image/fetch/$s_!EOSH!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F907e4e32-3c87-4ae2-871d-16bddf67f71c_940x181.png)](https://substackcdn.com/image/fetch/$s_!EOSH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F907e4e32-3c87-4ae2-871d-16bddf67f71c_940x181.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

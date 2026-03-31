@@ -4,7 +4,7 @@ excerpt: "surviving in an inhospitable environment - how hard can it be?"
 date: "Dec 16, 2024"
 readTime: "31 min"
 tags: ["antler","mercury","entrepreneurship","entrepreneurs-wrapped-up","2024-reflections","self-development","the-journey"]
-substackUrl: "https://deckandadream.substack.com/p/2024-reflections-living-on-mercury"
+substackUrl: "/essays/2024-reflections-living-on-mercury"
 featured: false
 ---
 
@@ -130,11 +130,10 @@ I sunset Outbound Hero. I enjoyed working with Founders, but the agency model wa
 
 I went back to the drawing board to think of software ideas. After Outbound Hero, I wanted to build a pure SaaS business. Antler had given me a great framework to think of ideas and problems, so I revisited this and started to generate a few ideas. I validated them with industry experts. The idea took some shape. I called it 6 degrees. 
 
-[![](https://substackcdn.com/image/fetch/$s_!e3Yc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1c163ea-224b-4626-a8d4-07025d9336aa_1900x392.png)](https://substackcdn.com/image/fetch/$s_!e3Yc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1c163ea-224b-4626-a8d4-07025d9336aa_1900x392.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!8y7F!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd915d7ff-63fa-422f-9121-20a7f607e200_1900x392.png)](https://substackcdn.com/image/fetch/$s_!8y7F!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd915d7ff-63fa-422f-9121-20a7f607e200_1900x392.png)## April
 
-I gave up the job search. I was in late-stage interviews with a few companies I wanted to work for, but they didn't materialise. I took a good, hard look in the mirror and realised why I was unsuccessful in my job search. I'd spent my professional life optimising to be a startup founder ([why startup founders should be more like thanos](https://deckandadream.substack.com/p/what-thanos-and-i-have-in-common)),  and the hiring manager in these companies didn’t care about diversity of experiences. They wanted someone that would fit into a nice little box. Someone who would just put their head down and do what they are told. Unfortunately, that's not me. 
+I gave up the job search. I was in late-stage interviews with a few companies I wanted to work for, but they didn't materialise. I took a good, hard look in the mirror and realised why I was unsuccessful in my job search. I'd spent my professional life optimising to be a startup founder ([why startup founders should be more like thanos](/essays/what-thanos-and-i-have-in-common)),  and the hiring manager in these companies didn’t care about diversity of experiences. They wanted someone that would fit into a nice little box. Someone who would just put their head down and do what they are told. Unfortunately, that's not me. 
 
 I made entrepreneurship my only focus.
 
@@ -204,7 +203,6 @@ I realised my frustrations weren't with GPT; they were with myself. I needed to 
 
 I started Harvard's CS50—Introduction to Computer Science course to achieve this.
 
-[![](https://substackcdn.com/image/fetch/$s_!8__y!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F48bfbbc1-4026-444c-8a95-2ee389cb7595_1900x392.png)](https://substackcdn.com/image/fetch/$s_!8__y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F48bfbbc1-4026-444c-8a95-2ee389cb7595_1900x392.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!2mWN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7673dc78-313b-4502-8e91-fa31bd312f43_1900x392.png)](https://substackcdn.com/image/fetch/$s_!2mWN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7673dc78-313b-4502-8e91-fa31bd312f43_1900x392.png)## July
 
@@ -270,7 +268,6 @@ I talked to my developer friends and asked them how they learnt to code. One of 
 
 I went for 20 runs, covered 107.6 km and spent 9:56:27 running. 
 
-[![](https://substackcdn.com/image/fetch/$s_!tQSN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36ec830b-13d4-4f94-bb3f-e4bc4cf5b50f_1900x392.png)](https://substackcdn.com/image/fetch/$s_!tQSN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36ec830b-13d4-4f94-bb3f-e4bc4cf5b50f_1900x392.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!1w1E!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcb650891-591d-4fdc-bd7f-20ccdb6078cf_1900x392.png)](https://substackcdn.com/image/fetch/$s_!1w1E!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcb650891-591d-4fdc-bd7f-20ccdb6078cf_1900x392.png)## September
 
@@ -426,4 +423,3 @@ I don't know if I will have to return any time soon, but I do know one thing:
 
 When I return to Earth, I will return a different man.
 
-[![](https://substackcdn.com/image/fetch/$s_!MgCu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49719d9a-4719-4804-b932-f7e8886a9ac9_1900x392.png)](https://substackcdn.com/image/fetch/$s_!MgCu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49719d9a-4719-4804-b932-f7e8886a9ac9_1900x392.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

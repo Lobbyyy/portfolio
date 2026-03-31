@@ -4,7 +4,7 @@ excerpt: "explaining the goldilocks of time"
 date: "Sep 15, 2025"
 readTime: "3 min"
 tags: ["universe","astrophysics"]
-substackUrl: "https://deckandadream.substack.com/p/pattern-recognition-across-the-cosmos"
+substackUrl: "/essays/pattern-recognition-across-the-cosmos"
 featured: false
 ---
 
@@ -128,4 +128,3 @@ Burning bright before the inevitable darkness.
 
 And then we go again.
 
-[![](https://substackcdn.com/image/fetch/$s_!64zK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7edbb41f-9803-4ae1-90a2-de4fae1f3b78_900x145.png)](https://substackcdn.com/image/fetch/$s_!64zK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7edbb41f-9803-4ae1-90a2-de4fae1f3b78_900x145.png)Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

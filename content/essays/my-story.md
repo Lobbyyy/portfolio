@@ -4,7 +4,7 @@ excerpt: "a tale of unfortunate fortunate events"
 date: "Nov 27, 2024"
 readTime: "10 min"
 tags: ["antler","startup","london","nepal","entrepreneurship","career-navigation","making-lemondade-from-lemons","kathmandu","stoicism","mystory"]
-substackUrl: "https://deckandadream.substack.com/p/my-story"
+substackUrl: "/essays/my-story"
 featured: false
 ---
 
@@ -202,7 +202,6 @@ incorporated breathing exercises,
 
 and started to be more active again.
 
-[![](https://substackcdn.com/image/fetch/$s_!FRGu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2195f94a-d948-47ef-b824-4549cd65b63e_2848x414.png)](https://substackcdn.com/image/fetch/$s_!FRGu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2195f94a-d948-47ef-b824-4549cd65b63e_2848x414.png)**Subscribe for access to practical business frameworks and startup insights!** 🚀
 
 [![](https://substackcdn.com/image/fetch/$s_!-12E!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8a8fb41-6853-48c2-8bc4-0d9ccb147073_2848x414.png)](https://substackcdn.com/image/fetch/$s_!-12E!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8a8fb41-6853-48c2-8bc4-0d9ccb147073_2848x414.png)A few months in, the changes became apparent.
 
@@ -354,4 +353,3 @@ I am excited to share my journey and insights with you.
 
 [![](https://substackcdn.com/image/fetch/$s_!KVLr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa629b2cf-de91-45ae-a744-ca57ac04ea8b_2848x414.png)](https://substackcdn.com/image/fetch/$s_!KVLr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa629b2cf-de91-45ae-a744-ca57ac04ea8b_2848x414.png)
 
- **Subscribe for access to practical business frameworks and startup insights! 🚀**

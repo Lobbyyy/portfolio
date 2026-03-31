@@ -4,7 +4,7 @@ excerpt: "find your equilibrium"
 date: "Nov 1, 2024"
 readTime: "5 min"
 tags: ["physics","mindfulness","astrophysics","depression","astronomy","the-sun","stoicism","gravity","mental-health"]
-substackUrl: "https://deckandadream.substack.com/p/express-if-youre-depressed"
+substackUrl: "/essays/express-if-youre-depressed"
 featured: false
 ---
 
@@ -70,7 +70,7 @@ The Sun can only exist in a state of equilibrium.
 
 [![](https://substackcdn.com/image/fetch/$s_!M_qt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49517320-c1ee-466b-b6fb-a80ab05db8a9_2856x370.png)](https://substackcdn.com/image/fetch/$s_!M_qt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49517320-c1ee-466b-b6fb-a80ab05db8a9_2856x370.png)I know the feeling of depression really well.
 
-[My story](https://deckandadream.substack.com/p/my-story) has been riddled with it.
+[My story](/essays/my-story) has been riddled with it.
 
 It feels like gravity.
 
@@ -120,7 +120,7 @@ We all feel it because it is a natural force.
 
 It exists in nature.
 
-[Nothing unnatural exists in nature.](https://deckandadream.substack.com/p/do-you-ever-question-your-mortality?r=r7j0y)
+[Nothing unnatural exists in nature.](/essays/do-you-ever-question-your-mortality?r=r7j0y)
 
 [![](https://substackcdn.com/image/fetch/$s_!hCPK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff79d5b01-05c5-495f-8fe2-d9f3a560f5c0_2856x370.png)](https://substackcdn.com/image/fetch/$s_!hCPK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff79d5b01-05c5-495f-8fe2-d9f3a560f5c0_2856x370.png)The only way to oppose this force of gravity is to cultivate an equal and opposite force.
 
@@ -292,4 +292,3 @@ because you never know the forces they are battling.
 
 [![](https://substackcdn.com/image/fetch/$s_!xLG2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03206d9-6351-4fe8-b9c5-6783762ef6f3_2856x370.png)](https://substackcdn.com/image/fetch/$s_!xLG2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03206d9-6351-4fe8-b9c5-6783762ef6f3_2856x370.png)**If this helped you, please share this so it helps someone else! :)**
 
-[Share](https://deckandadream.substack.com/p/express-if-youre-depressed?utm_source=substack&utm_medium=email&utm_content=share&action=share)

@@ -4,7 +4,7 @@ excerpt: "Suffering is optional"
 date: "Oct 27, 2024"
 readTime: "1 min"
 tags: ["you-got-this"]
-substackUrl: "https://deckandadream.substack.com/p/pain-vs-suffering"
+substackUrl: "/essays/pain-vs-suffering"
 featured: false
 ---
 
@@ -22,4 +22,3 @@ and reflects the human experience of pain.
 
 Chapman CR, Gavrin J. Suffering: the contributions of persistent pain. Lancet. 1999;353:2233–2237. [[DOI](https://doi.org/10.1016/S0140-6736(99)01308-2)] [[PubMed](https://pubmed.ncbi.nlm.nih.gov/10393002/)] [[Google Scholar](https://scholar.google.com/scholar_lookup?journal=Lancet&amp;title=Suffering:%20the%20contributions%20of%20persistent%20pain&amp;author=CR%20Chapman&amp;author=J%20Gavrin&amp;volume=353&amp;publication_year=1999&amp;pages=2233-2237&amp;pmid=10393002&amp;doi=10.1016/S0140-6736(99)01308-2&amp;)]
 
-Lobsang’s Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

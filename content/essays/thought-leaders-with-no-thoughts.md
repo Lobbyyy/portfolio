@@ -4,7 +4,7 @@ excerpt: "do not be a parrot, do not be a sheep"
 date: "Nov 4, 2024"
 readTime: "2 min"
 tags: ["tips-for-founders","quantum-physics","influencer-marketing","marketing","product-marketing","big-tech","erwin-schrodinger","startups","schrodingers-cat","thought-leadership"]
-substackUrl: "https://deckandadream.substack.com/p/thought-leaders-with-no-thoughts"
+substackUrl: "/essays/thought-leaders-with-no-thoughts"
 featured: false
 ---
 
@@ -90,4 +90,3 @@ Similarly, your thoughts are both right and wrong if they stay in your head.
 
 Open the box, put your thoughts out there and find out.
 
-[![](https://substackcdn.com/image/fetch/$s_!JkYH!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e47bcea-7538-4564-9b89-7d2245a31d8e_2858x368.png)](https://substackcdn.com/image/fetch/$s_!JkYH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e47bcea-7538-4564-9b89-7d2245a31d8e_2858x368.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

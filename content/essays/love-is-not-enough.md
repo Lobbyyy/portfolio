@@ -4,7 +4,7 @@ excerpt: "peace is not enough "
 date: "Nov 3, 2024"
 readTime: "1 min"
 tags: ["relationships","love","peace","united-nations"]
-substackUrl: "https://deckandadream.substack.com/p/love-is-not-enough"
+substackUrl: "/essays/love-is-not-enough"
 featured: false
 ---
 
@@ -46,4 +46,3 @@ A world where everyone is winning.
 
 A world where people and nations choose not to play zero-sum games.
 
-[![](https://substackcdn.com/image/fetch/$s_!kt0-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb7a8401-9e60-45fe-b066-759a61e26e03_2856x398.png)](https://substackcdn.com/image/fetch/$s_!kt0-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb7a8401-9e60-45fe-b066-759a61e26e03_2856x398.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

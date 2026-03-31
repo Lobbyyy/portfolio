@@ -4,7 +4,7 @@ excerpt: "fear is a potent, visceral impluse - use it to your advantage"
 date: "Nov 10, 2024"
 readTime: "5 min"
 tags: ["christopher-nolan","sun-tzu","entrepreneurship","bruce-wayne","the-dark-knight-rises","strategies","art-of-war"]
-substackUrl: "https://deckandadream.substack.com/p/make-the-jump-without-the-rope"
+substackUrl: "/essays/make-the-jump-without-the-rope"
 featured: false
 ---
 
@@ -218,6 +218,4 @@ Because I burnt the bridge.
 
 Oops.
 
-[![](https://substackcdn.com/image/fetch/$s_!GEKn!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0941ffac-587a-48df-92c7-7a4dfe632864_2108x406.png)](https://substackcdn.com/image/fetch/$s_!GEKn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0941ffac-587a-48df-92c7-7a4dfe632864_2108x406.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
-[Share](https://deckandadream.substack.com/p/make-the-jump-without-the-rope?utm_source=substack&utm_medium=email&utm_content=share&action=share)

@@ -4,7 +4,7 @@ excerpt: "create your vision, and manifest it"
 date: "Oct 29, 2024"
 readTime: "6 min"
 tags: ["startup","philosophy","entrepreneur","full-stack-founder","entrepreneurship","founder","manifestation","my-vision","digital-nomad"]
-substackUrl: "https://deckandadream.substack.com/p/the-vision"
+substackUrl: "/essays/the-vision"
 featured: false
 ---
 
@@ -102,7 +102,6 @@ It is no issue, though,
 
 I love a good challenge.
 
-[![](https://substackcdn.com/image/fetch/$s_!_sua!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0fe3cc5-cffe-4ba9-b1ae-c454d129a255_2858x372.png)](https://substackcdn.com/image/fetch/$s_!_sua!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0fe3cc5-cffe-4ba9-b1ae-c454d129a255_2858x372.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**
 
 [![](https://substackcdn.com/image/fetch/$s_!Z5In!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdbd5275e-2ddc-4e7d-adc7-3ee55b2ac9a9_2858x372.png)](https://substackcdn.com/image/fetch/$s_!Z5In!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdbd5275e-2ddc-4e7d-adc7-3ee55b2ac9a9_2858x372.png)As I bite into the buttery croissant,
 
@@ -304,4 +303,3 @@ is up to them.
 
 In the long run, desire is the only differentiator.
 
-[![](https://substackcdn.com/image/fetch/$s_!G8iL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c1d1bc3-a2bf-4c18-a059-0fd2413ed149_2858x372.png)](https://substackcdn.com/image/fetch/$s_!G8iL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c1d1bc3-a2bf-4c18-a059-0fd2413ed149_2858x372.png)**Subscribe for access to practical business frameworks and startup insights! 🚀**

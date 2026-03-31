@@ -1,0 +1,5 @@
+[     507ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://logo.clearbit.com/zadig-am.com:0
+[     507ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://logo.clearbit.com/talentcapital.co.uk:0
+[    1291ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/_next/static/webpack/fb5b161db89cf35f.webpack.hot-update.json:0
+[    1949ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://logo.clearbit.com/talentcapital.co.uk:0
+[    1949ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://logo.clearbit.com/zadig-am.com:0
