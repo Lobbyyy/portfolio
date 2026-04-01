@@ -1,13 +1,14 @@
 import { createOGImageResponse, ogSize, ogContentType } from '@/lib/og-image'
 
 export const runtime = 'nodejs'
-export const alt = 'Lobsang Lama - Stoic. Entrepreneur. Creative. Athlete.'
+export const alt = 'Resources by Lobsang Lama'
 export const size = ogSize
 export const contentType = ogContentType
 
 export default async function Image() {
   return createOGImageResponse({
-    title: 'Lobsang Lama',
-    subtitle: 'Stoic. Entrepreneur. Creative. Athlete. Building companies and sharing what I learn along the way.',
+    title: 'Resources',
+    subtitle: 'Templates, guides, and tools for founders. Everything I wish I had when starting out.',
+    tag: 'Resources',
   })
 }

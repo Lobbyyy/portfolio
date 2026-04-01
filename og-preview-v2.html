@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OG Image Design Variations - V2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+      gap: 60px;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h2 {
+      color: #D54919;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 0 0 12px 0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .label {
+      color: #666;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      text-align: center;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+
+    /* OG Image Container - 1200x630 scaled to 600x315 */
+    .og-image {
+      width: 600px;
+      height: 315px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+      position: relative;
+    }
+
+    /* Grain overlay */
+    .grain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.4;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .grain-subtle {
+      opacity: 0.15;
+    }
+
+    /* ========================================
+       VARIATION A: Current (Baseline)
+       ======================================== */
+    .var-a {
+      display: flex;
+      background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+    }
+
+    .var-a .sidebar {
+      width: 165px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .var-a .content {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .var-a .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #F5F5F5;
+      line-height: 1.25;
+    }
+
+    .var-a .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .var-a .name {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .var-a .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* ========================================
+       VARIATION B: With Grain + Better Logo
+       ======================================== */
+    .var-b {
+      display: flex;
+      background: linear-gradient(145deg, #141414 0%, #1f1f1f 50%, #181818 100%);
+    }
+
+    .var-b .sidebar {
+      width: 180px;
+      background: linear-gradient(180deg, #D54919 0%, #c04115 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .var-b .sidebar::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .var-b .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .var-b .content {
+      flex: 1;
+      padding: 45px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .var-b .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 95%;
+    }
+
+    .var-b .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .var-b .author-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .var-b .name {
+      font-size: 16px;
+      color: #CCCCCC;
+      font-weight: 500;
+    }
+
+    .var-b .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #666;
+    }
+
+    .var-b .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 12px;
+      border: 1px solid rgba(213, 73, 25, 0.3);
+      border-radius: 4px;
+    }
+
+    /* ========================================
+       VARIATION C: Refined with Accent Line
+       ======================================== */
+    .var-c {
+      display: flex;
+      background: #141414;
+      position: relative;
+    }
+
+    .var-c .accent-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #D54919;
+    }
+
+    .var-c .logo-area {
+      width: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #2a2a2a;
+      margin-left: 8px;
+    }
+
+    .var-c .content {
+      flex: 1;
+      padding: 45px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .var-c .top-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .var-c .category {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .var-c .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 32px;
+      color: #FFFFFF;
+      line-height: 1.15;
+      font-weight: 400;
+    }
+
+    .var-c .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    .var-c .name {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .var-c .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #555;
+    }
+
+    /* ========================================
+       VARIATION D: Minimal Elegance
+       ======================================== */
+    .var-d {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #181818 0%, #111111 100%);
+      padding: 50px;
+      justify-content: space-between;
+    }
+
+    .var-d .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .var-d .logo-small {
+      opacity: 0.9;
+    }
+
+    .var-d .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 14px;
+      background: rgba(213, 73, 25, 0.1);
+      border-radius: 4px;
+    }
+
+    .var-d .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 36px;
+      color: #FFFFFF;
+      line-height: 1.15;
+      max-width: 85%;
+      margin: auto 0;
+    }
+
+    .var-d .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .var-d .name {
+      font-size: 15px;
+      color: #888;
+    }
+
+    .var-d .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .var-d .accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #D54919;
+    }
+
+    /* ========================================
+       VARIATION E: Bold Statement
+       ======================================== */
+    .var-e {
+      display: flex;
+      background: #D54919;
+      position: relative;
+    }
+
+    .var-e .content-area {
+      width: 65%;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .var-e .visual-area {
+      width: 35%;
+      background: #141414;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .var-e .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 32px;
+      color: #FFFFFF;
+      line-height: 1.15;
+    }
+
+    .var-e .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .var-e .name {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .var-e .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Logo SVG */
+    .logo-svg {
+      fill: white;
+    }
+
+    .logo-svg-dark {
+      fill: #D54919;
+    }
+
+    /* ========================================
+       VARIATION F: Website-Consistent Grain
+       ======================================== */
+    .var-f {
+      display: flex;
+      background: #141414;
+    }
+
+    .sidebar-f {
+      width: 180px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-container-f {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-f {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #181818 0%, #141414 100%);
+    }
+
+    /* Website-consistent grain - using actual noise.png */
+    .grain-website {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.12;
+      background-image: url('public/textures/noise.png');
+      background-repeat: repeat;
+      mix-blend-mode: overlay;
+    }
+
+    .content-inner-f {
+      position: relative;
+      z-index: 2;
+      padding: 45px 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title-f {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 95%;
+    }
+
+    .footer-f {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .author-block-f {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .name-f {
+      font-size: 16px;
+      color: #CCCCCC;
+      font-weight: 500;
+    }
+
+    .site-f {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #666;
+    }
+
+    .tag-f {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 12px;
+      border: 1px solid rgba(213, 73, 25, 0.3);
+      border-radius: 4px;
+    }
+
+    /* ========================================
+       VARIATION G: Light Mode
+       ======================================== */
+    .var-g {
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .sidebar-g {
+      width: 180px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-container-g {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-g {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    /* Light mode grain - 8% opacity, multiply blend */
+    .grain-light {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.08;
+      background-image: url('public/textures/noise.png');
+      background-repeat: repeat;
+      mix-blend-mode: multiply;
+    }
+
+    .content-inner-g {
+      position: relative;
+      z-index: 2;
+      padding: 45px 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title-section-g {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .title-g {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #1A1A1A;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 95%;
+    }
+
+    .subtitle-g {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+      max-width: 90%;
+    }
+
+    .footer-g {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .author-block-g {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .name-g {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 500;
+    }
+
+    .site-g {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #888888;
+    }
+
+    .tag-g {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 12px;
+      border: 1px solid rgba(213, 73, 25, 0.25);
+      border-radius: 4px;
+      background: rgba(213, 73, 25, 0.06);
+    }
+
+    /* ========================================
+       VARIATION H: Light Mode Refined
+       ======================================== */
+    .var-h {
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .sidebar-h {
+      width: 180px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-container-h {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-h {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .grain-light-h {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.08;
+      background-image: url('public/textures/noise.png');
+      background-repeat: repeat;
+      mix-blend-mode: multiply;
+    }
+
+    .content-inner-h {
+      position: relative;
+      z-index: 2;
+      padding: 45px 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title-section-h {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .title-h {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #1A1A1A;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 95%;
+    }
+
+    .subtitle-h {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+      max-width: 90%;
+    }
+
+    .footer-h {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .site-h {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #888888;
+    }
+
+    .tag-h {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>OG Image Design Variations</h1>
+
+  <!-- VARIATION A: Current -->
+  <div class="section">
+    <h2>Variation A — Current Implementation</h2>
+    <div class="og-image var-a">
+      <div class="sidebar">
+        <svg class="logo-svg" width="60" height="60" viewBox="0 0 100 100">
+          <!-- Big L: top bar + right bar -->
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <!-- Small L: same orientation as big L -->
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="title">Go -1 to 0</div>
+        <div class="footer">
+          <span class="name">Lobsang Lama</span>
+          <span class="tag">Essay</span>
+        </div>
+      </div>
+    </div>
+    <span class="label">What's currently live. Clean but could be more refined.</span>
+  </div>
+
+  <!-- VARIATION B: With Grain -->
+  <div class="section">
+    <h2>Variation B — With Grain Texture</h2>
+    <div class="og-image var-b">
+      <div class="grain"></div>
+      <div class="sidebar">
+        <div class="logo-container">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">Go -1 to 0</div>
+        <div class="footer">
+          <div class="author-block">
+            <span class="name">Lobsang Lama</span>
+            <span class="site">lobsang-lama.com</span>
+          </div>
+          <span class="tag">Essay</span>
+        </div>
+      </div>
+    </div>
+    <span class="label">Adds film grain texture, gradient sidebar, refined footer with website URL.</span>
+  </div>
+
+  <!-- VARIATION C: Refined with Accent Line -->
+  <div class="section">
+    <h2>Variation C — Accent Line + Category</h2>
+    <div class="og-image var-c">
+      <div class="grain grain-subtle"></div>
+      <div class="accent-line"></div>
+      <div class="logo-area">
+        <svg class="logo-svg-dark" width="55" height="55" viewBox="0 0 100 100">
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="top-section">
+          <span class="category">Essay</span>
+          <div class="title">Go -1 to 0</div>
+        </div>
+        <div class="footer">
+          <span class="name">Lobsang Lama</span>
+          <span class="site">lobsang-lama.com</span>
+        </div>
+      </div>
+    </div>
+    <span class="label">Minimal accent line, category above title, orange logo. More editorial feel.</span>
+  </div>
+
+  <!-- VARIATION D: Minimal Elegance -->
+  <div class="section">
+    <h2>Variation D — Minimal Elegance</h2>
+    <div class="og-image var-d" style="position: relative;">
+      <div class="grain grain-subtle"></div>
+      <div class="header">
+        <svg class="logo-svg-dark logo-small" width="40" height="40" viewBox="0 0 100 100">
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+        <span class="tag">Essay</span>
+      </div>
+      <div class="title">Go -1 to 0</div>
+      <div class="footer">
+        <span class="name">Lobsang Lama</span>
+        <span class="site">lobsang-lama.com</span>
+      </div>
+      <div class="accent-bar"></div>
+    </div>
+    <span class="label">No sidebar. Logo top-left, accent bar at bottom. Very clean and modern.</span>
+  </div>
+
+  <!-- VARIATION E: Bold Statement -->
+  <div class="section">
+    <h2>Variation E — Inverted Bold</h2>
+    <div class="og-image var-e">
+      <div class="grain"></div>
+      <div class="content-area">
+        <div class="title">Go -1 to 0</div>
+        <div class="footer">
+          <span class="name">Lobsang Lama</span>
+          <span class="tag">Essay</span>
+        </div>
+      </div>
+      <div class="visual-area">
+        <svg class="logo-svg" width="70" height="70" viewBox="0 0 100 100">
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+      </div>
+    </div>
+    <span class="label">Inverted colors — orange background, dark logo area. Maximum brand impact.</span>
+  </div>
+
+  <!-- VARIATION F: Website-Consistent Grain -->
+  <div class="section">
+    <h2>Variation F — Website-Consistent Grain</h2>
+    <div class="og-image var-f">
+      <div class="sidebar-f">
+        <div class="logo-container-f">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-f">
+        <div class="grain-website"></div>
+        <div class="content-inner-f">
+          <div class="title-f">Go -1 to 0</div>
+          <div class="footer-f">
+            <div class="author-block-f">
+              <span class="name-f">Lobsang Lama</span>
+              <span class="site-f">lobsang-lama.com</span>
+            </div>
+            <span class="tag-f">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="label">Uses your actual website grain texture (noise.png at 12% opacity, overlay blend). Grain only on content area, not sidebar. Matches dark mode.</span>
+  </div>
+
+  <!-- VARIATION G: Light Mode -->
+  <div class="section">
+    <h2>Variation G — Light Mode</h2>
+    <div class="og-image var-g">
+      <div class="sidebar-g">
+        <div class="logo-container-g">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-g">
+        <div class="grain-light"></div>
+        <div class="content-inner-g">
+          <div class="title-section-g">
+            <div class="title-g">Go -1 to 0</div>
+            <div class="subtitle-g">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer-g">
+            <div class="author-block-g">
+              <span class="name-g">Lobsang Lama</span>
+              <span class="site-g">lobsang-lama.com</span>
+            </div>
+            <span class="tag-g">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="label">Light mode version. Uses noise.png at 8% opacity with multiply blend. Matches light mode website settings.</span>
+  </div>
+
+  <!-- VARIATION H: Light Mode Refined -->
+  <div class="section">
+    <h2>Variation H — Light Mode Refined</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Go -1 to 0</div>
+            <div class="subtitle-h">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="label">Cleaner footer: horizontal divider + website URL + tag. No redundant name.</span>
+  </div>
+
+  <!-- PAGE VARIATIONS SECTION -->
+  <div class="section" style="margin-top: 60px;">
+    <h1 style="color: #D54919; font-size: 16px; letter-spacing: 3px; text-transform: uppercase;">Page Variations</h1>
+    <span class="label" style="color: #888;">All pages using the Variation H template</span>
+  </div>
+
+  <!-- Homepage -->
+  <div class="section">
+    <h2>Homepage</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h" style="font-size: 32px;">Lobsang Lama</div>
+            <div class="subtitle-h">Stoic. Entrepreneur. Creative. Athlete. Building companies and sharing what I learn along the way.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="section">
+    <h2>About</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">About</div>
+            <div class="subtitle-h">The story so far. Athlete → Economist → Consultant → Builder.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">About</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Essays Index -->
+  <div class="section">
+    <h2>Essays Index</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Essays</div>
+            <div class="subtitle-h">Deep dives on building, thinking, and creating. Ideas that have shaped how I work.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Essays</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Essay Detail (reference) -->
+  <div class="section">
+    <h2>Essay Detail</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Go -1 to 0</div>
+            <div class="subtitle-h">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Companies Index -->
+  <div class="section">
+    <h2>Companies Index</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Companies</div>
+            <div class="subtitle-h">Things I'm building. Each one started as a problem I wanted to solve.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Companies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company Detail -->
+  <div class="section">
+    <h2>Company Detail</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Kiso</div>
+            <div class="subtitle-h">AI-native video editor for fast, beautiful content creation.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Company</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="section">
+    <h2>Resources</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Resources</div>
+            <div class="subtitle-h">Templates, guides, and tools for founders. Everything I wish I had when starting out.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Resources</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Context -->
+  <div class="section">
+    <h2>Context</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Context</div>
+            <div class="subtitle-h">Books, experiences, and influences that shaped how I think and build.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Context</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Changelog -->
+  <div class="section">
+    <h2>Changelog</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Changelog</div>
+            <div class="subtitle-h">A timeline of life events and milestones. The journey so far.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Changelog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="og-image var-h">
+      <div class="sidebar-h">
+        <div class="logo-container-h">
+          <svg class="logo-svg" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+            <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="content-h">
+        <div class="grain-light-h"></div>
+        <div class="content-inner-h">
+          <div class="title-section-h">
+            <div class="title-h">Contact</div>
+            <div class="subtitle-h">Always happy to chat with interesting people. Let's connect.</div>
+          </div>
+          <div class="footer-h">
+            <span class="site-h">lobsang-lama.com</span>
+            <span class="tag-h">Contact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO SECTION -->
+  <div class="section" style="margin-top: 40px; padding: 30px; background: #1a1a1a; border-radius: 12px;">
+    <h2 style="color: #888; margin-bottom: 20px;">What's Possible</h2>
+    <div class="label" style="text-align: left; color: #aaa;">
+      <strong style="color: #D54919;">✓ Grain texture</strong> — Adds tactile, film-like quality<br><br>
+      <strong style="color: #D54919;">✓ Gradients</strong> — Subtle depth on sidebar and background<br><br>
+      <strong style="color: #D54919;">✓ Typography</strong> — Instrument Serif for titles, JetBrains Mono for tags<br><br>
+      <strong style="color: #D54919;">✓ Logo</strong> — SVG recreation (or we can embed actual PNG as base64)<br><br>
+      <strong style="color: #D54919;">✓ Layouts</strong> — Sidebar, accent lines, minimal, inverted<br><br>
+      <strong style="color: #D54919;">✓ Dynamic content</strong> — Title changes per essay automatically<br><br>
+      <strong style="color: #888;">⚠️ Limitations</strong> — Next.js OG images use Satori renderer which supports most CSS but not all (e.g., no CSS filters, limited blend modes). Grain needs to be SVG-based.
+    </div>
+  </div>
+
+</body>
+</html>

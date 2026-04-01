@@ -1,25 +1,24 @@
 import { createOGImageResponse, ogSize, ogContentType } from '@/lib/og-image'
-import { getEssayBySlug, getAllEssays } from '@/lib/essays'
+import { COMPANIES } from '@/lib/data/portfolio-data'
 
 export const runtime = 'nodejs'
-export const alt = 'Essay by Lobsang Lama'
+export const alt = 'Company by Lobsang Lama'
 export const size = ogSize
 export const contentType = ogContentType
 
 export function generateStaticParams() {
-  const essays = getAllEssays()
-  return essays.map((essay) => ({
-    slug: essay.slug,
+  return COMPANIES.map((company) => ({
+    slug: company.slug,
   }))
 }
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const essay = getEssayBySlug(slug)
+  const company = COMPANIES.find((c) => c.slug === slug)
 
   return createOGImageResponse({
-    title: essay?.title || 'Essay',
-    subtitle: essay?.excerpt,
-    tag: 'Essay',
+    title: company?.name || 'Company',
+    subtitle: company?.tagline,
+    tag: 'Company',
   })
 }

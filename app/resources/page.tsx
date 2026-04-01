@@ -5,6 +5,14 @@ import { Download, ExternalLink, Folder, FileText } from "lucide-react"
 
 const RESOURCE_CATEGORIES = [
   {
+    name: "marketing",
+    label: "Marketing",
+    description: "Strategies for improving visibility and conversions",
+    items: [
+      { name: "Open Graph Images Guide", type: "guide", href: "/resources/marketing/og-images-guide" },
+    ],
+  },
+  {
     name: "fundraising",
     label: "Fundraising",
     description: "Templates and guides for raising capital",
