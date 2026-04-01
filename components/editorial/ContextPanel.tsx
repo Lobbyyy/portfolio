@@ -13,6 +13,7 @@ const SOCIAL_LINKS = [
   { name: "GitHub", url: "https://github.com/Lobbyyy" },
   { name: "YouTube", url: "https://www.youtube.com/@lobsang_lama" },
   { name: "TikTok", url: "https://www.tiktok.com/@seca.mp4" },
+  { name: "Instagram", url: "https://www.instagram.com/seca.mp4/" },
   { name: "Substack", url: "https://substack.com/@lobsanglama" },
 ]
 
@@ -57,7 +58,7 @@ export default function ContextPanel({ children }: ContextPanelProps) {
                   href={company.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors"
+                  className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors"
                 >
                   #{company.name.toLowerCase().replace(/\s+/g, '-')}
                 </a>

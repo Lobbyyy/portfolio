@@ -1,6 +1,7 @@
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import { Mail, Calendar, Twitter, Linkedin, Github } from "lucide-react"
+import Link from "next/link"
+import { Mail, Twitter, Linkedin, Github } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -22,47 +23,56 @@ export default function ContactPage() {
           <ContactLink
             icon={<Mail className="w-5 h-5" />}
             label="Email"
-            value="hello@example.com"
-            href="mailto:hello@example.com"
-          />
-          <ContactLink
-            icon={<Calendar className="w-5 h-5" />}
-            label="Schedule a call"
-            value="Calendly"
-            href="https://calendly.com"
+            value="contact@lobsang-lama.com"
+            href="mailto:contact@lobsang-lama.com"
           />
           <ContactLink
             icon={<Twitter className="w-5 h-5" />}
             label="Twitter / X"
-            value="@username"
-            href="https://twitter.com"
+            value="@Lobbyyyyyy"
+            href="https://x.com/Lobbyyyyyy"
           />
           <ContactLink
             icon={<Linkedin className="w-5 h-5" />}
             label="LinkedIn"
             value="Connect"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/lobsang-lama-42a76b63/"
           />
           <ContactLink
             icon={<Github className="w-5 h-5" />}
             label="GitHub"
-            value="@username"
-            href="https://github.com"
+            value="@Lobbyyy"
+            href="https://github.com/Lobbyyy"
           />
         </div>
       </section>
 
-      {/* What I'm Looking For */}
+      {/* Work With Me */}
       <section className="mb-16">
         <h2 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-6">
-          Open To
+          Work With Me
         </h2>
-        <ul className="space-y-3">
-          <OpenToItem text="Collaboration on AI/creative projects" />
-          <OpenToItem text="Speaking opportunities" />
-          <OpenToItem text="Advising early-stage founders" />
-          <OpenToItem text="Interesting conversations" />
-        </ul>
+        <p className="text-[rgb(var(--muted))] mb-6">
+          Looking to collaborate? Here&apos;s how we might work together.
+        </p>
+
+        <div className="grid gap-4">
+          <WorkWithMeCard
+            title="Build With Me"
+            description="If you back ambitious founders or want to build alongside one, let's talk."
+            cta="Join the Team"
+          />
+          <WorkWithMeCard
+            title="Advisory & Speaking"
+            description="Board seats, fractional roles, and speaking opportunities."
+            cta="Get in touch"
+          />
+          <WorkWithMeCard
+            title="Projects"
+            description="Selective consulting for founders building something meaningful."
+            cta="Discuss"
+          />
+        </div>
       </section>
 
       {/* Note */}
@@ -107,11 +117,26 @@ function ContactLink({
   )
 }
 
-function OpenToItem({ text }: { text: string }) {
+function WorkWithMeCard({
+  title,
+  description,
+  cta,
+}: {
+  title: string
+  description: string
+  cta: string
+}) {
   return (
-    <li className="flex items-center gap-3">
-      <span className="w-1.5 h-1.5 rounded-full bg-[rgb(var(--primary))]" />
-      <span className="text-[rgb(var(--text))]">{text}</span>
-    </li>
+    <div className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors">
+      <div>
+        <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-1">
+          {title}
+        </h3>
+        <p className="text-sm text-[rgb(var(--muted))]">{description}</p>
+      </div>
+      <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors">
+        {cta} &rarr;
+      </span>
+    </div>
   )
 }

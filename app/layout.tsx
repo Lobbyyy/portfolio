@@ -4,8 +4,12 @@ import Providers from '@/components/Providers'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Builder. Athlete. Founder. Curious.',
+  title: 'Lobsang Lama',
+  description: 'Stoic. Entrepreneur. Creative. Athlete.',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({

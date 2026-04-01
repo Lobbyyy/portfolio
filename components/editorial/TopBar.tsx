@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react"
 import { useTheme } from "next-themes"
-import { Search, Sun, Moon, Monitor, Globe } from "lucide-react"
+import { Search, Sun, Moon } from "lucide-react"
 import Link from "next/link"
 import SearchModal from "./SearchModal"
 import { PERSONAL } from "@/lib/data/portfolio-data"
@@ -93,9 +93,18 @@ export default function TopBar() {
   return (
     <>
       <header className="editorial-elevated h-12 border-b border-[rgb(var(--border))] flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-50">
-        {/* Logo / Name */}
+        {/* Logo */}
+        <Link href="/" className="flex-shrink-0">
+          <img
+            src="/logo.png"
+            alt="Lobsang Lama"
+            className="h-7 w-auto"
+          />
+        </Link>
+
+        {/* Center - Name with hover animation */}
         <div
-          className="cursor-pointer select-none min-w-[120px]"
+          className="cursor-pointer select-none"
           onMouseEnter={handleMouseEnter}
         >
           <h1 className="font-serif text-xl font-normal">
@@ -108,21 +117,6 @@ export default function TopBar() {
               {displayWord || PERSONAL.name}
             </span>
           </h1>
-        </div>
-
-        {/* Center - Mode Toggle */}
-        <div className="flex items-center gap-1 bg-[rgb(var(--border))] rounded-full p-1">
-          <span className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-[rgb(var(--surface))] text-[rgb(var(--text))]">
-            <Globe className="w-3 h-3" />
-            Browser
-          </span>
-          <Link
-            href="/desktop"
-            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[rgb(var(--muted))] hover:text-[rgb(var(--text))] transition-colors"
-          >
-            <Monitor className="w-3 h-3" />
-            Desktop
-          </Link>
         </div>
 
         {/* Right side - Date, Search, Theme */}
