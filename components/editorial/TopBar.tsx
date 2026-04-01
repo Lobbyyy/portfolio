@@ -2,10 +2,34 @@
 
 import { useState, useEffect, useRef, useCallback } from "react"
 import { useTheme } from "next-themes"
-import { Search, Sun, Moon } from "lucide-react"
+import { usePathname } from "next/navigation"
+import {
+  Search,
+  Sun,
+  Moon,
+  Menu,
+  X,
+  Home,
+  Folder,
+  User,
+  Mail,
+  Music,
+  FileText,
+  Coffee,
+} from "lucide-react"
 import Link from "next/link"
 import SearchModal from "./SearchModal"
-import { PERSONAL } from "@/lib/data/portfolio-data"
+import { PERSONAL, NAVIGATION, NavIcon } from "@/lib/data/portfolio-data"
+
+// Map icon names to Lucide components
+const iconMap: Record<NavIcon, React.ReactNode> = {
+  home: <Home className="w-4 h-4" />,
+  folder: <Folder className="w-4 h-4" />,
+  user: <User className="w-4 h-4" />,
+  mail: <Mail className="w-4 h-4" />,
+  music: <Music className="w-4 h-4" />,
+  file: <FileText className="w-4 h-4" />,
+}
 
 const IDENTITY_WORDS = ["Stoic", "Entrepreneur", "Creative", "Athlete"]
 const WORD_DISPLAY_TIME = 150 // ms per word
@@ -14,8 +38,15 @@ export default function TopBar() {
   const [mounted, setMounted] = useState(false)
   const [currentDate, setCurrentDate] = useState("")
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [displayWord, setDisplayWord] = useState<string | null>(null)
   const { theme, setTheme } = useTheme()
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/"
+    return pathname.startsWith(path)
+  }
 
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
   const isAnimatingRef = useRef(false)
@@ -102,9 +133,9 @@ export default function TopBar() {
           />
         </Link>
 
-        {/* Center - Name with hover animation */}
+        {/* Center - Name with hover animation (absolute positioned for true center) */}
         <div
-          className="cursor-pointer select-none"
+          className="absolute left-1/2 -translate-x-1/2 cursor-pointer select-none"
           onMouseEnter={handleMouseEnter}
         >
           <h1 className="font-serif text-xl font-normal">
@@ -150,8 +181,77 @@ export default function TopBar() {
               <Moon className="w-4 h-4 text-[rgb(var(--muted))]" />
             )}
           </button>
+
+          {/* Mobile Menu Button - only visible on mobile */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2 rounded-md hover:bg-[rgb(var(--border))] transition-colors lg:hidden"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-4 h-4 text-[rgb(var(--muted))]" />
+            ) : (
+              <Menu className="w-4 h-4 text-[rgb(var(--muted))]" />
+            )}
+          </button>
         </div>
       </header>
+
+      {/* Mobile Navigation Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="fixed top-12 left-0 right-0 z-40 lg:hidden">
+          <nav className="bg-[rgb(var(--surface))] border-b border-[rgb(var(--border))] shadow-lg">
+            <ul className="py-2 px-4">
+              {NAVIGATION.map((item) => (
+                <li key={item.path}>
+                  <Link
+                    href={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`
+                      flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-mono
+                      transition-colors
+                      ${
+                        isActive(item.path)
+                          ? "bg-[rgba(var(--primary),0.1)] text-[rgb(var(--text))]"
+                          : "text-[rgb(var(--muted))] hover:bg-[rgb(var(--border))] hover:text-[rgb(var(--text))]"
+                      }
+                    `}
+                  >
+                    <span
+                      className={
+                        isActive(item.path)
+                          ? "text-[rgb(var(--primary))]"
+                          : "text-[rgb(var(--muted))]"
+                      }
+                    >
+                      {iconMap[item.icon]}
+                    </span>
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
+              {/* Buy Me a Coffee */}
+              <li className="border-t border-[rgb(var(--border))] mt-2 pt-2">
+                <a
+                  href="https://buymeacoffee.com/lobsanglama"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-mono text-[rgb(var(--muted))] hover:bg-[rgb(var(--border))] hover:text-[rgb(var(--text))] transition-colors"
+                >
+                  <Coffee className="w-4 h-4" />
+                  <span>support.mdx</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black/20 -z-10"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        </div>
+      )}
 
       {/* Search Modal */}
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />

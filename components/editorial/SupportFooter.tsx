@@ -5,8 +5,7 @@ export default function SupportFooter() {
     <div className="mt-16 pt-8 border-t border-[rgb(var(--border))]">
       <div className="max-w-lg">
         <p className="text-sm text-[rgb(var(--muted))] mb-4">
-          I share without expecting anything in return. If something here helped you,
-          you can support the journey. If not, pay it forward to someone else.
+          I build companies and share what I learn along the way. If it&apos;s helped you think, build, or move ~ this is how you say thanks.
         </p>
         <a
           href="https://buymeacoffee.com/lobsanglama"

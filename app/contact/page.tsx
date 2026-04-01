@@ -1,6 +1,5 @@
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import Link from "next/link"
 import { Mail, Twitter, Linkedin, Github } from "lucide-react"
 
 export default function ContactPage() {
@@ -127,14 +126,14 @@ function WorkWithMeCard({
   cta: string
 }) {
   return (
-    <div className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors">
+    <div className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors">
       <div>
         <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-1">
           {title}
         </h3>
         <p className="text-sm text-[rgb(var(--muted))]">{description}</p>
       </div>
-      <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors">
+      <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors sm:flex-shrink-0">
         {cta} &rarr;
       </span>
     </div>

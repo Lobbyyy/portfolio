@@ -2,12 +2,23 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { PERSONAL, COMPANIES, ESSAYS, PURSUITS } from "@/lib/data/portfolio-data"
+import { PERSONAL, COMPANIES, PURSUITS } from "@/lib/data/portfolio-data"
+import { getAllEssays } from "@/lib/essays"
 
 // Get companies for the "Weapon of Mass Creation" pursuit
-const displayCompanies = COMPANIES.slice(0, 4)
-// Get essays for the "Unlocking the Secrets" pursuit
-const displayEssays = ESSAYS.slice(0, 3)
+const displayCompanies = COMPANIES.slice(0, 5)
+
+// Get specific essays for the "Unlocking the Secrets" pursuit
+const mindEssaySlugs = [
+  "the-presentnot-present-hypothesis",
+  "guide-to-being-4th-dimensional-beings",
+  "do-you-ever-question-your-mortality",
+  "calculus-of-feelings",
+]
+const allEssays = getAllEssays()
+const displayEssays = mindEssaySlugs
+  .map(slug => allEssays.find(e => e.slug === slug))
+  .filter((essay): essay is NonNullable<typeof essay> => essay !== undefined)
 
 export default function Home() {
   return (
@@ -156,7 +167,7 @@ export default function Home() {
           {/* Tier 1 */}
           <Link
             href="/contact"
-            className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+            className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
           >
             <div>
               <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-1">Build With Me</h3>
@@ -164,7 +175,7 @@ export default function Home() {
                 If you back ambitious founders or want to build alongside one, let&apos;s talk.
               </p>
             </div>
-            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors">
+            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors sm:flex-shrink-0">
               Join the Team →
             </span>
           </Link>
@@ -172,7 +183,7 @@ export default function Home() {
           {/* Tier 2 */}
           <Link
             href="/contact"
-            className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+            className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
           >
             <div>
               <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-1">Advisory & Speaking</h3>
@@ -180,7 +191,7 @@ export default function Home() {
                 Board seats, fractional roles, and speaking opportunities.
               </p>
             </div>
-            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors">
+            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors sm:flex-shrink-0">
               Get in touch →
             </span>
           </Link>
@@ -188,7 +199,7 @@ export default function Home() {
           {/* Tier 3 */}
           <Link
             href="/contact"
-            className="group flex items-center justify-between p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
+            className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-colors"
           >
             <div>
               <h3 className="font-medium text-[rgb(var(--text))] group-hover:text-[rgb(var(--primary))] transition-colors mb-1">Projects</h3>
@@ -196,7 +207,7 @@ export default function Home() {
                 Selective consulting for founders building something meaningful.
               </p>
             </div>
-            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors">
+            <span className="font-mono text-sm text-[rgb(var(--muted))] group-hover:text-[rgb(var(--primary))] transition-colors sm:flex-shrink-0">
               Discuss →
             </span>
           </Link>

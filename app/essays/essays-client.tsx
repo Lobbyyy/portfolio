@@ -4,7 +4,6 @@ import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
-import { ArrowUpRight } from "lucide-react"
 import { useMemo, Suspense } from "react"
 import type { EssayContent } from "@/lib/essays"
 
@@ -81,16 +80,6 @@ function EssaysPageContent({ essays: allEssays, tags }: EssaysClientProps) {
           ) : (
             <>
               Thoughts on building, philosophy, and everything in between.
-              Originally published on{" "}
-              <a
-                href="https://deckandadream.substack.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[rgb(var(--primary))] hover:underline"
-              >
-                Substack
-              </a>
-              .
             </>
           )}
         </p>
@@ -147,18 +136,6 @@ function EssaysPageContent({ essays: allEssays, tags }: EssaysClientProps) {
         )}
       </div>
 
-      {/* View More */}
-      <div className="mt-12 text-center">
-        <a
-          href="https://deckandadream.substack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[rgb(var(--border))] text-[rgb(var(--muted))] hover:border-[rgb(var(--primary))] hover:text-[rgb(var(--primary))] transition-colors"
-        >
-          View all on Substack
-          <ArrowUpRight className="w-4 h-4" />
-        </a>
-      </div>
     </EditorialLayout>
   )
 }
@@ -197,20 +174,6 @@ function EssaysContext({
             )
           })}
         </div>
-      </div>
-
-      <div>
-        <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
-          Subscribe
-        </h3>
-        <a
-          href="https://deckandadream.substack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] transition-colors"
-        >
-          Get new posts via email →
-        </a>
       </div>
     </div>
   )

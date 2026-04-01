@@ -7,7 +7,7 @@
   /* Light Mode - Default */
   --background: 250 248 245;        /* #FAF8F5 warm cream */
   --surface: 255 255 255;           /* #FFFFFF */
-  --primary: 255 102 0;             /* #FF6600 YC orange */
+  --primary: 213 73 25;             /* #D54919 */
   --text: 26 26 26;                 /* #1A1A1A */
   --muted: 107 107 107;             /* #6B6B6B */
   --border: 232 228 223;            /* #E8E4DF */
@@ -22,7 +22,7 @@
   /* Dark Mode */
   --background: 20 20 20;           /* #141414 */
   --surface: 30 30 30;              /* #1E1E1E */
-  --primary: 255 102 0;             /* #FF6600 stays same */
+  --primary: 213 73 25;             /* #D54919 */
   --text: 245 245 245;              /* #F5F5F5 */
   --muted: 138 138 138;             /* #8A8A8A */
   --border: 42 42 42;               /* #2A2A2A */
@@ -151,7 +151,7 @@ body {
 
 /* Selection color */
 ::selection {
-  background-color: rgba(255, 102, 0, 0.2);
+  background-color: rgba(213, 73, 25, 0.2);
   color: inherit;
 }
 

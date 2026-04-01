@@ -101,3 +101,25 @@ export function getAllTags(): string[] {
 
   return ["all", ...Array.from(tagSet).sort()]
 }
+
+/**
+ * Get related essays based on shared tags
+ */
+export function getRelatedEssays(currentSlug: string, limit: number = 3): EssayContent[] {
+  const allEssays = getAllEssays()
+  const currentEssay = allEssays.find(e => e.slug === currentSlug)
+
+  if (!currentEssay) return []
+
+  // Score essays by number of shared tags
+  const scored = allEssays
+    .filter(e => e.slug !== currentSlug)
+    .map(essay => ({
+      essay,
+      score: essay.tags.filter(tag => currentEssay.tags.includes(tag)).length
+    }))
+    .filter(item => item.score > 0) // Only essays with at least 1 shared tag
+    .sort((a, b) => b.score - a.score) // Sort by most shared tags
+
+  return scored.slice(0, limit).map(item => item.essay)
+}
