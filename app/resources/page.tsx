@@ -55,7 +55,7 @@ const RESOURCE_CATEGORIES = [
 
 export default function ResourcesPage() {
   return (
-    <EditorialLayout currentPath="resources/">
+    <EditorialLayout >
       <Breadcrumb path="resources/" />
 
       <header className="mb-12">

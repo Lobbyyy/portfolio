@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Share Image Formats - Based on Variation H</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+      gap: 80px;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h2 {
+      color: #D54919;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 0 0 12px 0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .formats-row {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .label {
+      color: #666;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      text-align: center;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+
+    .size-label {
+      color: #888;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 8px;
+    }
+
+    /* ========================================
+       SHARED STYLES (Variation H base)
+       ======================================== */
+
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+      position: relative;
+      display: flex;
+    }
+
+    .sidebar {
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .grain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.08;
+      background-image: url('public/textures/noise.png');
+      background-repeat: repeat;
+      mix-blend-mode: multiply;
+    }
+
+    .content-inner {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      color: #1A1A1A;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      color: #666666;
+      line-height: 1.5;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .site {
+      font-family: 'JetBrains Mono', monospace;
+      color: #888888;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .logo-svg {
+      fill: white;
+    }
+
+    /* ========================================
+       LANDSCAPE: 1200x630 (Twitter/LinkedIn)
+       Scaled to 600x315 for preview
+       ======================================== */
+    .landscape {
+      width: 600px;
+      height: 315px;
+    }
+
+    .landscape .sidebar {
+      width: 90px; /* 180px at full scale */
+    }
+
+    .landscape .content-inner {
+      padding: 22px 25px;
+    }
+
+    .landscape .title {
+      font-size: 14px; /* 28px at full scale */
+      max-width: 95%;
+    }
+
+    .landscape .subtitle {
+      font-size: 7px; /* 14px at full scale */
+      max-width: 90%;
+      margin-top: 6px;
+    }
+
+    .landscape .footer {
+      padding-top: 8px;
+    }
+
+    .landscape .site {
+      font-size: 5.5px; /* 11px at full scale */
+    }
+
+    .landscape .tag {
+      font-size: 5.5px;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       SQUARE: 1080x1080 (Instagram/Twitter Feed)
+       Scaled to 320x320 for preview
+       ======================================== */
+    .square {
+      width: 320px;
+      height: 320px;
+    }
+
+    .square .sidebar {
+      width: 60px; /* ~200px at full scale */
+    }
+
+    .square .content-inner {
+      padding: 24px 20px;
+    }
+
+    .square .title {
+      font-size: 16px; /* ~54px at full scale */
+      max-width: 95%;
+    }
+
+    .square .subtitle {
+      font-size: 8px; /* ~27px at full scale */
+      max-width: 90%;
+      margin-top: 10px;
+    }
+
+    .square .footer {
+      padding-top: 12px;
+    }
+
+    .square .site {
+      font-size: 6px; /* ~20px at full scale */
+    }
+
+    .square .tag {
+      font-size: 6px;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       INSTAGRAM: 1080x1350 (4:5 Feed)
+       Scaled to 280x350 for preview
+       ======================================== */
+    .instagram {
+      width: 280px;
+      height: 350px;
+    }
+
+    .instagram .sidebar {
+      width: 52px; /* ~200px at full scale */
+    }
+
+    .instagram .content-inner {
+      padding: 24px 18px;
+    }
+
+    .instagram .title {
+      font-size: 14px; /* ~54px at full scale */
+      max-width: 95%;
+    }
+
+    .instagram .subtitle {
+      font-size: 7px; /* ~27px at full scale */
+      max-width: 90%;
+      margin-top: 10px;
+    }
+
+    .instagram .footer {
+      padding-top: 12px;
+    }
+
+    .instagram .site {
+      font-size: 5.5px;
+    }
+
+    .instagram .tag {
+      font-size: 5.5px;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       VERTICAL: 1080x1920 (Stories)
+       Scaled to 180x320 for preview
+       Different layout - logo at top, centered content
+       ======================================== */
+    .vertical {
+      width: 180px;
+      height: 320px;
+      flex-direction: column;
+    }
+
+    .vertical .logo-header {
+      background: #D54919;
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px auto 20px auto;
+    }
+
+    .vertical .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vertical .content-inner {
+      padding: 0 20px 24px 20px;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .vertical .title-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .vertical .title {
+      font-size: 14px;
+    }
+
+    .vertical .subtitle {
+      font-size: 6px;
+    }
+
+    .vertical .footer {
+      flex-direction: column;
+      gap: 6px;
+      padding-top: 12px;
+      align-items: center;
+    }
+
+    .vertical .site {
+      font-size: 5px;
+    }
+
+    .vertical .tag {
+      font-size: 5px;
+    }
+
+    /* ========================================
+       Alternative layouts for comparison
+       ======================================== */
+
+    /* Vertical V2: Sidebar at bottom */
+    .vertical-v2 {
+      width: 180px;
+      height: 320px;
+      flex-direction: column;
+    }
+
+    .vertical-v2 .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vertical-v2 .content-inner {
+      padding: 30px 20px;
+      text-align: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .vertical-v2 .title {
+      font-size: 14px;
+    }
+
+    .vertical-v2 .subtitle {
+      font-size: 6px;
+    }
+
+    .vertical-v2 .bottom-bar {
+      background: #D54919;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .vertical-v2 .bottom-bar .site {
+      color: rgba(255,255,255,0.8);
+      font-size: 5px;
+    }
+
+    .vertical-v2 .bottom-bar .tag {
+      color: white;
+      font-size: 5px;
+    }
+
+    /* Vertical V3: Side stripe */
+    .vertical-v3 {
+      width: 180px;
+      height: 320px;
+    }
+
+    .vertical-v3 .sidebar {
+      width: 30px;
+    }
+
+    .vertical-v3 .content-inner {
+      padding: 30px 16px;
+    }
+
+    .vertical-v3 .title {
+      font-size: 12px;
+    }
+
+    .vertical-v3 .subtitle {
+      font-size: 6px;
+      margin-top: 8px;
+    }
+
+    .vertical-v3 .footer {
+      padding-top: 10px;
+    }
+
+    .vertical-v3 .site {
+      font-size: 5px;
+    }
+
+    .vertical-v3 .tag {
+      font-size: 5px;
+    }
+
+    /* Square V2: Logo at top */
+    .square-v2 {
+      width: 320px;
+      height: 320px;
+      flex-direction: column;
+    }
+
+    .square-v2 .top-bar {
+      background: #D54919;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .square-v2 .content {
+      flex: 1;
+    }
+
+    .square-v2 .content-inner {
+      padding: 20px;
+    }
+
+    .square-v2 .title {
+      font-size: 16px;
+    }
+
+    .square-v2 .subtitle {
+      font-size: 8px;
+      margin-top: 10px;
+    }
+
+    .square-v2 .footer {
+      padding-top: 12px;
+    }
+
+    .square-v2 .site {
+      font-size: 6px;
+    }
+
+    .square-v2 .tag {
+      font-size: 6px;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 1200px;
+      height: 1px;
+      background: #333;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Share Image Formats</h1>
+  <p class="label">Based on Variation H design. All formats maintain brand consistency.</p>
+
+  <div class="divider"></div>
+
+  <!-- REFERENCE: Landscape (same as OG) -->
+  <div class="section">
+    <h2>Landscape — 1200×630 (Twitter/LinkedIn)</h2>
+    <div class="card landscape">
+      <div class="sidebar">
+        <svg class="logo-svg" width="32" height="32" viewBox="0 0 100 100">
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="grain"></div>
+        <div class="content-inner">
+          <div class="title-section">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="size-label">1200 × 630 px (scaled 50% for preview)</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SQUARE OPTIONS -->
+  <div class="section">
+    <h2>Square — 1080×1080 (Instagram/Twitter Feed)</h2>
+    <div class="formats-row">
+
+      <!-- Square V1: Side sidebar -->
+      <div class="section">
+        <div class="card square">
+          <div class="sidebar">
+            <svg class="logo-svg" width="28" height="28" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div class="title-section">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">V1: Side sidebar (consistent with landscape)</span>
+      </div>
+
+      <!-- Square V2: Top bar -->
+      <div class="section">
+        <div class="card square-v2">
+          <div class="top-bar">
+            <svg class="logo-svg" width="28" height="28" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div class="title-section">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">V2: Top bar</span>
+      </div>
+
+    </div>
+    <span class="size-label">1080 × 1080 px (scaled ~30% for preview)</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- INSTAGRAM (4:5) OPTIONS -->
+  <div class="section">
+    <h2>Instagram — 1080×1350 (4:5 Feed)</h2>
+    <div class="formats-row">
+
+      <!-- Instagram V1: Side sidebar -->
+      <div class="section">
+        <div class="card instagram">
+          <div class="sidebar">
+            <svg class="logo-svg" width="24" height="24" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div class="title-section">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">V1: Side sidebar</span>
+      </div>
+
+    </div>
+    <span class="size-label">1080 × 1350 px (scaled ~26% for preview)</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- VERTICAL (9:16) OPTIONS -->
+  <div class="section">
+    <h2>Vertical — 1080×1920 (Stories)</h2>
+    <div class="formats-row">
+
+      <!-- Vertical V1: Logo at top center -->
+      <div class="section">
+        <div class="card vertical">
+          <div class="content">
+            <div class="grain"></div>
+            <div class="logo-header">
+              <svg class="logo-svg" width="36" height="36" viewBox="0 0 100 100">
+                <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+                <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+              </svg>
+            </div>
+            <div class="content-inner">
+              <div class="title-section">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">V1: Centered logo at top</span>
+      </div>
+
+      <!-- Vertical V2: Bottom bar -->
+      <div class="section">
+        <div class="card vertical-v2">
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div class="title-section" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle" style="margin-top: 8px;">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-bar">
+            <svg class="logo-svg" width="20" height="20" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+            <span class="site">lobsang-lama.com</span>
+          </div>
+        </div>
+        <span class="label">V2: Bottom bar with logo</span>
+      </div>
+
+      <!-- Vertical V3: Side stripe -->
+      <div class="section">
+        <div class="card vertical-v3">
+          <div class="sidebar">
+            <svg class="logo-svg" width="16" height="16" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div class="title-section">
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">V3: Thin side stripe</span>
+      </div>
+
+    </div>
+    <span class="size-label">1080 × 1920 px (scaled ~17% for preview)</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- INFO -->
+  <div class="section" style="padding: 30px; background: #1a1a1a; border-radius: 12px; max-width: 700px;">
+    <h2 style="color: #888; margin-bottom: 20px;">Design Notes</h2>
+    <div class="label" style="text-align: left; color: #aaa;">
+      <strong style="color: #D54919;">Typography:</strong> Instrument Serif for titles, Inter for subtitles, JetBrains Mono for labels<br><br>
+      <strong style="color: #D54919;">Colors:</strong> Orange sidebar (#D54919), light cream background (#F8F6F3 → #F5F3F0 gradient)<br><br>
+      <strong style="color: #D54919;">Grain:</strong> noise.png at 8% opacity with multiply blend<br><br>
+      <strong style="color: #D54919;">Footer:</strong> Horizontal divider, website URL left, tag right<br><br>
+      <strong style="color: #888;">Recommendation:</strong> V1 (side sidebar) for Square and Instagram maintains consistency with Landscape/OG. For Vertical/Stories, V1 (centered logo) or V3 (side stripe) work best.
+    </div>
+  </div>
+
+</body>
+</html>

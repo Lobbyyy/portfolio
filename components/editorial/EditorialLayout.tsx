@@ -5,16 +5,23 @@ import TopBar from "./TopBar"
 import Sidebar from "./Sidebar"
 import ContextPanel from "./ContextPanel"
 
+interface ShareData {
+  url: string
+  title: string
+  subtitle?: string
+  tag?: string
+}
+
 interface EditorialLayoutProps {
   children: ReactNode
   contextContent?: ReactNode
-  currentPath?: string
+  share?: ShareData
 }
 
 export default function EditorialLayout({
   children,
   contextContent,
-  currentPath = "home.mdx",
+  share,
 }: EditorialLayoutProps) {
   return (
     <div className="editorial-bg min-h-screen">
@@ -22,10 +29,10 @@ export default function EditorialLayout({
       <TopBar />
 
       {/* Left Sidebar - Fixed */}
-      <Sidebar currentPath={currentPath} />
+      <Sidebar />
 
       {/* Right - Context Panel - Fixed */}
-      <ContextPanel>{contextContent}</ContextPanel>
+      <ContextPanel share={share}>{contextContent}</ContextPanel>
 
       {/* Center - Document Area (scrollable main content) */}
       <main className="editorial-document-area ml-52 mr-48 pt-12 min-h-screen hidden lg:block">

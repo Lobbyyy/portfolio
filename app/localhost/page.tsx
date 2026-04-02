@@ -41,7 +41,7 @@ const EXPERIMENTS = [
 
 export default function LocalhostPage() {
   return (
-    <EditorialLayout currentPath="localhost/">
+    <EditorialLayout >
       <Breadcrumb path="localhost/" />
 
       <header className="mb-12">

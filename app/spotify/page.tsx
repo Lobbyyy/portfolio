@@ -25,7 +25,7 @@ const PLAYLISTS = [
 
 export default function SpotifyPage() {
   return (
-    <EditorialLayout currentPath="spotify.mdx">
+    <EditorialLayout >
       <Breadcrumb path="spotify.mdx" />
 
       <header className="mb-12">

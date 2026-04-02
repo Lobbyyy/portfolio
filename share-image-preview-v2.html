@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Share Image Variations — Creative Exploration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+      gap: 100px;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif;
+      margin: 0;
+    }
+
+    h2 {
+      color: #D54919;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin: 0 0 24px 0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .intro {
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .variations-row {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .variation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .label {
+      color: #888;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      text-align: center;
+      max-width: 300px;
+      line-height: 1.6;
+    }
+
+    .card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 30px 100px rgba(0,0,0,0.7);
+      position: relative;
+    }
+
+    .grain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.08;
+      background-image: url('public/textures/noise.png');
+      background-repeat: repeat;
+      mix-blend-mode: multiply;
+    }
+
+    .logo-svg { fill: white; }
+    .logo-svg-orange { fill: #D54919; }
+
+    .divider {
+      width: 100%;
+      max-width: 800px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #333, transparent);
+    }
+
+    /* ========================================
+       LANDSCAPE: 1200x630 — VARIATION H (FINAL)
+       This is the reference. Exact pixel sizing.
+       ======================================== */
+    .landscape {
+      width: 600px;
+      height: 315px;
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .landscape .sidebar {
+      width: 90px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .landscape .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .landscape .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 22px 25px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .landscape .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 14px;
+      color: #1A1A1A;
+      line-height: 1.2;
+    }
+
+    .landscape .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 7px;
+      color: #666666;
+      line-height: 1.5;
+      margin-top: 6px;
+      max-width: 90%;
+    }
+
+    .landscape .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .landscape .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 5.5px;
+      color: #888888;
+    }
+
+    .landscape .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 5.5px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ========================================
+       SQUARE: 1080x1080 — Instagram/Twitter Feed
+       Full size preview (540px = 50% for manageability)
+       ======================================== */
+
+    /* Square A: Quote-centric — Let the words breathe */
+    .square-a {
+      width: 540px;
+      height: 540px;
+      background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .square-a .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .square-a .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 36px;
+      color: #1A1A1A;
+      line-height: 1.15;
+      max-width: 90%;
+    }
+
+    .square-a .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.6;
+      margin-top: 24px;
+      max-width: 80%;
+    }
+
+    .square-a .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      position: relative;
+      z-index: 2;
+    }
+
+    .square-a .logo-mark {
+      width: 36px;
+      height: 36px;
+    }
+
+    .square-a .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #888888;
+    }
+
+    .square-a .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Square B: Sidebar consistent with landscape */
+    .square-b {
+      width: 540px;
+      height: 540px;
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .square-b .sidebar {
+      width: 100px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .square-b .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .square-b .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 50px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .square-b .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 32px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .square-b .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+      margin-top: 16px;
+      max-width: 95%;
+    }
+
+    .square-b .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .square-b .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #888888;
+    }
+
+    .square-b .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Square C: Dramatic typography — Title dominates */
+    .square-c {
+      width: 540px;
+      height: 540px;
+      background: #1A1A1A;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .square-c .grain {
+      opacity: 0.15;
+      mix-blend-mode: overlay;
+    }
+
+    .square-c .accent-bar {
+      height: 8px;
+      background: #D54919;
+    }
+
+    .square-c .logo-corner {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      z-index: 3;
+    }
+
+    .square-c .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .square-c .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 48px;
+      color: #FFFFFF;
+      line-height: 1.1;
+    }
+
+    .square-c .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #888888;
+      line-height: 1.6;
+      margin-top: 24px;
+      max-width: 85%;
+    }
+
+    .square-c .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 60px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    .square-c .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #666666;
+    }
+
+    .square-c .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* ========================================
+       INSTAGRAM 4:5: 1080x1350
+       Preview at 432x540 (40%)
+       ======================================== */
+
+    /* Instagram A: Generous breathing room */
+    .insta-a {
+      width: 432px;
+      height: 540px;
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .insta-a .sidebar {
+      width: 80px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .insta-a .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .insta-a .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 50px 36px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .insta-a .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .insta-a .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.55;
+      margin-top: 16px;
+    }
+
+    .insta-a .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .insta-a .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #888888;
+    }
+
+    .insta-a .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Instagram B: Centered, no sidebar */
+    .insta-b {
+      width: 432px;
+      height: 540px;
+      background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .insta-b .logo-header {
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .insta-b .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: #D54919;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .insta-b .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .insta-b .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 30px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .insta-b .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+
+    .insta-b .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      position: relative;
+      z-index: 2;
+    }
+
+    .insta-b .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #888888;
+    }
+
+    .insta-b .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Instagram C: Rule of thirds — 1/3 orange header */
+    .insta-c {
+      width: 432px;
+      height: 540px;
+      background: #F8F6F3;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .insta-c .orange-header {
+      height: 180px; /* 1/3 of 540 */
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .insta-c .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .insta-c .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 36px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .insta-c .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .insta-c .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.55;
+      margin-top: 16px;
+    }
+
+    .insta-c .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .insta-c .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #888888;
+    }
+
+    .insta-c .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* ========================================
+       VERTICAL 9:16: 1080x1920 — Stories
+       Preview at 270x480 (25%)
+       ======================================== */
+
+    /* Vertical A: Statement — Title commands attention */
+    .vert-a {
+      width: 270px;
+      height: 480px;
+      background: linear-gradient(180deg, #FAFAF8 0%, #F3F1EE 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .vert-a .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-a .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 28px;
+      color: #1A1A1A;
+      line-height: 1.1;
+    }
+
+    .vert-a .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.55;
+      margin-top: 20px;
+      max-width: 90%;
+    }
+
+    .vert-a .footer {
+      background: #D54919;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .vert-a .logo-small {
+      width: 24px;
+      height: 24px;
+    }
+
+    .vert-a .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* Vertical B: Dramatic negative space — Stoic restraint */
+    .vert-b {
+      width: 270px;
+      height: 480px;
+      background: #1A1A1A;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .vert-b .grain {
+      opacity: 0.12;
+      mix-blend-mode: overlay;
+    }
+
+    .vert-b .accent-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #D54919;
+    }
+
+    .vert-b .logo-corner {
+      position: absolute;
+      top: 30px;
+      right: 24px;
+      z-index: 3;
+    }
+
+    .vert-b .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-b .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 26px;
+      color: #FFFFFF;
+      line-height: 1.15;
+    }
+
+    .vert-b .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: #888888;
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+
+    .vert-b .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-b .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #666666;
+    }
+
+    .vert-b .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Vertical C: Book cover aesthetic */
+    .vert-c {
+      width: 270px;
+      height: 480px;
+      background: linear-gradient(180deg, #F8F6F3 0%, #EDE9E4 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .vert-c .top-space {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-c .logo-mark {
+      width: 50px;
+      height: 50px;
+      background: #D54919;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .vert-c .content-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-c .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 26px;
+      color: #1A1A1A;
+      line-height: 1.1;
+    }
+
+    .vert-c .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+
+    .vert-c .divider {
+      width: 60px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.15);
+      margin: 24px auto;
+    }
+
+    .vert-c .footer {
+      padding: 24px 30px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .vert-c .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: #888888;
+      display: block;
+    }
+
+    .vert-c .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-top: 8px;
+    }
+
+    /* Vertical D: Side stripe (consistent with landscape) */
+    .vert-d {
+      width: 270px;
+      height: 480px;
+      display: flex;
+      background: #F8F6F3;
+    }
+
+    .vert-d .sidebar {
+      width: 45px;
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .vert-d .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(145deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .vert-d .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 40px 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .vert-d .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 22px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .vert-d .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.55;
+      margin-top: 16px;
+    }
+
+    .vert-d .footer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .vert-d .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #888888;
+    }
+
+    .vert-d .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Vertical E: Rule of thirds — 1/3 orange header */
+    .vert-e {
+      width: 270px;
+      height: 480px;
+      background: #F8F6F3;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .vert-e .orange-header {
+      height: 160px; /* ~1/3 of 480 */
+      background: #D54919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .vert-e .content {
+      flex: 1;
+      position: relative;
+      background: linear-gradient(180deg, #FAFAF8 0%, #F5F3F0 100%);
+    }
+
+    .vert-e .content-inner {
+      position: relative;
+      z-index: 2;
+      padding: 30px 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .vert-e .title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 22px;
+      color: #1A1A1A;
+      line-height: 1.15;
+    }
+
+    .vert-e .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.55;
+      margin-top: 14px;
+    }
+
+    .vert-e .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .vert-e .site {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #888888;
+    }
+
+    .vert-e .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: #D54919;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Share Image Variations</h1>
+  <p class="intro">
+    Exploring formats for different platforms. The aesthetic: stoicism, wisdom, minimalism.<br>
+    Restraint. Breathing room. Let the words do the work.
+  </p>
+
+  <div class="divider"></div>
+
+  <!-- LANDSCAPE — VARIATION H (FINAL) -->
+  <div class="section">
+    <h2>Landscape — Twitter / LinkedIn (1200×630)</h2>
+    <p class="label" style="margin-bottom: 24px;">This is Variation H. The reference. Done.</p>
+    <div class="card landscape">
+      <div class="sidebar">
+        <svg class="logo-svg" width="32" height="32" viewBox="0 0 100 100">
+          <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+          <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="grain"></div>
+        <div class="content-inner">
+          <div>
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="label">Shown at 50% (600×315). Actual: 1200×630</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SQUARE — 1080×1080 -->
+  <div class="section">
+    <h2>Square — Instagram / Twitter Feed (1080×1080)</h2>
+    <div class="variations-row">
+
+      <div class="variation">
+        <div class="card square-a">
+          <div class="grain"></div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <svg class="logo-svg-orange logo-mark" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+        <span class="label">A: Quote-centric<br>Let the words breathe. Centered. Calm.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card square-b">
+          <div class="sidebar">
+            <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div>
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">B: Sidebar consistent<br>Matches landscape. Brand recognition.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card square-c">
+          <div class="accent-bar"></div>
+          <div class="grain"></div>
+          <div class="logo-corner">
+            <svg class="logo-svg-orange" width="36" height="36" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+        <span class="label">C: Dark mode dramatic<br>Bold contrast. Logo top-right.</span>
+      </div>
+
+    </div>
+    <span class="label" style="margin-top: 24px;">Shown at 50% (540×540). Actual: 1080×1080</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- INSTAGRAM 4:5 — 1080×1350 -->
+  <div class="section">
+    <h2>Instagram Feed — 4:5 Ratio (1080×1350)</h2>
+    <div class="variations-row">
+
+      <div class="variation">
+        <div class="card insta-a">
+          <div class="sidebar">
+            <svg class="logo-svg" width="32" height="32" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div>
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">A: Sidebar consistent<br>Extra vertical space for content.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card insta-b">
+          <div class="grain"></div>
+          <div class="logo-header">
+            <div class="logo-mark">
+              <svg class="logo-svg" width="18" height="18" viewBox="0 0 100 100">
+                <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+                <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+        <span class="label">B: Top logo, centered<br>Clean and modern.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card insta-c">
+          <div class="orange-header">
+            <svg class="logo-svg" width="60" height="60" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div>
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">C: Rule of thirds<br>1/3 orange header. Golden ratio.</span>
+      </div>
+
+    </div>
+    <span class="label" style="margin-top: 24px;">Shown at 40% (432×540). Actual: 1080×1350</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- VERTICAL 9:16 — 1080×1920 -->
+  <div class="section">
+    <h2>Vertical — Stories (1080×1920)</h2>
+    <p class="label" style="margin-bottom: 24px;">Stories need to arrest attention. Bold statements. Fast swipe context.</p>
+    <div class="variations-row">
+
+      <div class="variation">
+        <div class="card vert-a">
+          <div class="grain"></div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <svg class="logo-svg logo-small" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+            <span class="site">lobsang-lama.com</span>
+          </div>
+        </div>
+        <span class="label">A: Statement<br>Words center stage. Orange footer anchors.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card vert-b">
+          <div class="grain"></div>
+          <div class="accent-line"></div>
+          <div class="logo-corner">
+            <svg class="logo-svg-orange" width="28" height="28" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+        <span class="label">B: Dark dramatic<br>Logo top-right. Negative space speaks.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card vert-c">
+          <div class="grain"></div>
+          <div class="top-space">
+            <div class="logo-mark">
+              <svg class="logo-svg" width="26" height="26" viewBox="0 0 100 100">
+                <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+                <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="title">Go -1 to 0</div>
+            <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+            <div class="divider"></div>
+          </div>
+          <div class="footer">
+            <span class="site">lobsang-lama.com</span>
+            <span class="tag">Essay</span>
+          </div>
+        </div>
+        <span class="label">C: Book cover<br>Timeless. Classic composition.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card vert-d">
+          <div class="sidebar">
+            <svg class="logo-svg" width="20" height="20" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div>
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">D: Side stripe<br>Brand consistency across all formats.</span>
+      </div>
+
+      <div class="variation">
+        <div class="card vert-e">
+          <div class="orange-header">
+            <svg class="logo-svg" width="48" height="48" viewBox="0 0 100 100">
+              <path d="M0 0 H100 V100 H75 V25 H0 Z"/>
+              <path d="M0 45 H50 V100 H25 V70 H0 Z"/>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="grain"></div>
+            <div class="content-inner">
+              <div>
+                <div class="title">Go -1 to 0</div>
+                <div class="subtitle">The hardest part of building isn't going from zero to one — it's deciding to start at all.</div>
+              </div>
+              <div class="footer">
+                <span class="site">lobsang-lama.com</span>
+                <span class="tag">Essay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="label">E: Rule of thirds<br>1/3 orange header. Bold brand presence.</span>
+      </div>
+
+    </div>
+    <span class="label" style="margin-top: 24px;">Shown at 25% (270×480). Actual: 1080×1920</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- DESIGN NOTES -->
+  <div class="section" style="padding: 40px; background: #141414; border-radius: 12px; max-width: 800px;">
+    <h2 style="color: #666; margin-bottom: 24px;">Design Direction</h2>
+    <div class="label" style="text-align: left; color: #999; font-size: 13px; line-height: 1.8;">
+      <strong style="color: #D54919;">Stoicism</strong> — Restraint. Not everything needs to be filled. Let negative space do work.<br><br>
+      <strong style="color: #D54919;">Wisdom</strong> — The words are the hero. Typography hierarchy matters. Title dominates.<br><br>
+      <strong style="color: #D54919;">Minimalism</strong> — Every element earns its place. No decoration for decoration's sake.<br><br>
+      <strong style="color: #888;">Consistency vs. Platform</strong> — The sidebar creates brand recognition across formats. But Stories might benefit from a bolder, different approach that still feels "on-brand."<br><br>
+      <strong style="color: #888;">Options summary:</strong><br>
+      • Landscape: Variation H (done) — sidebar + content<br>
+      • Square: A (centered), B (sidebar), C (dark + logo top-right)<br>
+      • Instagram 4:5: A (sidebar), B (top logo), C (1/3 orange header)<br>
+      • Vertical: A (statement), B (dark + logo), C (book cover), D (side stripe), E (1/3 header)<br><br>
+      <strong style="color: #D54919;">Logo is now present in all variations.</strong>
+    </div>
+  </div>
+
+</body>
+</html>

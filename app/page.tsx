@@ -22,7 +22,7 @@ const displayEssays = mindEssaySlugs
 
 export default function Home() {
   return (
-    <EditorialLayout currentPath="home.mdx">
+    <EditorialLayout >
       <Breadcrumb path="home.mdx" />
 
       {/* Hero - SECA Identity */}

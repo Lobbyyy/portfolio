@@ -107,8 +107,14 @@ export default async function EssayPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <EditorialLayout
-      currentPath={`essays/${slug}`}
+      
       contextContent={<EssayContext essay={essay} relatedEssays={relatedEssays} />}
+      share={{
+        url: `https://lobsang-lama.com/essays/${slug}`,
+        title: essay.title,
+        subtitle: essay.excerpt,
+        tag: "Essay",
+      }}
     >
       <Breadcrumb path={`essays/${essay.slug}.mdx`} />
 

@@ -4,7 +4,7 @@ import { Mail, Twitter, Linkedin, Github } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <EditorialLayout currentPath="contact.mdx">
+    <EditorialLayout >
       <Breadcrumb path="contact.mdx" />
 
       <header className="mb-12">

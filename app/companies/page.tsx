@@ -8,7 +8,7 @@ import { COMPANIES, CompanyStatus } from "@/lib/data/portfolio-data"
 
 export default function CompaniesPage() {
   return (
-    <EditorialLayout currentPath="companies/">
+    <EditorialLayout >
       <Breadcrumb path="companies/" />
 
       <header className="mb-12">

@@ -15,10 +15,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Lobsang Lama', url: siteUrl }],
   creator: 'Lobsang Lama',
   metadataBase: new URL(siteUrl),
-  icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
-  },
   openGraph: {
     title: 'Lobsang Lama',
     description: 'Stoic. Entrepreneur. Creative. Athlete.',

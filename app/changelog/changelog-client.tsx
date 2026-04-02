@@ -14,7 +14,7 @@ interface ChangelogClientProps {
 export default function ChangelogClient({ eventsByYear, years }: ChangelogClientProps) {
   return (
     <EditorialLayout
-      currentPath="changelog/"
+      
       contextContent={<YearNavigation years={years} />}
     >
       <Breadcrumb path="changelog/" />

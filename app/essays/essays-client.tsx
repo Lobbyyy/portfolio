@@ -52,7 +52,7 @@ function EssaysPageContent({ essays: allEssays, tags }: EssaysClientProps) {
 
   return (
     <EditorialLayout
-      currentPath="essays/"
+      
       contextContent={<EssaysContext tags={tags} selectedTag={selectedTag} />}
     >
       <Breadcrumb path="essays/" />

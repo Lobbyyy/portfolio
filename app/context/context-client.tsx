@@ -85,7 +85,7 @@ function ContextPageContent({ items: allItems, categories }: ContextClientProps)
 
   return (
     <EditorialLayout
-      currentPath="context/"
+      
       contextContent={
         <ContextSidebar
           tags={categoryTags}

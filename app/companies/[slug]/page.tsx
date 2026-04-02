@@ -1,6 +1,6 @@
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import { COMPANIES, CompanyStatus } from "@/lib/data/portfolio-data"
+import { COMPANIES, CompanyStatus, Company } from "@/lib/data/portfolio-data"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
@@ -31,7 +31,16 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   if (!company) notFound()
 
   return (
-    <EditorialLayout currentPath="companies/">
+    <EditorialLayout
+      
+      contextContent={<CompanyContext company={company} />}
+      share={{
+        url: `https://lobsang-lama.com/companies/${company.slug}`,
+        title: company.name,
+        subtitle: company.tagline,
+        tag: "Company",
+      }}
+    >
       <Breadcrumb path={`companies/${company.slug}`} />
 
       {/* Hero */}
@@ -107,5 +116,39 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         </Link>
       </div>
     </EditorialLayout>
+  )
+}
+
+function CompanyContext({ company }: { company: Company }) {
+  return (
+    <div className="space-y-6">
+      {/* Company Info */}
+      <div>
+        <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
+          Company Info
+        </h3>
+        <div className="space-y-2">
+          <p className="text-sm text-[rgb(var(--text))]">
+            <span className="text-[rgb(var(--muted))]">Status:</span>{" "}
+            <span className="capitalize">{statusConfig[company.status].label}</span>
+          </p>
+        </div>
+      </div>
+
+      {/* Links */}
+      <div>
+        <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
+          Links
+        </h3>
+        <a
+          href={company.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-[rgb(var(--primary))] hover:underline"
+        >
+          {company.url.replace(/^https?:\/\//, "")}
+        </a>
+      </div>
+    </div>
   )
 }

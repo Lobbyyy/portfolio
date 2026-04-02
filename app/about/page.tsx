@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/editorial/Breadcrumb"
 
 export default function AboutPage() {
   return (
-    <EditorialLayout currentPath="about.mdx">
+    <EditorialLayout >
       <Breadcrumb path="about.mdx" />
 
       <header className="mb-12">

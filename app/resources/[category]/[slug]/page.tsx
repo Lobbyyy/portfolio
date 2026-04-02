@@ -102,10 +102,16 @@ export default async function ResourcePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <EditorialLayout
-        currentPath={`resources/${category}/${slug}`}
+        
         contextContent={
           <ResourceContext resource={resource} relatedResources={relatedResources} />
         }
+        share={{
+          url: `https://lobsang-lama.com/resources/${category}/${slug}`,
+          title: resource.title,
+          subtitle: resource.excerpt,
+          tag: "Resource",
+        }}
       >
         <Breadcrumb path={`resources/${category}/${slug}.mdx`} />
 
