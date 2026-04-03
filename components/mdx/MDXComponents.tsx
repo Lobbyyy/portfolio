@@ -1,5 +1,6 @@
 import type { Components } from "react-markdown"
 import Link from "next/link"
+import CodeBlock from "./CodeBlock"
 
 export const MDXComponents: Components = {
   // Headings with proper typography
@@ -100,17 +101,14 @@ export const MDXComponents: Components = {
         </code>
       )
     }
+    // Block code - styled within CodeBlock
     return (
-      <code className="font-mono text-sm">{children}</code>
+      <code className="font-mono text-sm text-[rgb(var(--text))]">{children}</code>
     )
   },
 
-  // Pre (code blocks)
-  pre: ({ children }) => (
-    <pre className="bg-[rgb(var(--surface))] border border-[rgb(var(--border))] rounded-lg p-4 my-6 overflow-x-auto">
-      {children}
-    </pre>
-  ),
+  // Pre (code blocks) - with copy button
+  pre: ({ children }) => <CodeBlock>{children}</CodeBlock>,
 
   // Lists
   ul: ({ children }) => (

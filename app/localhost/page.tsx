@@ -61,11 +61,17 @@ export default function LocalhostPage() {
         ))}
       </div>
 
-      {/* Footer Note */}
-      <footer className="mt-12 p-4 rounded-lg border border-dashed border-[rgb(var(--border))]">
-        <p className="text-sm text-[rgb(var(--muted))] italic text-center">
-          &ldquo;A lot more that may never leave localhost lol&rdquo;
+      {/* Footer CTA */}
+      <footer className="mt-12 p-6 rounded-lg border border-dashed border-[rgb(var(--border))] text-center">
+        <p className="text-[rgb(var(--text))] mb-4">
+          See a project with potential? I&apos;m always looking for talented collaborators.
         </p>
+        <a
+          href="mailto:contact@lobsang-lama.com"
+          className="inline-flex items-center gap-2 text-[rgb(var(--primary))] hover:underline underline-offset-2 font-medium"
+        >
+          Get in touch &rarr;
+        </a>
       </footer>
     </EditorialLayout>
   )

@@ -105,7 +105,7 @@ function ContextPageContent({ items: allItems, categories }: ContextClientProps)
         </p>
 
         {/* Category Tabs */}
-        <div className="flex gap-1 border-b border-[rgb(var(--border))]">
+        <div className="flex gap-1 border-b border-[rgb(var(--border))] overflow-x-auto scrollbar-hide">
           {categories.map((category) => {
             const isActive = selectedCategory === category
             const count = allItems.filter((i) => i.category === category).length
@@ -113,7 +113,7 @@ function ContextPageContent({ items: allItems, categories }: ContextClientProps)
               <Link
                 key={category}
                 href={`/context?category=${category}`}
-                className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-[1px] ${
+                className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-[1px] whitespace-nowrap ${
                   isActive
                     ? "border-[rgb(var(--primary))] text-[rgb(var(--primary))]"
                     : "border-transparent text-[rgb(var(--muted))] hover:text-[rgb(var(--text))]"

@@ -128,6 +128,16 @@ body {
   background: rgb(var(--muted));
 }
 
+/* Hidden scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Link hover animation */
 .link-underline {
   position: relative;
