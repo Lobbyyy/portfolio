@@ -7,10 +7,6 @@ tags: ["ai", "chatgpt", "sycophancy", "mental-health", "openai"]
 featured: true
 ---
 
-*Which IS a lie.*
-
----
-
 You ask ChatGPT if your startup idea is good. It says yes.
 
 You ask again, slightly differently. It agrees even harder.

@@ -7,10 +7,6 @@ tags: ["ai", "benchmarks", "openai", "apple", "agi"]
 featured: true
 ---
 
-*AGI is not a breakthrough, it's a narrative.*
-
----
-
 ## The six words that did all the work
 
 In January 2025, Sam Altman published a statement on his blog. He wrote that OpenAI was confident it knew how to build AGI "as we have traditionally understood it."

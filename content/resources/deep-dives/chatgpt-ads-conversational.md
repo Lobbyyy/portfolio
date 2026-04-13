@@ -7,10 +7,6 @@ tags: ["ai", "chatgpt", "openai", "advertising", "trust"]
 featured: true
 ---
 
-*63% of people say ChatGPT ads will make them trust it less, but OpenAI launched them anyway. There's only one explanation for that math.*
-
----
-
 Last week I asked ChatGPT a question about a chest pain I'd been ignoring. It gave me a careful, warm answer. Underneath the answer, a small card appeared. A health brand. Tap to ask follow-up questions.
 
 I sat there for a second and tried to remember whether the recommendation had come before the card or because of it.
