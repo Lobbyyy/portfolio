@@ -1,16 +1,16 @@
 import { createOGImageResponse, ogSize, ogContentType } from '@/lib/og-image'
-import { getAllResources, getResourceBySlug } from '@/lib/resources'
+import { getResourcesByType, getResourceBySlug } from '@/lib/resources'
 
 export const runtime = 'nodejs'
-export const alt = 'Resource by Lobsang Lama'
+export const alt = 'Guide by Lobsang Lama'
 export const size = ogSize
 export const contentType = ogContentType
 
 export function generateStaticParams() {
-  const resources = getAllResources()
-  return resources.map((resource) => ({
-    category: resource.category,
-    slug: resource.slug,
+  const guides = getResourcesByType("guide")
+  return guides.map((guide) => ({
+    category: guide.category,
+    slug: guide.slug,
   }))
 }
 

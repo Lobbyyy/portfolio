@@ -2,9 +2,10 @@
 
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 import { ArrowUpRight, ExternalLink } from "lucide-react"
 import { COMPANIES, CompanyStatus } from "@/lib/data/portfolio-data"
+import { trackCompanyCardClick, trackCompanyVisitClick } from "@/lib/analytics"
 
 export default function CompaniesPage() {
   return (
@@ -77,15 +78,26 @@ function CompanyCard({
   status: CompanyStatus
 }) {
   const router = useRouter()
+  const pathname = usePathname()
   const statusConfig = {
     active: { color: "bg-green-500", label: "Active" },
     live: { color: "bg-blue-500", label: "Live" },
     exploring: { color: "bg-yellow-500", label: "Exploring" },
   }
 
+  const handleCardClick = () => {
+    trackCompanyCardClick(slug, pathname)
+    router.push(`/companies/${slug}`)
+  }
+
+  const handleVisitClick = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    trackCompanyVisitClick(slug, url)
+  }
+
   return (
     <div
-      onClick={() => router.push(`/companies/${slug}`)}
+      onClick={handleCardClick}
       className="group block p-6 rounded-lg border border-[rgb(var(--border))] bg-[rgb(var(--surface))] hover:border-[rgb(var(--primary))] transition-all cursor-pointer"
     >
       <div className="flex items-start justify-between mb-3">
@@ -108,7 +120,7 @@ function CompanyCard({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
+          onClick={handleVisitClick}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-md border border-[rgb(var(--border))] hover:border-[rgb(var(--primary))] hover:text-[rgb(var(--primary))] transition-colors"
           aria-label={`Visit ${name}`}
         >

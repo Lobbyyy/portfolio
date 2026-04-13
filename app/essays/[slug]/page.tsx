@@ -6,6 +6,7 @@ import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight, Clock, Calendar } from "lucide-react"
 import { getAllEssays, getEssayBySlug, getRelatedEssays, EssayContent } from "@/lib/essays"
+import EssayTracker from "./EssayTracker"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -105,6 +106,12 @@ export default async function EssayPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <EssayTracker
+        slug={essay.slug}
+        title={essay.title}
+        tags={essay.tags}
+        readTime={essay.readTime}
       />
       <EditorialLayout
       

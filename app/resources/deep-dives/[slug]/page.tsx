@@ -7,33 +7,32 @@ import Link from "next/link"
 import { ArrowLeft, Clock, Calendar } from "lucide-react"
 import {
   getResourcesByType,
-  getResourceBySlug,
+  getDeepDiveBySlug,
   getRelatedResources,
-  ResourceContent,
+  type ResourceContent,
 } from "@/lib/resources"
-import GuideTracker from "./GuideTracker"
+import DeepDiveTracker from "./DeepDiveTracker"
 
 interface Props {
-  params: Promise<{ category: string; slug: string }>
+  params: Promise<{ slug: string }>
 }
 
 export function generateStaticParams() {
-  const guides = getResourcesByType("guide")
-  return guides.map((guide) => ({
-    category: guide.category,
-    slug: guide.slug,
+  const deepDives = getResourcesByType("deep-dive")
+  return deepDives.map((deepDive) => ({
+    slug: deepDive.slug,
   }))
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { category, slug } = await params
-  const resource = getResourceBySlug(category, slug)
+  const { slug } = await params
+  const resource = getDeepDiveBySlug(slug)
 
   if (!resource) {
-    return { title: "Resource Not Found" }
+    return { title: "Deep Dive Not Found" }
   }
 
-  const url = `https://lobsang-lama.com/resources/${category}/${slug}`
+  const url = `https://lobsang-lama.com/resources/deep-dives/${slug}`
 
   return {
     title: resource.title,
@@ -62,15 +61,15 @@ export async function generateMetadata({ params }: Props) {
   }
 }
 
-export default async function ResourcePage({ params }: Props) {
-  const { category, slug } = await params
-  const resource = getResourceBySlug(category, slug)
+export default async function DeepDivePage({ params }: Props) {
+  const { slug } = await params
+  const resource = getDeepDiveBySlug(slug)
 
   if (!resource) {
     notFound()
   }
 
-  const relatedResources = getRelatedResources("guide", slug, 3, category)
+  const relatedResources = getRelatedResources("deep-dive", slug, 3)
 
   // Article schema for SEO/GEO
   const articleSchema = {
@@ -91,7 +90,7 @@ export default async function ResourcePage({ params }: Props) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://lobsang-lama.com/resources/${category}/${slug}`,
+      "@id": `https://lobsang-lama.com/resources/deep-dives/${slug}`,
     },
     keywords: resource.tags.join(", "),
   }
@@ -102,7 +101,7 @@ export default async function ResourcePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <GuideTracker
+      <DeepDiveTracker
         slug={resource.slug}
         title={resource.title}
         tags={resource.tags}
@@ -110,31 +109,31 @@ export default async function ResourcePage({ params }: Props) {
       />
       <EditorialLayout
         contextContent={
-          <ResourceContext resource={resource} relatedResources={relatedResources} />
+          <DeepDiveContext resource={resource} relatedResources={relatedResources} />
         }
         share={{
-          url: `https://lobsang-lama.com/resources/${category}/${slug}`,
+          url: `https://lobsang-lama.com/resources/deep-dives/${slug}`,
           title: resource.title,
           subtitle: resource.excerpt,
-          tag: "Resource",
+          tag: "Deep Dive",
         }}
       >
-        <Breadcrumb path={`resources/${category}/${slug}.mdx`} />
+        <Breadcrumb path={`resources/deep-dives/${slug}.mdx`} />
 
         {/* Back Link */}
         <Link
-          href="/resources?tab=guides"
+          href="/resources?tab=deep-dives"
           className="inline-flex items-center gap-2 text-sm text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Guides
+          Back to Deep Dives
         </Link>
 
         {/* Resource Header */}
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <span className="font-mono text-xs text-[rgb(var(--primary))] uppercase tracking-wider">
-              {resource.category}
+              Deep Dive
             </span>
             <span className="text-[rgb(var(--border))]">·</span>
             <span className="flex items-center gap-1.5 font-mono text-xs text-[rgb(var(--muted))]">
@@ -159,17 +158,18 @@ export default async function ResourcePage({ params }: Props) {
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-6">
             {resource.tags.map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
+                href={`/resources?tab=deep-dives&tag=${tag}`}
+                className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors"
               >
                 #{tag}
-              </span>
+              </Link>
             ))}
           </div>
         </header>
 
-        {/* Resource Content */}
+        {/* Content */}
         <MarkdownRenderer content={resource.content} />
 
         {/* Support Footer */}
@@ -179,7 +179,7 @@ export default async function ResourcePage({ params }: Props) {
   )
 }
 
-function ResourceContext({
+function DeepDiveContext({
   resource,
   relatedResources,
 }: {
@@ -201,8 +201,7 @@ function ResourceContext({
             <span className="text-[rgb(var(--muted))]">Published:</span> {resource.date}
           </p>
           <p className="text-sm text-[rgb(var(--text))]">
-            <span className="text-[rgb(var(--muted))]">Category:</span>{" "}
-            <span className="capitalize">{resource.category}</span>
+            <span className="text-[rgb(var(--muted))]">Type:</span> Deep Dive
           </p>
         </div>
       </div>
@@ -214,12 +213,13 @@ function ResourceContext({
         </h3>
         <div className="flex flex-wrap gap-2">
           {resource.tags.map((tag) => (
-            <span
+            <Link
               key={tag}
-              className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
+              href={`/resources?tab=deep-dives&tag=${tag}`}
+              className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors"
             >
               #{tag}
-            </span>
+            </Link>
           ))}
         </div>
       </div>
@@ -228,13 +228,17 @@ function ResourceContext({
       {relatedResources.length > 0 && (
         <div>
           <h3 className="font-mono text-xs text-[rgb(var(--muted))] uppercase tracking-wider mb-3">
-            Related Resources
+            Related
           </h3>
           <div className="space-y-2">
             {relatedResources.map((related) => (
               <Link
-                key={`${related.category}-${related.slug}`}
-                href={`/resources/${related.category}/${related.slug}`}
+                key={related.slug}
+                href={
+                  related.type === "deep-dive"
+                    ? `/resources/deep-dives/${related.slug}`
+                    : `/resources/${related.category}/${related.slug}`
+                }
                 className="block text-sm text-[rgb(var(--text))] hover:text-[rgb(var(--primary))] transition-colors line-clamp-2"
               >
                 {related.title}
