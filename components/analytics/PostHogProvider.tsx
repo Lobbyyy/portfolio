@@ -8,7 +8,9 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
-        api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com',
+        // Proxied through /ingest (see next.config.mjs) so ad blockers don't drop events
+        api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || '/ingest',
+        ui_host: 'https://eu.posthog.com',
         capture_pageview: 'history_change', // Handles SPA navigation automatically
         capture_pageleave: 'if_capture_pageview',
         // Session replay is enabled by default

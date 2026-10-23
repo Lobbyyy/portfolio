@@ -19,6 +19,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // PostHog reverse proxy: requests go through our own domain so ad blockers don't drop them
+  async rewrites() {
+    return [
+      { source: '/ingest/static/:path*', destination: 'https://eu-assets.i.posthog.com/static/:path*' },
+      { source: '/ingest/array/:path*', destination: 'https://eu-assets.i.posthog.com/array/:path*' },
+      { source: '/ingest/:path*', destination: 'https://eu.i.posthog.com/:path*' },
+    ]
+  },
+  // Required by the PostHog proxy (its API paths end in a slash)
+  skipTrailingSlashRedirect: true,
   // Short links used as Instagram DM keyword replies (AMBITION, PATCH); UTMs let PostHog funnels separate DM traffic. Temporary so the targets can move later.
   async redirects() {
     return [
