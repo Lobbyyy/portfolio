@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, ReactNode, isValidElement } from "react"
 import { Copy, Check } from "lucide-react"
+import { trackCodeBlockCopied } from "@/lib/analytics"
 
 interface CodeBlockProps {
   children: ReactNode
@@ -25,11 +26,12 @@ export default function CodeBlock({ children }: CodeBlockProps) {
     try {
       await navigator.clipboard.writeText(text)
       setCopied(true)
+      trackCodeBlockCopied(codeClass.replace("language-", "") || "plain", text)
       setTimeout(() => setCopied(false), 2000)
     } catch (error) {
       console.error("Failed to copy:", error)
     }
-  }, [])
+  }, [codeClass])
 
   return (
     <div className="relative group my-6">

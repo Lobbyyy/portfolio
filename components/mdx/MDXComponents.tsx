@@ -1,6 +1,9 @@
 import type { Components } from "react-markdown"
 import Link from "next/link"
 import CodeBlock from "./CodeBlock"
+import AmbitionCompass from "./AmbitionCompass"
+import InstallVideo from "./InstallVideo"
+import { trackFileDownloaded } from "@/lib/analytics"
 
 export const MDXComponents: Components = {
   // Headings with proper typography
@@ -51,6 +54,7 @@ export const MDXComponents: Components = {
         <a
           href={href}
           download={download}
+          onClick={() => trackFileDownloaded(href || "")}
           className="text-[rgb(var(--primary))] hover:underline underline-offset-2"
         >
           {children}
@@ -179,4 +183,12 @@ export const MDXComponents: Components = {
       {children}
     </td>
   ),
+
+  // Custom blocks used in resource markdown
+  ...({
+    "ambition-compass": () => <AmbitionCompass />,
+    "install-video": ({ src, poster, label }: { src?: string; poster?: string; label?: string }) => (
+      <InstallVideo src={src || ""} poster={poster} label={label} />
+    ),
+  } as Components),
 }

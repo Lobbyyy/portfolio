@@ -23,6 +23,8 @@ export const AnalyticsEvents = {
   // Sharing events
   LINK_COPIED: 'link_copied',
   SHARE_IMAGE_DOWNLOADED: 'share_image_downloaded',
+  CODE_BLOCK_COPIED: 'code_block_copied',
+  FILE_DOWNLOADED: 'file_downloaded',
 
   // External link events
   EXTERNAL_LINK_CLICK: 'external_link_click',
@@ -102,6 +104,22 @@ export function trackRelatedContentClick(
     from_slug: fromSlug,
     to_slug: toSlug,
     content_type: contentType,
+  })
+}
+
+// Lead-magnet tracking (copyable prompts, skill files)
+export function trackCodeBlockCopied(language: string, preview: string) {
+  capture(AnalyticsEvents.CODE_BLOCK_COPIED, {
+    language,
+    preview: preview.slice(0, 80),
+    page: window.location.pathname,
+  })
+}
+
+export function trackFileDownloaded(href: string) {
+  capture(AnalyticsEvents.FILE_DOWNLOADED, {
+    href,
+    page: window.location.pathname,
   })
 }
 

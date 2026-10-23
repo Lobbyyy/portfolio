@@ -19,11 +19,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Short links used as Instagram DM keyword replies (AMBITION, PATCH). Temporary so the targets can move later.
+  // Short links used as Instagram DM keyword replies (AMBITION, PATCH); UTMs let PostHog funnels separate DM traffic. Temporary so the targets can move later.
   async redirects() {
     return [
-      { source: '/ambition', destination: '/resources/agent-skills/be-ambitious', permanent: false },
-      { source: '/patch', destination: '/resources/engineering/php-security-oct-2026', permanent: false },
+      { source: '/ambition', destination: '/resources/agent-skills/be-ambitious?utm_source=instagram&utm_medium=dm&utm_campaign=ambition', permanent: false },
+      { source: '/patch', destination: '/resources/engineering/php-security-oct-2026?utm_source=instagram&utm_medium=dm&utm_campaign=patch', permanent: false },
     ]
   },
   experimental: {
