@@ -7,7 +7,15 @@ const RESOURCES_DIR = path.join(process.cwd(), "content/resources")
 export type ResourceType = "deep-dive" | "guide"
 
 // Legacy category type (for existing guides)
-export type ResourceCategory = "marketing" | "fundraising" | "product" | "mindset" | "tools"
+export type ResourceCategory =
+  | "marketing"
+  | "sales"
+  | "engineering"
+  | "agent-skills"
+  | "fundraising"
+  | "product"
+  | "mindset"
+  | "tools"
 
 export interface ResourceContent {
   slug: string

@@ -43,8 +43,20 @@ export const MDXComponents: Components = {
   ),
 
   // Links
-  a: ({ href, children }) => {
+  a: ({ href, children, download }) => {
     const isExternal = href?.startsWith("http")
+    // File downloads (e.g. /skills/*.md) need a plain anchor so the browser keeps the download attribute
+    if (download !== undefined) {
+      return (
+        <a
+          href={href}
+          download={download}
+          className="text-[rgb(var(--primary))] hover:underline underline-offset-2"
+        >
+          {children}
+        </a>
+      )
+    }
     if (isExternal) {
       return (
         <a
