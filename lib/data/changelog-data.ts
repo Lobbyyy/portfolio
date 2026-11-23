@@ -90,11 +90,11 @@ export const CHANGELOG_EVENTS: ChangelogEvent[] = [
     emoji: "🎓"
   },
 
-  // 2017
+  // 2016
   {
     id: "team-gb",
-    date: "Jul 2017",
-    year: 2017,
+    date: "Jul 2016",
+    year: 2016,
     title: "Represented Team GB at European University Games",
     description: "Zagreb, Croatia. Competing for my country on the international stage.",
     category: "milestone",
