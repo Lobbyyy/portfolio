@@ -22,9 +22,9 @@ export default function Providers({ children }: ProvidersProps) {
         enableSystem
         disableTransitionOnChange
       >
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        {/* Sibling, not wrapper: Lenis only runs in the browser, but page content must still server-render */}
+        <SmoothScroll />
+        {children}
       </ThemeProvider>
     </PostHogProvider>
   )
