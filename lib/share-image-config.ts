@@ -39,3 +39,6 @@ export type VariationKey = typeof VARIATIONS[ShareImageFormat][number]['key']
 export function getDefaultVariation(format: ShareImageFormat): VariationKey {
   return VARIATIONS[format][0].key
 }
+
+// Share as image is off until the rebuild (6 of 11 styles render empty on production, 26 Nov 2026).
+export const SHARE_IMAGE_ENABLED = false

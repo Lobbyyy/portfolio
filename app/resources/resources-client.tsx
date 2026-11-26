@@ -2,7 +2,6 @@
 
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
-import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { FileText, Telescope, Bookmark, ExternalLink, Clock, Folder } from "lucide-react"
@@ -201,8 +200,6 @@ function ResourcesPageContent({
         )}
       </div>
 
-      {/* Support Footer */}
-      <SupportFooter />
     </EditorialLayout>
   )
 }

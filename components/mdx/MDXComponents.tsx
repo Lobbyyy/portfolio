@@ -8,22 +8,22 @@ import { trackFileDownloaded } from "@/lib/analytics"
 export const MDXComponents: Components = {
   // Headings with proper typography
   h1: ({ children }) => (
-    <h1 className="font-serif text-3xl md:text-4xl text-[rgb(var(--text))] mt-12 mb-6 leading-tight first:mt-0">
+    <h1 className="font-serif font-normal text-3xl md:text-4xl text-[rgb(var(--text))] mt-12 mb-6 leading-tight first:mt-0">
       {children}
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="font-sans text-xl md:text-2xl font-semibold text-[rgb(var(--text))] mt-10 mb-4 leading-snug tracking-tight">
+    <h2 className="font-serif font-normal text-2xl md:text-[1.75rem] text-[rgb(var(--text))] mt-12 mb-4 leading-snug">
       {children}
     </h2>
   ),
   h3: ({ children }) => (
-    <h3 className="font-serif text-xl md:text-2xl text-[rgb(var(--text))] mt-8 mb-3 leading-snug">
+    <h3 className="font-serif font-normal text-xl md:text-2xl text-[rgb(var(--text))] mt-8 mb-3 leading-snug">
       {children}
     </h3>
   ),
   h4: ({ children }) => (
-    <h4 className="font-serif text-lg md:text-xl text-[rgb(var(--text))] mt-6 mb-2 leading-snug">
+    <h4 className="font-serif font-normal text-lg md:text-xl text-[rgb(var(--text))] mt-6 mb-2 leading-snug">
       {children}
     </h4>
   ),
@@ -40,7 +40,7 @@ export const MDXComponents: Components = {
 
   // Paragraphs
   p: ({ children }) => (
-    <p className="text-[rgb(var(--text))] leading-relaxed mb-6 text-base md:text-lg">
+    <p className="text-[rgb(var(--text)/0.85)] leading-[1.7] mb-6 text-base md:text-[17px]">
       {children}
     </p>
   ),
@@ -112,7 +112,7 @@ export const MDXComponents: Components = {
     const isInline = !className
     if (isInline) {
       return (
-        <code className="font-mono text-sm bg-[rgb(var(--border))] text-[rgb(var(--text))] px-1.5 py-0.5 rounded">
+        <code className="font-mono text-[0.85em] font-normal bg-[rgb(var(--border)/0.7)] text-[rgb(var(--text))] px-1.5 py-0.5 rounded before:content-none after:content-none">
           {children}
         </code>
       )
@@ -138,7 +138,7 @@ export const MDXComponents: Components = {
     </ol>
   ),
   li: ({ children }) => (
-    <li className="text-base md:text-lg leading-relaxed pl-2">
+    <li className="text-[rgb(var(--text)/0.85)] text-base md:text-[17px] leading-[1.7] pl-2">
       {children}
     </li>
   ),
@@ -150,7 +150,7 @@ export const MDXComponents: Components = {
 
   // Strong/Bold
   strong: ({ children }) => (
-    <strong className="font-semibold text-[rgb(var(--text))]">{children}</strong>
+    <strong className="font-medium text-[rgb(var(--text))]">{children}</strong>
   ),
 
   // Emphasis/Italic

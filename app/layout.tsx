@@ -47,6 +47,8 @@ const personSchema = {
     'https://github.com/Lobbyyy',
     'https://www.youtube.com/@lobsang_lama',
     'https://www.instagram.com/seca.mp4/',
+    'https://www.instagram.com/lobsang_lama__/',
+    'https://www.tiktok.com/@lobsang_lama_',
     'https://substack.com/@lobsanglama',
   ],
   jobTitle: 'Entrepreneur',
@@ -61,11 +63,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Instrument Serif for headlines */}
+        {/* GT Sectra Fine (headlines) and GT America (body), self-hosted in /public/fonts; JetBrains Mono for the file-tree look */}
+        <link rel="preload" href="/fonts/gt-america-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/gt-sectra-fine-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
       </head>

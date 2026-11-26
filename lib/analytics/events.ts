@@ -38,6 +38,14 @@ export const AnalyticsEvents = {
 
   // UI events
   THEME_TOGGLE: 'theme_toggle',
+
+  // Resource page events (agent box + email drawer)
+  AGENT_PROMPT_COPIED: 'agent_prompt_copied',
+  RESOURCE_PRIMARY_CLICK: 'resource_primary_click',
+  SIGNUP_DRAWER_OPENED: 'signup_drawer_opened',
+  SIGNUP_DRAWER_DISMISSED: 'signup_drawer_dismissed',
+  SIGNUP_SUBMITTED: 'signup_submitted',
+  SIGNUP_FAILED: 'signup_failed',
 } as const
 
 // Type for event names
@@ -234,4 +242,27 @@ export function trackThemeToggle(newTheme: string) {
   capture(AnalyticsEvents.THEME_TOGGLE, {
     new_theme: newTheme,
   })
+}
+
+// Resource page tracking
+export function trackAgentPromptCopied(resource: string) {
+  capture(AnalyticsEvents.AGENT_PROMPT_COPIED, { resource, page: window.location.pathname })
+}
+
+export function trackResourcePrimaryClick(resource: string, href: string) {
+  capture(AnalyticsEvents.RESOURCE_PRIMARY_CLICK, { resource, href, page: window.location.pathname })
+}
+
+export function trackSignupDrawer(
+  event: 'opened' | 'dismissed' | 'submitted' | 'failed',
+  resource: string,
+  extra?: Record<string, unknown>
+) {
+  const map = {
+    opened: AnalyticsEvents.SIGNUP_DRAWER_OPENED,
+    dismissed: AnalyticsEvents.SIGNUP_DRAWER_DISMISSED,
+    submitted: AnalyticsEvents.SIGNUP_SUBMITTED,
+    failed: AnalyticsEvents.SIGNUP_FAILED,
+  } as const
+  capture(map[event], { resource, page: window.location.pathname, ...extra })
 }

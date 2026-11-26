@@ -2,9 +2,8 @@ import { notFound } from "next/navigation"
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import MarkdownRenderer from "@/components/mdx/MarkdownRenderer"
-import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
-import { ArrowLeft, Clock, Calendar } from "lucide-react"
+import { Clock, Calendar } from "lucide-react"
 import {
   getResourcesByType,
   getDeepDiveBySlug,
@@ -120,15 +119,6 @@ export default async function DeepDivePage({ params }: Props) {
       >
         <Breadcrumb path={`resources/deep-dives/${slug}.mdx`} />
 
-        {/* Back Link */}
-        <Link
-          href="/resources?tab=deep-dives"
-          className="inline-flex items-center gap-2 text-sm text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors mb-8"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Deep Dives
-        </Link>
-
         {/* Resource Header */}
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">
@@ -172,8 +162,6 @@ export default async function DeepDivePage({ params }: Props) {
         {/* Content */}
         <MarkdownRenderer content={resource.content} />
 
-        {/* Support Footer */}
-        <SupportFooter />
       </EditorialLayout>
     </>
   )
