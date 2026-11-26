@@ -44,6 +44,18 @@ const nextConfig = {
       { source: '/design', destination: '/resources/github-repos/ui-ux-pro-max-skill?utm_source=instagram&utm_medium=dm&utm_campaign=design', permanent: false },
       { source: '/video', destination: '/resources/github-repos/wan2gp?utm_source=instagram&utm_medium=dm&utm_campaign=video', permanent: false },
       { source: '/sherlock', destination: '/resources/github-repos/sherlock?utm_source=instagram&utm_medium=dm&utm_campaign=sherlock', permanent: false },
+      { source: '/jarvis', destination: '/resources/github-repos/openjarvis?utm_source=instagram&utm_medium=dm&utm_campaign=jarvis', permanent: false },
+      { source: '/craft', destination: '/resources/github-repos/craft-anything?utm_source=instagram&utm_medium=dm&utm_campaign=craft', permanent: false },
+      { source: '/build', destination: '/resources/github-repos/build-your-own-x?utm_source=instagram&utm_medium=dm&utm_campaign=build', permanent: false },
+      { source: '/trilium', destination: '/resources/github-repos/trilium?utm_source=instagram&utm_medium=dm&utm_campaign=trilium', permanent: false },
+      { source: '/job', destination: '/resources/github-repos/ai-job-search?utm_source=instagram&utm_medium=dm&utm_campaign=job', permanent: false },
+      { source: '/career', destination: '/resources/github-repos/career-ops?utm_source=instagram&utm_medium=dm&utm_campaign=career', permanent: false },
+      { source: '/stickman', destination: '/resources/github-repos/stickman-video-director?utm_source=instagram&utm_medium=dm&utm_campaign=stickman', permanent: false },
+      { source: '/skills', destination: '/resources/github-repos/pm-skills?utm_source=instagram&utm_medium=dm&utm_campaign=skills', permanent: false },
+      { source: '/cad', destination: '/resources/github-repos/solidcraft?utm_source=instagram&utm_medium=dm&utm_campaign=cad', permanent: false },
+      { source: '/hacker', destination: '/resources/github-repos/h4cker?utm_source=instagram&utm_medium=dm&utm_campaign=hacker', permanent: false },
+      { source: '/cli', destination: '/resources/github-repos/cli-anything?utm_source=instagram&utm_medium=dm&utm_campaign=cli', permanent: false },
+      { source: '/loop', destination: '/resources/github-repos/autoresearch?utm_source=instagram&utm_medium=dm&utm_campaign=loop', permanent: false },
     ]
   },
   experimental: {
