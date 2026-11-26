@@ -2,9 +2,8 @@ import { notFound } from "next/navigation"
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import MarkdownRenderer from "@/components/mdx/MarkdownRenderer"
-import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
-import { ArrowLeft, Clock, Calendar } from "lucide-react"
+import { Clock, Calendar } from "lucide-react"
 import {
   getResourcesByType,
   getResourceBySlug,
@@ -141,30 +140,22 @@ export default async function ResourcePage({ params }: Props) {
       >
         <Breadcrumb path={`resources/${category}/${slug}.mdx`} />
 
-        {/* Back Link */}
-        <Link
-          href="/resources?tab=guides"
-          className="inline-flex items-center gap-2 text-sm text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors mb-8"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Guides
-        </Link>
-
         {/* Resource Header */}
         <header className={resource.agentPrompt ? "mb-6" : "mb-12"}>
-          <div className="flex items-center gap-3 mb-4">
+          {/* Category on the left; date and read time on the right, kept quiet */}
+          <div className="flex items-center justify-between gap-3 mb-4">
             <span className="font-mono text-xs text-[rgb(var(--primary))] uppercase tracking-wider">
               {resource.category}
             </span>
-            <span className="text-[rgb(var(--border))]">·</span>
-            <span className="flex items-center gap-1.5 font-mono text-xs text-[rgb(var(--muted))]">
-              <Calendar className="w-3 h-3" />
-              {resource.date}
-            </span>
-            <span className="text-[rgb(var(--border))]">·</span>
-            <span className="flex items-center gap-1.5 font-mono text-xs text-[rgb(var(--muted))]">
-              <Clock className="w-3 h-3" />
-              {resource.readTime}
+            <span className="flex items-center gap-3 font-mono text-[11px] text-[rgb(var(--muted))] opacity-70">
+              <span className="flex items-center gap-1">
+                <Calendar className="w-3 h-3" />
+                {resource.date}
+              </span>
+              <span className="flex items-center gap-1">
+                <Clock className="w-3 h-3" />
+                {resource.readTime}
+              </span>
             </span>
           </div>
 
@@ -192,21 +183,25 @@ export default async function ResourcePage({ params }: Props) {
             />
           )}
 
-          {/* Tags */}
-          <div id="read-more" className="flex flex-wrap gap-2 mt-6 scroll-mt-24">
-            {resource.tags.map((tag) => (
-              <span
-                key={tag}
-                className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
-              >
-                #{tag}
-              </span>
-            ))}
-          </div>
+          {/* Tags: only on long-read guides; TLDR pages keep them in the side panel */}
+          {!resource.agentPrompt && (
+            <div className="flex flex-wrap gap-2 mt-6">
+              {resource.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="font-mono text-xs px-2 py-1 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))]"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )}
         </header>
 
         {/* Resource Content */}
-        <MarkdownRenderer content={resource.content} />
+        <div id="read-more" className="scroll-mt-24">
+          <MarkdownRenderer content={resource.content} />
+        </div>
 
         {resource.postHref && (
           <p className="mt-10 text-sm text-[rgb(var(--muted))]">
@@ -223,8 +218,6 @@ export default async function ResourcePage({ params }: Props) {
           </p>
         )}
 
-        {/* Support Footer */}
-        <SupportFooter />
       </EditorialLayout>
 
       {/* Outside the layout: EditorialLayout renders its children twice (desktop and mobile), the drawer must exist once */}

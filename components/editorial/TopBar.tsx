@@ -15,7 +15,6 @@ import {
   Mail,
   Music,
   FileText,
-  Coffee,
 } from "lucide-react"
 import Link from "next/link"
 import SearchModal from "./SearchModal"
@@ -138,7 +137,7 @@ export default function TopBar() {
           className="absolute left-1/2 -translate-x-1/2 cursor-pointer select-none"
           onMouseEnter={handleMouseEnter}
         >
-          <h1 className="font-serif text-xl font-normal">
+          <h1 className="font-serif text-sm sm:text-base md:text-xl font-normal">
             <span
               className={`
                 inline-block transition-all duration-100 ease-out
@@ -230,19 +229,6 @@ export default function TopBar() {
                   </Link>
                 </li>
               ))}
-              {/* Buy Me a Coffee */}
-              <li className="border-t border-[rgb(var(--border))] mt-2 pt-2">
-                <a
-                  href="https://buymeacoffee.com/lobsanglama"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-mono text-[rgb(var(--muted))] hover:bg-[rgb(var(--border))] hover:text-[rgb(var(--text))] transition-colors"
-                >
-                  <Coffee className="w-4 h-4" />
-                  <span>support.mdx</span>
-                </a>
-              </li>
             </ul>
           </nav>
           {/* Backdrop */}

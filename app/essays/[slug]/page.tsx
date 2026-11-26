@@ -2,7 +2,6 @@ import { notFound } from "next/navigation"
 import EditorialLayout from "@/components/editorial/EditorialLayout"
 import Breadcrumb from "@/components/editorial/Breadcrumb"
 import MarkdownRenderer from "@/components/mdx/MarkdownRenderer"
-import SupportFooter from "@/components/editorial/SupportFooter"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight, Clock, Calendar } from "lucide-react"
 import { getAllEssays, getEssayBySlug, getRelatedEssays, EssayContent } from "@/lib/essays"
@@ -125,15 +124,6 @@ export default async function EssayPage({ params }: Props) {
     >
       <Breadcrumb path={`essays/${essay.slug}.mdx`} />
 
-      {/* Back Link */}
-      <Link
-        href="/essays"
-        className="inline-flex items-center gap-2 text-sm text-[rgb(var(--muted))] hover:text-[rgb(var(--primary))] transition-colors mb-8"
-      >
-        <ArrowLeft className="w-4 h-4" />
-        Back to Essays
-      </Link>
-
       {/* Essay Header */}
       <header className="mb-12">
         <div className="flex items-center gap-3 mb-4">
@@ -217,8 +207,6 @@ export default async function EssayPage({ params }: Props) {
         </nav>
       )}
 
-      {/* Support Footer */}
-      <SupportFooter />
     </EditorialLayout>
     </>
   )
