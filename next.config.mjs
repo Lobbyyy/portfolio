@@ -37,6 +37,8 @@ const nextConfig = {
       { source: '/free', destination: '/resources/github-repos/awesome-free-apps?utm_source=instagram&utm_medium=dm&utm_campaign=free', permanent: false },
       { source: '/llm', destination: '/resources/github-repos/freellmapi?utm_source=instagram&utm_medium=dm&utm_campaign=llm', permanent: false },
       { source: '/printer', destination: '/resources/github-repos/moneyprinterturbo?utm_source=instagram&utm_medium=dm&utm_campaign=printer', permanent: false },
+      { source: '/flow', destination: '/resources/github-repos/ruflo?utm_source=instagram&utm_medium=dm&utm_campaign=flow', permanent: false },
+      { source: '/trade', destination: '/resources/github-repos/day-trader-skill?utm_source=instagram&utm_medium=dm&utm_campaign=trade', permanent: false },
     ]
   },
   experimental: {

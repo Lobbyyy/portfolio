@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Link2, Image, Check } from "lucide-react"
 import ShareImageModal from "@/components/ShareImageModal"
+import { SHARE_IMAGE_ENABLED } from "@/lib/share-image-config"
 
 interface ShareFooterProps {
   url: string
@@ -51,27 +52,31 @@ export default function ShareFooter({ url, title, subtitle, tag }: ShareFooterPr
             </span>
           </button>
 
-          {/* Download image button */}
-          <button
-            onClick={() => setModalOpen(true)}
-            className="group relative p-2 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors"
-          >
-            <Image className="w-4 h-4" />
-            {/* Tooltip */}
-            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs font-mono bg-[rgb(var(--text))] text-[rgb(var(--background))] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-              Download image
-            </span>
-          </button>
+          {/* Download image button: hidden until the share-image rebuild */}
+          {SHARE_IMAGE_ENABLED && (
+            <button
+              onClick={() => setModalOpen(true)}
+              className="group relative p-2 rounded bg-[rgb(var(--border))] text-[rgb(var(--muted))] hover:bg-[rgb(var(--primary))] hover:text-white transition-colors"
+            >
+              <Image className="w-4 h-4" />
+              {/* Tooltip */}
+              <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs font-mono bg-[rgb(var(--text))] text-[rgb(var(--background))] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Download image
+              </span>
+            </button>
+          )}
         </div>
       </div>
 
-      <ShareImageModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        title={title}
-        subtitle={subtitle}
-        tag={tag}
-      />
+      {SHARE_IMAGE_ENABLED && (
+        <ShareImageModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          title={title}
+          subtitle={subtitle}
+          tag={tag}
+        />
+      )}
     </>
   )
 }

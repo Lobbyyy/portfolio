@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Link2, Image, Check } from "lucide-react"
 import ShareImageModal from "@/components/ShareImageModal"
+import { SHARE_IMAGE_ENABLED } from "@/lib/share-image-config"
 
 interface ShareSectionProps {
   url: string
@@ -57,24 +58,28 @@ export default function ShareSection({ url, title, subtitle, tag }: ShareSection
             )}
           </button>
 
-          {/* Download image button */}
-          <button
-            onClick={() => setModalOpen(true)}
-            className="flex items-center gap-2 px-3 py-2 rounded-lg border border-[rgb(var(--border))] text-sm text-[rgb(var(--muted))] hover:border-[rgb(var(--primary))] hover:text-[rgb(var(--primary))] transition-colors w-full"
-          >
-            <Image className="w-4 h-4" />
-            <span>Download image</span>
-          </button>
+          {/* Download image button: hidden until the share-image rebuild */}
+          {SHARE_IMAGE_ENABLED && (
+            <button
+              onClick={() => setModalOpen(true)}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-[rgb(var(--border))] text-sm text-[rgb(var(--muted))] hover:border-[rgb(var(--primary))] hover:text-[rgb(var(--primary))] transition-colors w-full"
+            >
+              <Image className="w-4 h-4" />
+              <span>Download image</span>
+            </button>
+          )}
         </div>
       </div>
 
-      <ShareImageModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        title={title}
-        subtitle={subtitle}
-        tag={tag}
-      />
+      {SHARE_IMAGE_ENABLED && (
+        <ShareImageModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          title={title}
+          subtitle={subtitle}
+          tag={tag}
+        />
+      )}
     </>
   )
 }
