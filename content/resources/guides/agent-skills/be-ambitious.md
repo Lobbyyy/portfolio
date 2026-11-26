@@ -5,6 +5,11 @@ date: "Oct 24, 2026"
 readTime: "8 min"
 tags: ["ai", "agent-skills", "claude-code", "chatgpt", "prompting", "ambition"]
 featured: true
+agentPrompt: "Install the be-ambitious skill from lobsang-lama.com/ambition"
+primaryLabel: "Download SKILL.md"
+primaryHref: "/skills/be-ambitious/SKILL.md"
+postHref: "https://www.instagram.com/lobsang_lama__/"
+keyword: "AMBITION"
 ---
 
 If you've used ChatGPT, Claude or Gemini, you know the pattern. You ask for something, and it gives you exactly that. Nothing more.

@@ -12,6 +12,11 @@ import {
   ResourceContent,
 } from "@/lib/resources"
 import GuideTracker from "./GuideTracker"
+import ResourceTLDR from "@/components/resources/ResourceTLDR"
+import SignupDrawer from "@/components/resources/SignupDrawer"
+
+// The drawer shows only when the Resend list is configured, so a visitor never gets a form that cannot work.
+const signupEnabled = Boolean(process.env.RESEND_API_KEY && process.env.RESEND_RESOURCES_SEGMENT_ID)
 
 interface Props {
   params: Promise<{ category: string; slug: string }>
@@ -102,6 +107,21 @@ export default async function ResourcePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {category === "github-repos" && resource.primaryHref && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              name: resource.title,
+              description: resource.excerpt,
+              codeRepository: resource.primaryHref,
+              url: `https://lobsang-lama.com/resources/${category}/${slug}`,
+            }),
+          }}
+        />
+      )}
       <GuideTracker
         slug={resource.slug}
         title={resource.title}
@@ -131,7 +151,7 @@ export default async function ResourcePage({ params }: Props) {
         </Link>
 
         {/* Resource Header */}
-        <header className="mb-12">
+        <header className={resource.agentPrompt ? "mb-6" : "mb-12"}>
           <div className="flex items-center gap-3 mb-4">
             <span className="font-mono text-xs text-[rgb(var(--primary))] uppercase tracking-wider">
               {resource.category}
@@ -148,7 +168,13 @@ export default async function ResourcePage({ params }: Props) {
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-5xl text-[rgb(var(--text))] mb-6 leading-tight">
+          <h1
+            className={
+              resource.agentPrompt
+                ? "font-serif text-3xl md:text-5xl text-[rgb(var(--text))] mb-3 leading-tight"
+                : "font-serif text-4xl md:text-5xl text-[rgb(var(--text))] mb-6 leading-tight"
+            }
+          >
             {resource.title}
           </h1>
 
@@ -156,8 +182,18 @@ export default async function ResourcePage({ params }: Props) {
             {resource.excerpt}
           </p>
 
+          {/* TLDR: give it to your agent, open it, or read more */}
+          {resource.agentPrompt && (
+            <ResourceTLDR
+              resource={resource.slug}
+              agentPrompt={resource.agentPrompt}
+              primaryLabel={resource.primaryLabel}
+              primaryHref={resource.primaryHref}
+            />
+          )}
+
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 mt-6">
+          <div id="read-more" className="flex flex-wrap gap-2 mt-6 scroll-mt-24">
             {resource.tags.map((tag) => (
               <span
                 key={tag}
@@ -172,9 +208,29 @@ export default async function ResourcePage({ params }: Props) {
         {/* Resource Content */}
         <MarkdownRenderer content={resource.content} />
 
+        {resource.postHref && (
+          <p className="mt-10 text-sm text-[rgb(var(--muted))]">
+            Found this from a video?{" "}
+            <a
+              href={resource.postHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[rgb(var(--primary))] hover:underline"
+            >
+              There are more like it on Instagram
+            </a>
+            .
+          </p>
+        )}
+
         {/* Support Footer */}
         <SupportFooter />
       </EditorialLayout>
+
+      {/* Outside the layout: EditorialLayout renders its children twice (desktop and mobile), the drawer must exist once */}
+      {resource.agentPrompt && signupEnabled && (
+        <SignupDrawer resource={resource.slug} keyword={resource.keyword} />
+      )}
     </>
   )
 }

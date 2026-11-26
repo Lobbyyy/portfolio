@@ -16,6 +16,7 @@ export type ResourceCategory =
   | "product"
   | "mindset"
   | "tools"
+  | "github-repos"
 
 export interface ResourceContent {
   slug: string
@@ -28,6 +29,12 @@ export interface ResourceContent {
   tags: string[]
   featured: boolean
   content: string
+  // Optional TLDR block at the top of a guide: agent prompt, primary link, post link
+  agentPrompt?: string
+  primaryLabel?: string
+  primaryHref?: string
+  postHref?: string
+  keyword?: string
 }
 
 /**
@@ -93,6 +100,11 @@ export function getResourcesByType(type: ResourceType): ResourceContent[] {
           tags: data.tags || [],
           featured: data.featured || false,
           content,
+          agentPrompt: data.agentPrompt,
+          primaryLabel: data.primaryLabel,
+          primaryHref: data.primaryHref,
+          postHref: data.postHref,
+          keyword: data.keyword,
         })
       })
     })
@@ -192,6 +204,11 @@ export function getGuideBySlug(category: string, slug: string): ResourceContent 
     tags: data.tags || [],
     featured: data.featured || false,
     content,
+    agentPrompt: data.agentPrompt,
+    primaryLabel: data.primaryLabel,
+    primaryHref: data.primaryHref,
+    postHref: data.postHref,
+    keyword: data.keyword,
   }
 }
 

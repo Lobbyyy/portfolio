@@ -47,6 +47,8 @@ const personSchema = {
     'https://github.com/Lobbyyy',
     'https://www.youtube.com/@lobsang_lama',
     'https://www.instagram.com/seca.mp4/',
+    'https://www.instagram.com/lobsang_lama__/',
+    'https://www.tiktok.com/@lobsang_lama_',
     'https://substack.com/@lobsanglama',
   ],
   jobTitle: 'Entrepreneur',

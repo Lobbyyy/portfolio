@@ -34,6 +34,9 @@ const nextConfig = {
     return [
       { source: '/ambition', destination: '/resources/agent-skills/be-ambitious?utm_source=instagram&utm_medium=dm&utm_campaign=ambition', permanent: false },
       { source: '/patch', destination: '/resources/engineering/php-security-oct-2026?utm_source=instagram&utm_medium=dm&utm_campaign=patch', permanent: false },
+      { source: '/free', destination: '/resources/github-repos/awesome-free-apps?utm_source=instagram&utm_medium=dm&utm_campaign=free', permanent: false },
+      { source: '/llm', destination: '/resources/github-repos/freellmapi?utm_source=instagram&utm_medium=dm&utm_campaign=llm', permanent: false },
+      { source: '/printer', destination: '/resources/github-repos/moneyprinterturbo?utm_source=instagram&utm_medium=dm&utm_campaign=printer', permanent: false },
     ]
   },
   experimental: {
