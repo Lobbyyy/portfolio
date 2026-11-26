@@ -39,6 +39,11 @@ const nextConfig = {
       { source: '/printer', destination: '/resources/github-repos/moneyprinterturbo?utm_source=instagram&utm_medium=dm&utm_campaign=printer', permanent: false },
       { source: '/flow', destination: '/resources/github-repos/ruflo?utm_source=instagram&utm_medium=dm&utm_campaign=flow', permanent: false },
       { source: '/trade', destination: '/resources/github-repos/day-trader-skill?utm_source=instagram&utm_medium=dm&utm_campaign=trade', permanent: false },
+      { source: '/edit', destination: '/resources/github-repos/opencut?utm_source=instagram&utm_medium=dm&utm_campaign=edit', permanent: false },
+      { source: '/claude', destination: '/resources/github-repos/everything-claude-code?utm_source=instagram&utm_medium=dm&utm_campaign=claude', permanent: false },
+      { source: '/design', destination: '/resources/github-repos/ui-ux-pro-max-skill?utm_source=instagram&utm_medium=dm&utm_campaign=design', permanent: false },
+      { source: '/video', destination: '/resources/github-repos/wan2gp?utm_source=instagram&utm_medium=dm&utm_campaign=video', permanent: false },
+      { source: '/sherlock', destination: '/resources/github-repos/sherlock?utm_source=instagram&utm_medium=dm&utm_campaign=sherlock', permanent: false },
     ]
   },
   experimental: {
