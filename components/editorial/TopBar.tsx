@@ -137,7 +137,7 @@ export default function TopBar() {
           className="absolute left-1/2 -translate-x-1/2 cursor-pointer select-none"
           onMouseEnter={handleMouseEnter}
         >
-          <h1 className="font-serif text-sm sm:text-base md:text-xl font-normal">
+          <h1 className="font-serif text-base md:text-xl font-normal">
             <span
               className={`
                 inline-block transition-all duration-100 ease-out

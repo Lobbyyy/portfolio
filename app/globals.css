@@ -96,7 +96,15 @@ body {
     0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography: GT America (licensed with Coconut) for headlines and body */
+/* Typography (licensed with Coconut): GT Sectra Fine for headlines, GT America for body */
+@font-face {
+  font-family: 'GT Sectra Fine';
+  src: url('/fonts/gt-sectra-fine-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'GT America';
   src: url('/fonts/gt-america-regular.woff2') format('woff2');
@@ -113,11 +121,10 @@ body {
   font-display: swap;
 }
 
-/* Headlines: GT America Medium, tightened */
+/* Headlines: GT Sectra Fine (Coconut's display face) */
 .font-serif {
-  font-family: 'GT America', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-family: 'GT Sectra Fine', Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 .font-sans {

@@ -36,7 +36,7 @@ export default function ResourceTLDR({ resource, agentPrompt, primaryLabel, prim
   }, [agentPrompt, resource])
 
   return (
-    <div className="mt-8 overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface))] divide-y divide-[rgb(var(--border))]">
+    <div className="editorial-elevated-card mt-8 overflow-hidden rounded-2xl border border-[rgb(var(--border))] divide-y divide-[rgb(var(--border))] !shadow-[0_1px_2px_rgba(0,0,0,0.05),0_8px_24px_-8px_rgba(0,0,0,0.12)] dark:!shadow-[0_1px_2px_rgba(0,0,0,0.3),0_8px_24px_-8px_rgba(0,0,0,0.5)]">
       {/* 01: give it to your agent */}
       <div className="p-4 md:p-5">
         <div className="mb-3 flex items-center gap-3">
